@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: B
+# key: B
+# group: rspec
+# --
+But('$1'){
+  $2
+}

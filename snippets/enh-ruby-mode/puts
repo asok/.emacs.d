@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: puts
+# key: puts
+# --
+puts '`(random t)`'
+p $0

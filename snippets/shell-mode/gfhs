@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: gfhs
+# key: gfhs
+# --
+git flow hotfix start 

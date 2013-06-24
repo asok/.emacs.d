@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: S
+# key: S
+# --
+SELECT ${1:*} FROM $2;

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: A
+# key: A
+# group: rspec
+# --
+And('$1'){
+  $2
+}

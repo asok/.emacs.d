@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Sc
+# key: Sc
+# --
+SELECT count(*) FROM ${1};

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: rescue
+# key: res
+# --
+rescue Exception => err
+  p err.inspect
+  pp err.backtrace[0..11]

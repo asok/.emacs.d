@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: W
+# key: W
+# group: rspec
+# --
+When('$1'){
+  $2
+}

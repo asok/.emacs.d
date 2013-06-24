@@ -1,0 +1,6 @@
+# name: class
+# key: class
+# --
+class ${1:`(substring (camelize (file-name-nondirectory (buffer-file-name))) 0 -3)`}
+  $0
+end

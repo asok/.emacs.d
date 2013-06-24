@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: gfhf
+# key: gfhf
+# --
+git flow hotfix finish -n 

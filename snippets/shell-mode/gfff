@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: gfff
+# key: gfff
+# --
+git flow feature finish 

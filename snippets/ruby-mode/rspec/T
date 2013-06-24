@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: T
+# key: T
+# group: rspec
+# --
+Then('$1'){
+  $2
+}

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: should_receive
+# key: sr
+# group: rspec
+# --
+should_receive(:$1).${2:once}

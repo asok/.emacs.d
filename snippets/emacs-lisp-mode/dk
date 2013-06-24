@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: define-key
+# key: dk 
+# --
+(define-key ${1:global-map} (kbd "$2") '{$3:(lambda () ())})

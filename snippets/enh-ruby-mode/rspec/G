@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: G
+# key: G
+# group: rspec
+# --
+Given('$1'){
+  $2
+}

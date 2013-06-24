@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: bef
+# key: bef
+# group: rspec
+# --
+before do
+  $0
+end

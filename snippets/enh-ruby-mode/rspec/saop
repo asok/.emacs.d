@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: save_and_open_page
+# key: saop
+# group: rspec
+# --
+save_and_open_page
