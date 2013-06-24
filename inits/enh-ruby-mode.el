@@ -3,8 +3,6 @@
 (add-to-list 'auto-mode-alist '("Rakefile$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.rake$" . enh-ruby-mode))
 
-(add-hook 'enh-ruby-mode-hook 'auto-complete-mode)
-
 ;; (add-hook 'enh-ruby-mode-hook 'asok/evil-paste-ad)
 
 (setq enh-ruby-program "ruby")

@@ -113,5 +113,4 @@
 
 (evil-define-key 'normal emacs-lisp-mode-map (kbd "RET") 'elisp-slime-nav-find-elisp-thing-at-point)
 
-
 (require 'evil-integration)

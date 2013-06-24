@@ -13,7 +13,6 @@
     inf-ruby
     yaml-mode
     mmm-mode
-    helm-rails
     rbenv
     ace-jump-mode
     ack-and-a-half
@@ -39,8 +38,11 @@
     undo-tree
     ;; volatile-highlights
     yasnippet
+    company
     exec-path-from-shell
-    zenburn-theme)
+    ruby-end
+    zenburn-theme
+    helm-rails)
   "A list of packages to ensure are installed at launch.")
 
 (defun asok/install-packages (&optional force)

@@ -68,10 +68,6 @@
 
 (setq org-src-fontify-natively t)
 
-(defadvice load-theme 
-  (before theme-dont-propagate activate)
-  (mapcar #'disable-theme custom-enabled-themes))
-
 (global-set-key (kbd "s-h") 'windmove-left)
 (global-set-key (kbd "s-l") 'windmove-right)
 (global-set-key (kbd "s-j") 'windmove-down)
@@ -150,3 +146,10 @@ or start a new one while killing a defunt one"
         (message "File '%s' successfully removed" filename)))))
 
 (global-set-key (kbd "C-x C-k") 'delete-current-buffer-file)
+
+(load "~/.emacs.d/packages")
+
+(asok/install-packages)
+(asok/init-packages)
+
+(load "~/.emacs.d/theming")
