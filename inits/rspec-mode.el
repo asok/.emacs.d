@@ -1,6 +1,6 @@
 (defun asok/rspec-recompile ()
   (interactive)
-  (with-current-buffer "*compilation*"
+  (with-current-buffer "*rspec-compilation*"
     (recompile)))
 
 (evil-define-key 'normal rspec-verifiable-mode-map
@@ -12,4 +12,8 @@
 
 (add-hook 'arm-mode-hook 'rspec-verifiable-mode)
 
-(setq rspec-use-rvm nil)
+(setq rspec-use-rvm nil
+      rspec-use-opts-file-when-available nil
+      rspec-use-rake-when-possible nil)
+
+

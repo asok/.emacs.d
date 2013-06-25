@@ -24,8 +24,7 @@
   (helm-other-buffer (append '(helm-source-buffers-list
                                helm-source-recentf
                                helm-source-asok-config-files)
-                             (if (boundp 'helm-rails-not-found-c-source)
-                                 '(helm-rails-not-found-c-source))
-                             ()
+                             (if (and (fboundp 'helm-rails-project-p) (helm-rails-project-p))
+                               '(helm-rails-not-found-c-source))
                              '(helm-source-buffer-not-found))
                      "*helm mini*"))

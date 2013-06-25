@@ -38,12 +38,13 @@
     undo-tree
     ;; volatile-highlights
     yasnippet
-    company
     exec-path-from-shell
     ruby-end
     zenburn-theme
+    auto-complete
+    helm-ag
     helm-rails)
-  "A list of packages to ensure are installed at launch.")
+  "List of packages installed via package.el")
 
 (defun asok/install-packages (&optional force)
   (package-initialize)
@@ -57,3 +58,9 @@
         (let ((file (concat "~/.emacs.d/inits/" (symbol-name package))))
           (when (file-exists-p (concat file ".el")) 
             (load file)))))
+
+(defun asok/init-manual-packages ()
+  (let ((asok/packages '(peep-dired arm)))
+    (loop for package in asok/packages
+          do (add-to-list 'load-path (concat "~/.emacs.d/site-lisp/" (symbol-name package))))
+    (asok/init-packages)))

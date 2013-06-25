@@ -151,5 +151,6 @@ or start a new one while killing a defunt one"
 
 (asok/install-packages)
 (asok/init-packages)
+(asok/init-manual-packages)
 
 (load "~/.emacs.d/theming")

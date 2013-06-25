@@ -10,3 +10,5 @@
 (add-hook 'enh-ruby-mode-hook 'ruby-end-mode)
 
 (add-hook 'enh-ruby-mode-hook 'asok/delete-trailing-whitespace-on-file-write)
+
+(evil-define-key 'insert enh-ruby-mode-map (kbd "RET") 'evil-ret-and-indent)
