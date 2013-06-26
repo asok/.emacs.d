@@ -1,3 +1,5 @@
+(require 'peep-dired)
+
 (define-key dired-mode-map (kbd "C-c C-p") 'peep-dired)
 
 (evil-define-key 'normal peep-dired-mode-map (kbd "<SPC>") 'peep-dired-scroll-page-down)

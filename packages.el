@@ -54,13 +54,12 @@
           (remove-if #'package-installed-p asok/packages))))
 
 (defun asok/init-packages ()
-  (loop for package in asok/packages do
+  (loop for package in (append asok/packages (asok/discover-site-lisp-packages)) do
         (let ((file (concat "~/.emacs.d/inits/" (symbol-name package))))
           (when (file-exists-p (concat file ".el")) 
             (load file)))))
 
-(defun asok/init-manual-packages ()
-  (let ((asok/packages '(peep-dired arm)))
-    (loop for package in asok/packages
-          do (add-to-list 'load-path (concat "~/.emacs.d/site-lisp/" (symbol-name package))))
-    (asok/init-packages)))
+(defun asok/discover-site-lisp-packages ()
+  (let ((root "~/.emacs.d/site-lisp/"))
+    (mapcar '(lambda (dir) (add-to-list 'load-path (concat root dir)) (intern dir))
+            (directory-files root nil "^[^.]+$"))))
