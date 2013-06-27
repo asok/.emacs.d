@@ -15,15 +15,13 @@
 (push "/usr/local/bin" exec-path)
 (push "/opt/local/bin" exec-path)
 
-(fset 'yes-or-no-p 'y-or-n-p)
 ;; (set-frame-font "Monospaced-14")	
-
+(fset 'yes-or-no-p 'y-or-n-p)
 (set-variable 'shell-file-name "/bin/bash")
 (winner-mode 1)
 (show-paren-mode t)
 (auto-fill-mode nil)
 (blink-cursor-mode -1)
-
 (electric-pair-mode)
 
 (setq custom-file "~/.emacs.d/custom.el")
@@ -35,13 +33,6 @@
 
 ;; Also auto refresh dired, but be quiet about it
 ;; (setq global-auto-revert-non-file-buffers t)
-
-(require 'term)
-
-(setq term-default-bg-color nil
-      term-default-fg-color 'white)
-
-(setq multi-term-program "/bin/bash")
 
 (load "~/.emacs.d/bindings")
 (load "~/.emacs.d/packages")
