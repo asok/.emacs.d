@@ -29,12 +29,11 @@
     expand-region
     ;; flycheck
     ;; gist
-    ;; guru-mode
     helm
     ido-ubiquitous
-    ;rainbow-mode
+    rainbow-mode
     smex
-    solarized-theme
+    ;; solarized-theme
     undo-tree
     ;; volatile-highlights
     yasnippet
@@ -43,12 +42,13 @@
     zenburn-theme
     auto-complete
     helm-ag
+    ag
     helm-rails)
   "List of packages installed via package.el")
 
-(defun asok/install-packages (&optional force)
+(defun asok/install-packages ()
   (package-initialize)
-  (when (or force (notevery #'package-installed-p asok/packages))
+  (when (notevery #'package-installed-p asok/packages)
     (package-refresh-contents)
     (mapc #'package-install
           (remove-if #'package-installed-p asok/packages))))
