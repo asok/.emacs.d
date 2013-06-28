@@ -1,5 +1,7 @@
 (setq ag-highlight-search t)
 
+(evil-define-key 'normal global-map (kbd ", a") 'ag-project)
+
 (defun ag/helm-init ()
   (helm-init-candidates-in-buffer
    'local

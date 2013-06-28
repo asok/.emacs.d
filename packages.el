@@ -42,7 +42,9 @@
     zenburn-theme
     auto-complete
     helm-ag
+    js2-mode
     ag
+    rhtml-mode
     helm-rails)
   "List of packages installed via package.el")
 
@@ -55,7 +57,7 @@
 
 (defun asok/init-packages ()
   (loop for package in (append asok/packages (asok/discover-site-lisp-packages)) do
-        (let ((file (concat "~/.emacs.d/inits/" (symbol-name package))))
+        (let ((file (concat "~/.emacs.d/inits/init-" (symbol-name package))))
           (when (file-exists-p (concat file ".el")) 
             (load file)))))
 

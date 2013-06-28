@@ -1,5 +1,4 @@
 (require 'auto-complete-autoloads)
-(global-auto-complete-mode t)
 ;; (add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
 (setq rsense-home "/usr/local/Cellar/rsense/0.3/libexec")
 (add-to-list 'load-path (concat rsense-home "/etc"))
@@ -54,3 +53,11 @@
 (add-hook 'c-mode-common-hook 'asok/ac-cc-mode-setup)
 (add-hook 'ruby-mode-hook 'asok/ac-ruby-mode-setup)
 (add-hook 'css-mode-hook 'asok/ac-css-mode-setup)
+
+(add-to-list 'ac-modes 'enh-ruby-mode)
+(add-to-list 'ac-modes 'shell-mode)
+(add-to-list 'ac-modes 'rhtml-mode)
+(add-to-list 'ac-modes 'html-mode)
+(global-auto-complete-mode t)
+
+
