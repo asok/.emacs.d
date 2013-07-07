@@ -31,6 +31,8 @@
 (add-hook 'lisp-interaction-mode-hook 'turn-on-eldoc-mode)
 (add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
 
+(add-to-list 'auto-mode-alist '("\\.css$" . css-mode))
+
 ;; Also auto refresh dired, but be quiet about it
 ;; (setq global-auto-revert-non-file-buffers t)
 

@@ -6,10 +6,21 @@
 
 (setq ac-expand-on-auto-complete t)
 (setq ac-use-quick-help t)
-
 (setq ac-dwim t) ; To get pop-ups with docs even if a word is uniquely completed
-(define-key ac-completing-map (kbd "C-n") 'ac-next)
-(define-key ac-completing-map (kbd "C-p") 'ac-previous)
+
+(eval-after-load "auto-complete"
+  '(progn
+     (add-to-list 'ac-modes 'enh-ruby-mode)
+     (add-to-list 'ac-modes 'shell-mode)
+     (add-to-list 'ac-modes 'rhtml-mode)
+     (add-to-list 'ac-modes 'html-mode)
+
+     (define-key ac-completing-map (kbd "C-n") 'ac-next)
+     (define-key ac-completing-map (kbd "C-p") 'ac-previous)
+     (define-key ac-completing-map [return] nil)
+     (define-key ac-completing-map "\r" nil)
+
+     (global-auto-complete-mode t)))
 
 ;; hook AC into completion-at-point
 (defun set-auto-complete-as-completion-at-point-function ()
@@ -30,8 +41,6 @@
 (defadvice ac-next (after asok/expand-string activate)
   (ac-expand-string (ac-selected-candidate)))
 
-(define-key ac-completing-map [return] nil)
-(define-key ac-completing-map "\r" nil)
 
 (defun asok/ac-emacs-lisp-mode-setup ()
   (setq ac-sources (append '(ac-source-features ac-source-functions ac-source-variables ac-source-symbols) ac-sources)))
@@ -54,10 +63,5 @@
 (add-hook 'ruby-mode-hook 'asok/ac-ruby-mode-setup)
 (add-hook 'css-mode-hook 'asok/ac-css-mode-setup)
 
-(add-to-list 'ac-modes 'enh-ruby-mode)
-(add-to-list 'ac-modes 'shell-mode)
-(add-to-list 'ac-modes 'rhtml-mode)
-(add-to-list 'ac-modes 'html-mode)
-(global-auto-complete-mode t)
 
 

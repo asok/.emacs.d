@@ -15,6 +15,7 @@
 
 (evil-define-key 'normal term-raw-map "i" 'go-to-end-and-insert)
 (evil-define-key 'normal comint-mode-map "i" 'comint-goto-end-and-insert)
+(evil-define-key 'normal inf-ruby-mode-map "i" 'comint-goto-end-and-insert)
 
 (evil-define-key 'insert comint-mode-map
   (kbd "<up>") 'comint-previous-input
@@ -51,22 +52,6 @@
   (kbd ", f") 'ido-find-file
   (kbd ", C-c") 'magit-checkout
   (kbd ", d") 'ido-dired)
-
-(evil-add-hjkl-bindings magit-branch-manager-mode-map 'emacs
-  (kbd "C-f") 'evil-scroll-page-down
-  (kbd "C-b") 'evil-scroll-page-up)
-(evil-add-hjkl-bindings magit-status-mode-map 'emacs
-  (kbd "C-f") 'evil-scroll-page-down
-  (kbd "C-b") 'evil-scroll-page-up
-  (kbd "K") 'magit-discard-item
-  (kbd "h") 'magit-toggle-diff-refine-hunk
-  (kbd "l") 'magit-key-mode-popup-logging)
-
-(evil-define-key 'motion magit-status-mode-map
-  (kbd "<tab>") 'magit-toggle-section
-  (kbd "<enter>") 'magit-visit-item
-  (kbd ", C-c") 'magit-checkout
-  (kbd ", c") 'magit-status)
 
 (add-hook 'compilation-mode-hook '(lambda ()
                                     (local-unset-key "g")

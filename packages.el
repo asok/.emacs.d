@@ -22,7 +22,7 @@
     ;readline-complete
     enh-ruby-mode
     rspec-mode
-    robe
+    ;; robe
     slim-mode
     dash
     elisp-slime-nav

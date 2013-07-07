@@ -16,4 +16,11 @@
       rspec-use-opts-file-when-available nil
       rspec-use-rake-when-possible nil)
 
+(defun asok/rspec-compilation-hook ()
+  (make-local-variable 'compilation-scroll-output)
+  (setq compilation-scroll-output 'first-error))
+
+(add-hook 'rspec-compilation-mode-hook 'asok/rspec-compilation-hook)
+
+
 

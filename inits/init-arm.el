@@ -2,12 +2,14 @@
 (define-key arm-mode-map (kbd "C-c C-r") 'arm/start-server)
 (define-key arm-mode-map (kbd "C-c r") 'arm/rake)
 
+(add-hook 'arm-mode-hook 'evil-normalize-keymaps)
+
 (defun asok/arm/find-view-or-tag-dwim-maybe ()
   (interactive)
   (if (find 'arm-mode minor-mode-list)
       (arm/find-view-or-tag-dwim)))
 
-(evil-define-key 'normal arm-mode-map (kbd ", a") 'arm/ack
+(evil-define-key 'normal arm-mode-map (kbd ", a") 'ag-project
   (kbd ", h") arm/shortcut-map)
 
 (evil-define-key 'normal ruby-mode-map (kbd "<return>") 'asok/arm/find-view-or-tag-dwim-maybe)
@@ -28,4 +30,4 @@
   (interactive)
   (arm/in-root (helm-ag)))
 
-(evil-define-key 'normal arm-mode-map (kbd ", a") 'asok/arm-helm-ag)
+;; (evil-define-key 'normal arm-mode-map (kbd ", a") 'asok/arm-helm-ag)
