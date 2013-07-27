@@ -10,7 +10,9 @@
       indent-tabs-mode nil
       font-lock-maximum-decoration t
       auto-revert-verbose nil
-      org-src-fontify-natively t)
+      org-src-fontify-natively t
+      ns-right-alternate-modifier nil)
+
 
 (push "/usr/local/bin" exec-path)
 (push "/opt/local/bin" exec-path)

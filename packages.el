@@ -16,8 +16,6 @@
     rbenv
     ace-jump-mode
     ack-and-a-half
-    wgrep
-    wgrep-ack
     magit
     ;readline-complete
     enh-ruby-mode
@@ -45,6 +43,7 @@
     js2-mode
     ag
     rhtml-mode
+    scss-mode
     helm-rails)
   "List of packages installed via package.el")
 
