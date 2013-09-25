@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: percent
+# key: %
+# --
+<% ${1:if } %>

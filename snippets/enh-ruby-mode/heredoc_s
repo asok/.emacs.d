@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: heredoc_s
+# key: <s
+# --
+<<-sql
+$1
+sql

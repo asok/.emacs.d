@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: heredoc_d
+# key: <d
+# --
+<<-doc
+$1
+doc

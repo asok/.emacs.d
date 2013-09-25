@@ -1,6 +1,8 @@
 (defun asok/rspec-recompile ()
   (interactive)
   (with-current-buffer "*rspec-compilation*"
+    (when (string= major-mode "inf-ruby-mode")
+      (inf-ruby-mode))
     (recompile)))
 
 (evil-define-key 'normal rspec-verifiable-mode-map
@@ -18,7 +20,11 @@
 
 (defun asok/rspec-compilation-hook ()
   (make-local-variable 'compilation-scroll-output)
-  (setq compilation-scroll-output 'first-error))
+  (setq compilation-scroll-output 'first-error)
+  (define-key rspec-compilation-mode-map (kbd "C-x C-q") '(lambda ()
+							    (interactive)
+							    (inf-ruby-switch-from-compilation)
+							    (comint-goto-end-and-insert))))
 
 (add-hook 'rspec-compilation-mode-hook 'asok/rspec-compilation-hook)
 

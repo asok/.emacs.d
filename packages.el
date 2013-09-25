@@ -7,6 +7,7 @@
 (defvar asok/packages
   '(evil
     surround
+    evil-indent-textobject
     haml-mode
     markdown-mode
     bundler
