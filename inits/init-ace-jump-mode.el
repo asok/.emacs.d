@@ -23,4 +23,4 @@
 
 (asok/evil-define-key-when-global-map '(normal motion)
                                       (kbd "SPC") 'evil-ace-jump-word-mode
-                                      (kbd "C-u SPC") 'evil-ace-jump-char-mode)
+                                      (kbd "C-SPC") 'evil-ace-jump-char-mode)

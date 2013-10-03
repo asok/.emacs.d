@@ -21,7 +21,7 @@
     ;readline-complete
     enh-ruby-mode
     rspec-mode
-    ;; robe
+    robe
     slim-mode
     dash
     elisp-slime-nav
@@ -45,6 +45,7 @@
     ag
     rhtml-mode
     scss-mode
+    lorem-ipsum
     helm-rails)
   "List of packages installed via package.el")
 

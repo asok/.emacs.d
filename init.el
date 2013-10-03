@@ -11,6 +11,8 @@
       font-lock-maximum-decoration t
       auto-revert-verbose nil
       org-src-fontify-natively t
+      gc-cons-threshold 20000000
+      ;;global-auto-revert-non-file-buffers t
       ns-right-alternate-modifier nil)
 
 
@@ -34,9 +36,6 @@
 (add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
 
 (add-to-list 'auto-mode-alist '("\\.css$" . css-mode))
-
-;; Also auto refresh dired, but be quiet about it
-;; (setq global-auto-revert-non-file-buffers t)
 
 (load "~/.emacs.d/bindings")
 (load "~/.emacs.d/packages")
