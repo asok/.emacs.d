@@ -21,7 +21,7 @@
     ;readline-complete
     enh-ruby-mode
     rspec-mode
-    robe
+    ;; robe
     slim-mode
     dash
     elisp-slime-nav
@@ -37,7 +37,7 @@
     ;; volatile-highlights
     yasnippet
     exec-path-from-shell
-    ruby-end
+    ;; ruby-end
     zenburn-theme
     auto-complete
     helm-ag

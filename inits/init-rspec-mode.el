@@ -12,7 +12,7 @@
   (kbd ", t") 'rspec-toggle-spec-and-target
   (kbd ", r") 'asok/rspec-recompile)
 
-(add-hook 'arm-mode-hook 'rspec-verifiable-mode)
+(add-hook 'enh-ruby-mode-hook 'rspec-verifiable-mode)
 
 (setq rspec-use-rvm nil
       rspec-use-opts-file-when-available nil

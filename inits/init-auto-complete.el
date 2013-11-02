@@ -2,11 +2,11 @@
 ;; (add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
 (setq rsense-home "/usr/local/Cellar/rsense/0.3/libexec")
 (add-to-list 'load-path (concat rsense-home "/etc"))
-(setq ac-auto-start 3)
-
-(setq ac-expand-on-auto-complete t)
-(setq ac-use-quick-help t)
-(setq ac-dwim t) ; To get pop-ups with docs even if a word is uniquely completed
+(setq ac-auto-start 3
+      ac-auto-show-menu 0.1
+      ac-expand-on-auto-complete t
+      ac-use-quick-help t
+      ac-dwim t) ; To get pop-ups with docs even if a word is uniquely completed
 
 (eval-after-load "auto-complete"
   '(progn
@@ -17,8 +17,9 @@
 
      (define-key ac-completing-map (kbd "C-n") 'ac-next)
      (define-key ac-completing-map (kbd "C-p") 'ac-previous)
-     (define-key ac-completing-map [return] nil)
+     ;; (define-key ac-completing-map [return] nil)
      (define-key ac-completing-map "\r" nil)
+     (define-key ac-completing-map (kbd "<tab>") nil)
 
      (global-auto-complete-mode t)))
 
@@ -41,7 +42,6 @@
 (defadvice ac-next (after asok/expand-string activate)
   (ac-expand-string (ac-selected-candidate)))
 
-
 (defun asok/ac-emacs-lisp-mode-setup ()
   (setq ac-sources (append '(ac-source-features ac-source-functions ac-source-variables ac-source-symbols) ac-sources)))
 
@@ -57,7 +57,7 @@
 			   ac-source-dictionary
 			   ac-source-words-in-same-mode-buffers
 			   ac-source-filename
-			   ac-source-yasnippet))
+			   ))
 
 (add-hook 'emacs-lisp-mode-hook 'asok/ac-emacs-lisp-mode-setup)
 (add-hook 'c-mode-common-hook 'asok/ac-cc-mode-setup)

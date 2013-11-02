@@ -1,6 +1,9 @@
 (require 'arm)
+
 (define-key arm-mode-map (kbd "C-c C-r") 'arm/start-server)
 (define-key arm-mode-map (kbd "C-c r") 'arm/rake)
+
+(define-key arm-mode-map (kbd "<f3>") 'arm/project-shell)
 
 (add-hook 'arm-mode-hook 'evil-normalize-keymaps)
 

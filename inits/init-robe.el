@@ -4,3 +4,5 @@
 
 (require 'auto-complete)
 (push 'ac-source-robe ac-sources)
+
+(setq robe-turn-on-eldoc nil)
