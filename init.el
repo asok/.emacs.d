@@ -12,6 +12,7 @@
       auto-revert-verbose nil
       org-src-fontify-natively t
       gc-cons-threshold 20000000
+      ido-auto-merge-work-directories-length -1
       ;;global-auto-revert-non-file-buffers t
       ns-right-alternate-modifier nil)
 
