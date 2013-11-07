@@ -24,6 +24,13 @@
   (kbd "<down>") 'comint-next-input
   (kbd "<up>") 'comint-previous-input)
 
+(defun asok/sgml-skip-tag-forward-or-backward ()
+  (interactive)
+  (if (string-match-p "/" (symbol-name (symbol-at-point)))
+      (sgml-skip-tag-backward 1)
+    (sgml-skip-tag-forward 1)))
+(evil-define-key 'normal html-mode-map (kbd "%") 'asok/sgml-skip-tag-forward-or-backward)
+
 ;;todo
 
 (defmacro asok/evil-define-key-when-global-map (states &rest bindings)
