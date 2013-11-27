@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: des
-# key: des
-# group: rspec
-# --
-describe '$1' do
-  $0
-end

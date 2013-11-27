@@ -14,7 +14,8 @@
       gc-cons-threshold 20000000
       ido-auto-merge-work-directories-length -1
       ;;global-auto-revert-non-file-buffers t
-      ns-right-alternate-modifier nil)
+      ns-right-alternate-modifier nil
+      comint-process-echoes t)
 
 
 (push "/usr/local/bin" exec-path)
@@ -35,13 +36,18 @@
 (add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode)
 (add-hook 'lisp-interaction-mode-hook 'turn-on-eldoc-mode)
 (add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
+(eval-after-load "ispell"
+  '(when (executable-find ispell-program-name)
+   (add-hook 'text-mode-hook 'turn-on-flyspell)))
 
 (add-to-list 'auto-mode-alist '("\\.css$" . css-mode))
+(add-to-list 'auto-mode-alist '("\\.zsh$" . sh-mode))
 
 (load "~/.emacs.d/bindings")
 (load "~/.emacs.d/packages")
 (asok/install-packages)
 (asok/init-packages)
 (load "~/.emacs.d/theming")
+
 
 (server-start)

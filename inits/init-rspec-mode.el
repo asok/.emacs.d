@@ -13,6 +13,8 @@
   (kbd ", r") 'asok/rspec-recompile)
 
 (add-hook 'enh-ruby-mode-hook 'rspec-verifiable-mode)
+(add-hook 'ruby-mode-hook 'rspec-verifiable-mode)
+(add-hook 'rspec-mode-hook 'evil-normalize-keymaps)
 
 (setq rspec-use-rvm nil
       rspec-use-opts-file-when-available nil

@@ -11,6 +11,7 @@
 (eval-after-load "auto-complete"
   '(progn
      (add-to-list 'ac-modes 'enh-ruby-mode)
+     (add-to-list 'ac-modes 'ruby-mode)
      (add-to-list 'ac-modes 'shell-mode)
      (add-to-list 'ac-modes 'rhtml-mode)
      (add-to-list 'ac-modes 'html-mode)

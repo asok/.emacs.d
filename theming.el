@@ -13,4 +13,13 @@
     (load-theme 'solarized-dark)
     (setq evil-default-cursor '("white" t))))
 
-(asok/toggle-solarized-theme)
+;; (asok/toggle-solarized-theme)
+
+;; (load-theme 'zenburn)
+(require 'noname-theme)
+(load-theme 'noname)
+(setq evil-default-cursor '("white" t))
+
+;; (custom-theme-set-faces
+;;  'hickey
+;;    `(font-lock-string-face ((t (:foreground "#999999")))))

@@ -6,6 +6,7 @@
 (define-key arm-mode-map (kbd "<f3>") 'arm/project-shell)
 
 (add-hook 'arm-mode-hook 'evil-normalize-keymaps)
+(add-hook 'arm-mode-hook 'rspec-verifiable-mode)
 
 (defun asok/arm/find-view-or-tag-dwim-maybe ()
   (interactive)
@@ -32,5 +33,6 @@
 (defun asok/arm-helm-ag ()
   (interactive)
   (arm/in-root (helm-ag)))
+
 
 ;; (evil-define-key 'normal arm-mode-map (kbd ", a") 'asok/arm-helm-ag)

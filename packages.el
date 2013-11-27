@@ -19,14 +19,14 @@
     ack-and-a-half
     magit
     ;readline-complete
-    enh-ruby-mode
+    ;; enh-ruby-mode
     rspec-mode
     ;; robe
     slim-mode
     dash
     elisp-slime-nav
     expand-region
-    ;; flycheck
+    flycheck
     ;; gist
     helm
     ido-ubiquitous
@@ -45,7 +45,9 @@
     ag
     rhtml-mode
     scss-mode
+    ruby-refactor
     lorem-ipsum
+    feature-mode
     helm-rails)
   "List of packages installed via package.el")
 
