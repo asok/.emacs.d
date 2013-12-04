@@ -50,7 +50,7 @@
   (kbd ", g") 'google-query
   (kbd ", c") 'magit-status
   (kbd ", C-c") 'magit-checkout
-  (kbd ", o") 'helm-occur)
+  (kbd ", o") 'asok/helm-occur)
 
 (evil-define-key 'visual global-map (kbd ", g") 'google-query)
 
@@ -107,3 +107,14 @@
 (evil-define-key 'normal emacs-lisp-mode-map (kbd ", e") 'eval-expression)
 
 (require 'evil-integration)
+
+(defun helm-occur ()
+  "Preconfigured helm for Occur."
+  (interactive)
+  (setq helm-multi-occur-buffer-list (list (buffer-name (current-buffer))))
+  (helm-occur-init-source)
+  (helm-attrset 'name "Occur" helm-source-occur)
+  (helm :sources 'helm-source-occur
+        :buffer "*helm occur*"
+	:input (symbol-name (symbol-at-point))
+        :history 'helm-grep-history))

@@ -65,5 +65,5 @@
 (add-hook 'ruby-mode-hook 'asok/ac-ruby-mode-setup)
 (add-hook 'css-mode-hook 'asok/ac-css-mode-setup)
 
-
-
+(eval-after-load 'auto-complete
+  '(diminish 'auto-complete-mode " ΑΨ"))

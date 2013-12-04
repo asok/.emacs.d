@@ -2,6 +2,7 @@
 
 (eval-after-load 'flycheck
   '(progn
+     (diminish 'flycheck-mode " Φ")
      (add-hook 'web-mode-hook '(lambda () (flycheck-mode -1)))
      (add-hook 'js-mode-hook '(lambda ()
 				(when (and

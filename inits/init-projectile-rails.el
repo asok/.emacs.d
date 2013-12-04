@@ -17,3 +17,5 @@
 (define-key projectile-rails-mode-map (kbd "C-c g") projectile-rails-mode-goto-map)
 
 (setq projectile-rails-expand-snippet nil)
+
+(diminish 'projectile-rails-mode " Ρ")

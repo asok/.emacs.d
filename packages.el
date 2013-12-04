@@ -8,6 +8,7 @@
   '(evil
     surround
     evil-indent-textobject
+    diminish
     haml-mode
     markdown-mode
     bundler
@@ -51,6 +52,7 @@
     lorem-ipsum
     feature-mode
     powerline
+    pretty-lambdada
     helm-rails)
   "List of packages installed via package.el")
 
@@ -69,5 +71,5 @@
 
 (defun asok/discover-site-lisp-packages ()
   (let ((root "~/.emacs.d/site-lisp/"))
-    (mapcar '(lambda (dir) (add-to-list 'load-path (concat root dir)) (intern dir))
+    (mapcar #'(lambda (dir) (add-to-list 'load-path (concat root dir)) (intern dir))
             (directory-files root nil "^[^.]+$"))))

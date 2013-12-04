@@ -30,5 +30,7 @@
 
 (add-hook 'rspec-compilation-mode-hook 'asok/rspec-compilation-hook)
 
-
-
+(eval-after-load 'rspec-mode
+                 '(progn
+                    (diminish 'rspec-mode "ΡΣ")
+                    (diminish 'rspec-verifiable-mode "ΡΣΩ")))

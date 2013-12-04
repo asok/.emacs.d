@@ -10,3 +10,6 @@
 (push 'ac-source-robe ac-sources)
 
 (setq robe-turn-on-eldoc nil)
+
+(eval-after-load 'robe
+  '(diminish 'robe-mode " Ροβε"))
