@@ -50,6 +50,7 @@
     ruby-refactor
     lorem-ipsum
     feature-mode
+    powerline
     helm-rails)
   "List of packages installed via package.el")
 
