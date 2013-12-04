@@ -2,8 +2,18 @@
 (setq projectile-completion-system 'grizzl)
 (add-hook 'projectile-mode-hook 'projectile-rails-on)
 
-(global-set-key (kbd "s-t") 'projectile-rails-controllers)
-(global-set-key (kbd "s-y") 'projectile-rails-models)
-(global-set-key (kbd "s-u") 'projectile-rails-views)
-(global-set-key (kbd "s-o") 'projectile-rails-specs)
-(global-set-key (kbd "s-r") 'projectile-find-file)
+(evil-define-key 'normal projectile-rails-mode-map (kbd "s-t") 'projectile-rails-find-controller)
+(evil-define-key 'normal projectile-rails-mode-map (kbd "s-y") 'projectile-rails-find-model)
+(evil-define-key 'normal projectile-rails-mode-map (kbd "s-u") 'projectile-rails-find-view)
+(evil-define-key 'normal projectile-rails-mode-map (kbd "s-o") 'projectile-rails-find-spec)
+(evil-define-key 'normal projectile-rails-mode-map (kbd "s-r") 'projectile-find-file)
+
+(evil-define-key 'normal ruby-mode-map (kbd "RET") '(lambda ()
+						      (interactive)
+						      (and
+						       projectile-rails-mode
+						       (projectile-rails-goto-file-at-point))))
+
+(define-key projectile-rails-mode-map (kbd "C-c g") projectile-rails-mode-goto-map)
+
+(setq projectile-rails-expand-snippet nil)

@@ -1,6 +1,14 @@
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
-(setq flycheck-highlighting-mode 'lines)
-(setq flycheck-idle-change-delay 1)
+(eval-after-load 'flycheck
+  '(progn
+     (add-hook 'web-mode-hook '(lambda () (flycheck-mode -1)))
+     (add-hook 'js-mode-hook '(lambda ()
+				(when (and
+				       (buffer-file-name)
+				       (string-match-p "\\.js\\.+$" (buffer-file-name)))
+				  (flycheck-mode -1))))
+     (setq flycheck-highlighting-mode 'lines)
+     (setq flycheck-idle-change-delay 1)
+     (setq flycheck-checkers (delq 'emacs-lisp-checkdoc flycheck-checkers))))
 
-(add-hook 'emacs-lisp-mode-hook '(lambda () (flycheck-mode -1)))

@@ -47,7 +47,6 @@
   (kbd ", b") 'helm-bookmarks
   (kbd ", f") 'ido-find-file
   (kbd ", d") 'ido-dired
-  (kbd ", e") 'helm-c-etags-select
   (kbd ", g") 'google-query
   (kbd ", c") 'magit-status
   (kbd ", C-c") 'magit-checkout

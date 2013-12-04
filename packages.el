@@ -13,7 +13,7 @@
     bundler
     inf-ruby
     yaml-mode
-    mmm-mode
+    ;; mmm-mode
     rbenv
     ace-jump-mode
     ack-and-a-half
@@ -21,8 +21,9 @@
     ;readline-complete
     ;; enh-ruby-mode
     rspec-mode
-    ;; robe
+    robe
     slim-mode
+    ;; paredit-mode
     dash
     elisp-slime-nav
     expand-region
@@ -32,7 +33,7 @@
     ido-ubiquitous
     rainbow-mode
     smex
-    ;; solarized-theme
+    solarized-theme
     undo-tree
     ;; volatile-highlights
     yasnippet
@@ -43,8 +44,9 @@
     helm-ag
     js2-mode
     ag
-    rhtml-mode
+    ;; rhtml-mode
     scss-mode
+    ;; web-mode
     ruby-refactor
     lorem-ipsum
     feature-mode
