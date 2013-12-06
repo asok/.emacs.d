@@ -4,6 +4,7 @@
 
 (require 'solarized)
 (require 'noname-theme)
-(require 'ujelly-theme)
 
 (setq evil-default-cursor t)
+
+(load-theme 'noname)

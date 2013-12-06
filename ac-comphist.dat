@@ -1,4 +1,40 @@
-((("max-char" .
+((("string-match-p" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("--filter" .
+   [1 0 0 0 0 0 0 0])
+  ("projectile-expand-root" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("projectile-dir-files" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("projectile-rails-choices" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("projectile-rails-goto-file" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("short-names" .
+   [1 0 0 0 1 0 0 0 0 0 0])
+  ("-first-item" .
+   [0 0 0 0 0 0 0 0 0 1 0])
+  ("choices" .
+   [7 0 0 0 0 0 0])
+  ("subpaths" .
+   [3 0 0 0 0 0 0 0])
+  ("s-join" .
+   [2 0 0 0 0 0])
+  ("paths" .
+   [1 0 0 0 0])
+  ("string=" .
+   [1 0 0 0 0 0 0])
+  ("gethash" .
+   [1 0 0 0 1 0 0])
+  ("candidates" .
+   [4 0 0 0 0 0 0 0 0 0])
+  ("projectile-rails-candidates" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 1 1 0 0 0 0])
+  ("dir" .
+   [1 0 0])
+  ("projectile-rails-hash-keys" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 2 0 0 0])
+  ("max-char" .
    [0 0 0 0 0 0 1 0])
   ("compilation-parse-errors" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
@@ -45,17 +81,17 @@
   ("button-get" .
    [2 0 0 0 0 0 0 0 0 0])
   ("projectile-rails-on" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
   ("add-hook" .
    [0 0 0 0 0 1 0 0])
   ("projectile-rails-mode-hook" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0])
   ("names" .
-   [1 0 0 0 0])
+   [3 0 0 0 0])
   ("filepath" .
-   [2 0 0 0 0 0 0 0])
+   [5 0 0 0 0 0 0 0])
   ("print" .
-   [8 0 0 0 0])
+   [15 0 0 0 0])
   ("projectile-global-mode" .
    [1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
   ("object" .
@@ -65,7 +101,7 @@
   ("buffer-size" .
    [1 0 0 0 0 0 0 0 0 0 0])
   ("length" .
-   [1 0 0 0 0 0])
+   [1 0 0 1 0 0])
   ("hickey-remix-theme" .
    [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("enqueue" .
@@ -437,13 +473,13 @@
   ("funcall" .
    [1 0 0 0 0 0 0])
   ("defmacro" .
-   [3 0 0 0 0 0 0 0])
+   [4 0 0 0 0 0 0 0])
   ("expression" .
    [5 0 0 0 0 1 0 0 0 0])
   ("ag/setup-arguments" .
    [0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 1])
   ("defun" .
-   [10 0 0 0 0])
+   [11 0 0 0 0])
   ("insert" .
    [2 0 0 0 0 0])
   ("defvar" .
@@ -459,7 +495,7 @@
   ("ag-highlight-search" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
   ("let" .
-   [14 0 0])
+   [15 0 0])
   ("arguments" .
    [2 0 0 0 0 0 0 0 0])
   ("ag/with-default-directory" .
@@ -475,7 +511,7 @@
   ("ag/helm-init" .
    [1 0 0 0 0 0 0 0 0 0 0 0])
   ("concat" .
-   [2 0 0 0 0 0])
+   [7 0 0 0 0 0])
   ("load" .
    [1 0 0 0])
   ("js2-mode" .
@@ -503,13 +539,13 @@
   ("hide" .
    [2 0 0 0])
   ("files" .
-   [5 0 0 0 0])
+   [8 0 0 0 0])
   ("push" .
    [2 0 0 0])
   ("each" .
    [2 0 0 0])
   ("file" .
-   [4 0 0 0])
+   [5 0 0 0])
   ("true" .
    [5 0 0 0])
   ("ac-modes" .
@@ -629,7 +665,7 @@
   ("Trader" .
    [1 0 0 0 0 0])
   ("interactive" .
-   [0 0 0 0 0 0 0 1 0 0 0])
+   [0 0 0 0 0 0 0 2 0 0 0])
   ("member" .
    [1 0 0 0 0 0])
   ("custom-enabled-themes" .
@@ -755,7 +791,7 @@
   ("integer" .
    [2 0 0 0 0 0 0])
   ("hash" .
-   [8 0 0 0])
+   [10 0 0 0])
   ("sql" .
    [2 0 0])
   ("FROM" .
@@ -919,7 +955,7 @@
   ("setq-local" .
    [1 0 0 0 0 0 0 0 0 1])
   ("projectile-completing-read" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 1 0 0 0 0 0 0 0 0 0 0])
   ("helm-completing-read-default" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
   ("projectile" .
@@ -941,7 +977,7 @@
   ("Given" .
    [1 0 0 0 0])
   ("projectile-rails-" .
-   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+   [4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("projectile-rails-keymap-prefix" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0])
   ("prefix" .
@@ -959,4 +995,10 @@
   ("run-hook-with-args" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
   ("compilation-finish-functions" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])))
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("projectile-mode-hook" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("prompt" .
+   [2 0 0 0 0 0])
+  ("projectile-rails-find-resource" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 1 0 0 0 0])))

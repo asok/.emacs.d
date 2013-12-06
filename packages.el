@@ -12,7 +12,6 @@
     haml-mode
     markdown-mode
     bundler
-    inf-ruby
     yaml-mode
     ;; mmm-mode
     rbenv
@@ -41,6 +40,7 @@
     exec-path-from-shell
     ;; ruby-end
     zenburn-theme
+    grizzl
     auto-complete
     helm-ag
     js2-mode
@@ -52,6 +52,7 @@
     lorem-ipsum
     feature-mode
     powerline
+    projectile
     pretty-lambdada
     helm-rails)
   "List of packages installed via package.el")

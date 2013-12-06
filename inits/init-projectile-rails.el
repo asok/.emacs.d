@@ -16,4 +16,6 @@
 
 (define-key projectile-rails-mode-map (kbd "C-c g") projectile-rails-mode-goto-map)
 
+(add-hook 'projectile-mode-hook 'projectile-rails-on)
+
 (diminish 'projectile-rails-mode " Ρ")

@@ -21,7 +21,7 @@
 (push "/usr/local/bin" exec-path)
 (push "/opt/local/bin" exec-path)
 
-;; (set-frame-font "Monospaced-14")	
+(set-frame-font "Inconsolata-14")
 (fset 'yes-or-no-p 'y-or-n-p)
 (set-variable 'shell-file-name "/bin/bash")
 (winner-mode 1)
@@ -49,7 +49,4 @@
 (asok/init-packages)
 (load "~/.emacs.d/theming")
 
-
 (server-start)
-
-(load-theme 'noname)
