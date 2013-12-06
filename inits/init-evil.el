@@ -1,3 +1,4 @@
+(require 'evil)
 (evil-mode 1)
 
 (defun match-paren (arg)
@@ -13,23 +14,12 @@
        (evil-append-line nil))
     (evil-insert 1)))
 
-(evil-define-key 'normal term-raw-map "i" 'go-to-end-and-insert)
 (evil-define-key 'normal comint-mode-map "i" 'comint-goto-end-and-insert)
 (evil-define-key 'normal inf-ruby-mode-map "i" 'comint-goto-end-and-insert)
 
 (evil-define-key 'insert comint-mode-map
   (kbd "<up>") 'comint-previous-input
   (kbd "<down>") 'comint-next-input)
-(evil-define-key 'insert ielm-map
-  (kbd "<down>") 'comint-next-input
-  (kbd "<up>") 'comint-previous-input)
-
-(defun asok/sgml-skip-tag-forward-or-backward ()
-  (interactive)
-  (if (string-match-p "/" (symbol-name (symbol-at-point)))
-      (sgml-skip-tag-backward 1)
-    (sgml-skip-tag-forward 1)))
-(evil-define-key 'normal html-mode-map (kbd "%") 'asok/sgml-skip-tag-forward-or-backward)
 
 ;;todo
 
@@ -118,3 +108,11 @@
         :buffer "*helm occur*"
 	:input (symbol-name (symbol-at-point))
         :history 'helm-grep-history))
+
+(defun asok/sgml-skip-tag-forward-or-backward ()
+  (interactive)
+  (if (string-match-p "/" (symbol-name (symbol-at-point)))
+      (sgml-skip-tag-backward 1)
+    (sgml-skip-tag-forward 1)))
+(evil-define-key 'normal html-mode-map (kbd "%") 'asok/sgml-skip-tag-forward-or-backward)
+
