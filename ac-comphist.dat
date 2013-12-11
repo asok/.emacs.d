@@ -1,1004 +1,1008 @@
-((("string-match-p" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("--filter" .
-   [1 0 0 0 0 0 0 0])
-  ("projectile-expand-root" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("projectile-dir-files" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("projectile-rails-choices" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("projectile-rails-goto-file" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("short-names" .
-   [1 0 0 0 1 0 0 0 0 0 0])
-  ("-first-item" .
-   [0 0 0 0 0 0 0 0 0 1 0])
-  ("choices" .
-   [7 0 0 0 0 0 0])
-  ("subpaths" .
-   [3 0 0 0 0 0 0 0])
-  ("s-join" .
-   [2 0 0 0 0 0])
-  ("paths" .
-   [1 0 0 0 0])
-  ("string=" .
-   [1 0 0 0 0 0 0])
-  ("gethash" .
-   [1 0 0 0 1 0 0])
-  ("candidates" .
-   [4 0 0 0 0 0 0 0 0 0])
-  ("projectile-rails-candidates" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 1 1 0 0 0 0])
-  ("dir" .
-   [1 0 0])
-  ("projectile-rails-hash-keys" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 2 0 0 0])
-  ("max-char" .
-   [0 0 0 0 0 0 1 0])
-  ("compilation-parse-errors" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("s-lex-format" .
-   [0 0 0 0 0 0 0 0 0 0 0 1])
-  ("arg" .
-   [1 0 0])
-  ("ansi-color-apply" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("toggle-read-only" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("s-+" .
-   [1 0 0])
-  ("re-search-forward" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("point" .
-   [3 0 0 0 0])
-  ("compilation-filter-start" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("current-buffer" .
-   [0 0 0 0 0 0 0 0 0 0 2 0 0 0])
-  ("get-buffer-process" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
-  ("compilation-filter" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("When" .
-   [4 0 0 0])
-  ("output" .
-   [3 0 0 0 0 0])
-  ("compilation-start" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("abbreviate-file-name" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("abbrev-file-name" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("projectile-current-project" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("projectile-project-root" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("s-starts-with?" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("button-label" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("button-get" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("projectile-rails-on" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("add-hook" .
-   [0 0 0 0 0 1 0 0])
-  ("projectile-rails-mode-hook" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0])
-  ("names" .
-   [3 0 0 0 0])
-  ("filepath" .
-   [5 0 0 0 0 0 0 0])
-  ("print" .
-   [15 0 0 0 0])
-  ("projectile-global-mode" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("object" .
-   [1 0 0 0 0 0])
-  ("counter_currency:" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("buffer-size" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("length" .
-   [1 0 0 1 0 0])
-  ("hickey-remix-theme" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("enqueue" .
-   [1 0 0 0 0 0 0])
-  ("Job" .
-   [1 0 0])
-  ("Delayed" .
-   [0 0 0 1 0 0 0])
-  ("map" .
-   [1 0 0])
-  ("suspend" .
-   [2 0 0 0 0 0 1])
-  ("suspended" .
-   [2 0 0 0 3 1 0 0 0])
-  ("active" .
-   [1 0 0 0 0 0])
-  ("subject" .
-   [5 0 0 0 0 0 0])
-  ("add-supervisor-birthday-field-to-profile-form" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("init" .
-   [1 0 0 0])
-  ("decrypt_signing_key" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("created_at" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("opposite_type" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("Map" .
-   [2 0 0])
-  ("or_operand" .
-   [1 0 0 0 0 0 1 0 0 0])
-  ("counter_hedges_according_to_currencies_and_hedge_type" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("protected" .
-   [1 0 0 0 0 0 0 0 0])
-  ("reverse" .
-   [1 0 0 0 0 0 0])
-  ("creates" .
-   [1 0 0 0 0 0 0])
-  ("created" .
-   [1 0 0 0 0 0 0])
-  ("orders" .
-   [1 0 0 0 0 0])
-  ("order" .
-   [1 0 0 0 0])
-  ("one" .
-   [1 0 0])
-  ("context" .
-   [1 0 0 0 0 0 0])
-  ("accepted" .
-   [1 0 0 0 0 0 0 0])
-  ("update_column" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("do_accept" .
-   [0 0 0 0 1 0 0 0 0])
-  ("hedge_id" .
-   [3 0 0 0 0 0 0 0])
-  ("make_bid" .
-   [2 0 0 0 0 0 0 0])
-  ("Bid" .
-   [3 0 0])
-  ("payable" .
-   [3 0 0 0 0 0 0])
-  ("times" .
-   [1 0 0 0 0])
-  ("receivable" .
-   [0 0 0 0 4 0 0 0 0 0])
-  ("bid_accepted" .
-   [0 0 0 0 0 0 0 1 0 0 0 0])
-  ("new_hedge" .
-   [2 0 0 0 0 0 0 0 0])
-  ("workflow_state" .
-   [6 0 0 0 0 0 0 0 0 0 0 1 0 0])
-  ("hedge_type" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("where" .
-   [3 0 0 0 0])
-  ("biddable_state" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("scope" .
-   [1 0 0 0 0])
-  ("puts" .
-   [5 0 0 0])
-  ("migration" .
-   [1 0 0 0 0 0 0 0 0])
-  ("suite" .
-   [1 0 0 0 0])
-  ("percent_covered" .
-   [0 0 0 0 0 0 0 0 0 0 2 0 0 0 0])
-  ("perform_auto_instructions" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("_percent_covered" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("counter_company" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("rates" .
-   [1 0 0 0 0])
-  ("invert_using_flt" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("inverse_rate" .
-   [2 0 0 0 0 0 0 0 0 0 0 0])
-  ("rate" .
-   [2 0 0 0])
-  ("and" .
-   [2 0 0])
-  ("nil?" .
-   [2 0 0 0])
-  ("value" .
-   [2 0 0 0 0])
-  ("set_rates" .
-   [1 0 0 0 0 0 0 0 0])
-  ("calc_rates" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("left" .
-   [16 0 0 0])
-  ("right" .
-   [5 0 0 0 0])
-  ("command-execute" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("fav" .
-   [2 0 0])
-  ("asok/org-notes" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("robe-doc" .
-   [1 0 0 0 0 0 0 0])
-  ("arm/open-log" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("skip_full_validation" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("merge" .
-   [1 0 0 0 0])
-  ("require_current_company" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("count" .
-   [2 0 0 0 0])
-  ("group" .
-   [3 0 0 0 0])
-  ("joins" .
-   [1 0 0 0 0])
-  ("stub_out_general_before_filters" .
-   [0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("usd_client" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("current_company" .
-   [8 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("reload" .
-   [2 0 0 0 0 0])
-  ("setting" .
-   [1 0 0 0 0 0 0])
-  ("settings" .
-   [5 0 0 0 0 0 0 0])
-  ("last" .
-   [1 0 0 0])
-  ("apply" .
-   [2 0 0 0 0])
-  ("helpers" .
-   [3 0 0 0 0 0 0])
-  ("JQuery" .
-   [3 0 0 0 0 0])
-  ("jQueryMatchers" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("jasmine" .
-   [3 0 0 0 0 0 0])
-  ("matchers" .
-   [1 0 0 0 0 0 0 0])
-  ("jQuery" .
-   [1 0 0 0 0 0])
-  ("jasmin" .
-   [1 0 0 0 0 0])
-  ("this" .
-   [4 0 0 0])
-  ("eventHandler" .
-   [0 0 0 0 0 0 0 0 0 0 0 1])
-  ("handlerName" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("eventName" .
-   [7 0 0 0 0 0 0 0 0])
-  ("_toHandle" .
-   [0 0 0 0 1 0 0 0 0])
-  ("event" .
-   [3 0 0 0 0])
-  ("protected_numbers" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("find" .
-   [2 0 0 0])
-  ("checked_rb" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("checked" .
-   [2 0 0 0 0 0 0])
-  ("type_radio_button_selector" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("toEqual" .
-   [0 0 0 1 0 0 1])
-  ("attr" .
-   [2 0 0 0])
-  ("expect" .
-   [1 0 0 0 0 0])
-  ("beforeEach" .
-   [0 0 0 0 0 0 0 1 0 0])
-  ("describe" .
-   [5 0 0 0 0 0 0 0])
-  ("events" .
-   [1 0 0 0 0 0])
-  ("handlers" .
-   [1 0 0 0 0 0 0 0])
-  ("handler" .
-   [3 0 0 0 0 0 0])
-  ("build" .
-   [1 0 0 0 0])
-  ("made" .
-   [1 0 0 0])
-  ("debugger" .
-   [11 0 0 0 0 0 0 0])
-  ("create" .
-   [5 0 0 0 0 0])
-  ("bank_accounts" .
-   [3 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("companies" .
-   [1 0 0 0 0 0 0 0 0])
-  ("client" .
-   [17 0 0 3 4 0])
-  ("trader" .
-   [3 0 0 0 0 0])
-  ("display" .
-   [1 0 0 0 0 0 0])
-  ("super" .
-   [1 0 0 0 0])
-  ("first" .
-   [6 0 0 0 0])
-  ("clients" .
-   [8 0 0 2 1 0 0])
-  ("send" .
-   [2 0 0 0])
-  ("args" .
-   [2 0 0 0])
-  ("name" .
-   [6 0 0 0])
-  ("Profile" .
-   [1 0 0 0 0 0 0])
-  ("has" .
-   [4 0 0])
-  ("alias_attribute" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("company" .
-   [13 0 0 0 0 0 0])
-  ("rename_column" .
-   [0 0 0 0 0 0 1 0 1 0 0 0 0])
-  ("add" .
-   [1 0 0])
-  ("origin" .
-   [3 0 0 0 0 0])
-  ("remove-search-boxes-and-change-position-of-bank-transfer-concept" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("Emacs-wgrep" .
-   [0 0 0 0 0 0 0 0 0 0 1])
-  ("site-lisp" .
-   [0 0 0 0 0 1 0 0 0])
-  ("present" .
-   [1 0 0 0 0 0 0])
-  ("confirm_bid_deletion" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("ShowHedge" .
-   [0 0 0 0 1 0 0 0 0])
-  ("disable" .
-   [1 0 0 0 0 0 0])
-  ("format" .
-   [1 0 0 0 0 0])
-  ("counter_currencies" .
-   [1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("counter_currency" .
-   [0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 3])
-  ("hedge_currency_changed" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("change" .
-   [1 0 0 0 0 0])
-  ("config" .
-   [2 0 0 1 0 1])
-  ("val" .
-   [2 0 0])
-  ("currency" .
-   [5 0 0 0 0 0 0 0])
-  ("_setup_currencies" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("HedgeForm" .
-   [1 0 0 0 1 3 2 0 0])
-  ("comint-" .
-   [1 0 0 0 0 0 0])
-  ("c" .
-   [1])
-  ("inf-ruby" .
-   [1 0 0 0 0 0 0 0])
-  ("progn" .
-   [2 0 0 0 0])
-  ("dataType" .
-   [1 0 0 0 0 0 0 0])
-  ("window" .
-   [2 0 0 0 0 0])
-  ("function" .
-   [10 0 0 0 0 0 0 0])
-  ("ready" .
-   [1 0 0 0 0])
-  ("document" .
-   [1 0 0 0 0 0 0 0])
-  ("log" .
-   [1 0 0])
-  ("console" .
-   [1 0 0 0 0 0 0])
-  ("ignore" .
-   [1 0 0 0 0 0])
-  ("eval-after-load" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("flymake-warnline" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("solarized" .
-   [0 0 0 0 0 0 1 0 1])
-  ("asok/discover-site-lisp-packages" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("intern" .
-   [3 0 0 0 0 0])
-  ("load-path" .
-   [1 0 0 0 0 0 0 0 0])
-  ("add-to-list" .
-   [0 0 0 0 0 0 0 0 0 0 2])
-  ("lambda" .
-   [6 0 0 0 0 0])
-  ("symbol-name" .
-   [3 0 0 0 0 0 0 0 0 0 0])
-  ("mapcar" .
-   [3 0 0 0 0 0])
-  ("peep-dired" .
-   [0 0 0 1 1 0 0 0 0 0])
-  ("s" .
-   [1])
-  ("mapc" .
-   [1 0 0 0])
-  ("/etc/" .
-   [0 1 0 0 0])
-  ("ac-source-yasnippet" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0])
-  ("ac-source-filename" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
-  ("require" .
-   [9 0 0 0 0 0 0])
-  ("auto-complete" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("auto-complete-autoloads" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("enh-ruby-mode" .
-   [0 0 0 1 1 3 0 0 0 0 0 0 1])
-  ("enh-ruby-op-face" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("class" .
-   [1 0 0 0 0])
-  (":foreground" .
-   [0 0 0 0 0 2 0 0 0 0 0])
-  (":inherit" .
-   [1 0 0 0 0 0 1 0])
-  ("default" .
-   [2 0 0 0 0 0 0])
-  ("enh-ruby-string-delimiter-face" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0])
-  ("red" .
-   [1 0 0])
-  ("enh-ruby-regexp-delimiter-face" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("enh-ruby-heredoc-delimiter-face" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("funcall" .
-   [1 0 0 0 0 0 0])
-  ("defmacro" .
-   [4 0 0 0 0 0 0 0])
-  ("expression" .
-   [5 0 0 0 0 1 0 0 0 0])
-  ("ag/setup-arguments" .
-   [0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 1])
-  ("defun" .
-   [11 0 0 0 0])
-  ("insert" .
-   [2 0 0 0 0 0])
-  ("defvar" .
-   [1 0 0 0 0 0])
-  ("string" .
-   [7 0 0 0 0 0])
-  ("directory" .
-   [3 0 0 0 0 0 1 0 0])
-  ("regexp" .
-   [6 0 0 0 0 0])
-  ("append" .
-   [1 0 0 0 0 0])
-  ("ag-highlight-search" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("let" .
-   [15 0 0])
-  ("arguments" .
-   [2 0 0 0 0 0 0 0 0])
-  ("ag/with-default-directory" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("ag/command" .
-   [1 0 0 0 0 1 0 0 0 0])
-  ("ag/arguments" .
-   [0 0 0 0 0 0 2 0 0 0 0 0])
-  ("shell-environment-variable-completion" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("shell-command-to-string" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0])
-  ("ag/helm-init" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("concat" .
-   [7 0 0 0 0 0])
-  ("load" .
-   [1 0 0 0])
-  ("js2-mode" .
-   [1 0 0 0 0 0 0 0])
-  ("var" .
-   [6 0 0])
-  ("data" .
-   [20 0 0 0])
-  ("null" .
-   [4 0 0 0])
-  ("return" .
-   [3 0 0 0 0 0])
-  ("FileUpload" .
-   [4 0 0 0 0 3 0 0 0 3])
-  ("first_data_with_file" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("else" .
-   [7 0 0 0])
-  ("singleFileUploads" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("false" .
-   [4 0 0 0 0])
-  ("replaceFileInput" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
-  ("hide" .
-   [2 0 0 0])
-  ("files" .
-   [8 0 0 0 0])
-  ("push" .
-   [2 0 0 0])
-  ("each" .
-   [2 0 0 0])
-  ("file" .
-   [5 0 0 0])
-  ("true" .
-   [5 0 0 0])
-  ("ac-modes" .
-   [1 0 0 0 0 0 0 0])
-  ("rails" .
-   [1 0 0 0 0])
-  ("bundle" .
-   [1 0 0 0 0 0])
-  ("to_s" .
-   [3 0 0 0])
-  ("robe" .
-   [1 0 0 0])
-  ("Rails" .
-   [1 0 0 0 0])
-  ("profiles" .
-   [13 0 0 0 0 0 0 0])
-  ("provider" .
-   [3 0 0 0 0 0 0 0])
-  ("providers" .
-   [1 0 0 0 0 0 0 0 0])
-  ("present?" .
-   [1 0 0 0 0 0 0 0])
-  ("params" .
-   [3 0 0 0 0 0])
-  ("provider_id" .
-   [3 0 0 0 0 0 0 0 0 0 0])
-  ("to_i" .
-   [1 0 0 0])
-  ("nil" .
-   [9 0 0])
-  ("end" .
-   [13 0 0])
-  ("validate" .
-   [2 0 0 0 0 0 0 0])
-  ("def" .
-   [16 0 0])
-  ("beneficiary_name" .
-   [0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 0])
-  ("PROVIDER_OWNED" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0])
-  ("provider_owned?" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("company_name" .
-   [6 0 0 0 0 0 0 0 0 0 0 0])
-  ("read_attribute" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("BENEFICIARY" .
-   [0 0 0 0 1 0 0 0 0 0 0])
-  ("update" .
-   [6 0 0 0 0 0])
-  ("bank_account" .
-   [2 0 0 0 0 0 0 0 0 0 0 0])
-  ("inverse_of" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("shell" .
-   [1 0 0 0 0])
-  ("local" .
-   [1 0 0 0 0])
-  ("rbenv" .
-   [1 0 0 0 0])
-  ("install" .
-   [1 0 0 0 0 0 0])
-  ("master" .
-   [5 0 0 0 0 1])
-  ("develop" .
-   [5 0 0 0 0 0 0])
-  ("git" .
-   [5 0 0])
-  ("destroy" .
-   [1 0 0 0 0 0 0])
-  ("class_name" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("Hedge" .
-   [4 0 0 0 0])
-  ("through" .
-   [4 0 0 0 0 0 0])
-  ("bids" .
-   [3 0 0 0])
-  ("foreign_key" .
-   [0 0 0 0 1 0 0 1 0 0 1])
-  ("counter_hedge_id" .
-   [4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("transaction" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("flexmock" .
-   [0 0 0 0 0 0 0 2])
-  ("normalize_to_usd" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1])
-  ("to_money" .
-   [6 0 0 0 0 0 0 0])
-  ("before" .
-   [7 0 0 0 0 0])
-  ("bid" .
-   [19 0 0])
-  ("errors" .
-   [1 0 0 0 0 0])
-  ("base" .
-   [1 0 0 0])
-  ("invalid" .
-   [1 0 0 0 0 0 0])
-  ("Client" .
-   [4 0 0 1 1 2])
-  ("roles" .
-   [5 0 0 0 0])
-  ("Role" .
-   [6 0 0 0])
-  ("new" .
-   [17 0 0])
-  ("title" .
-   [1 0 0 0 0])
-  ("Supervisor" .
-   [0 0 0 0 0 1 0 0 0 0])
-  ("try" .
-   [5 0 0])
-  ("current_client" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("Trader" .
-   [1 0 0 0 0 0])
-  ("interactive" .
-   [0 0 0 0 0 0 0 2 0 0 0])
-  ("member" .
-   [1 0 0 0 0 0])
-  ("custom-enabled-themes" .
+((("split-width-threshold" .
    [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("case" .
-   [1 0 0 0])
-  ("cond" .
-   [1 0 0 0])
-  ("load-theme" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("car" .
-   [1 0 0])
-  ("opts" .
-   [3 0 0 0])
-  ("cdr" .
-   [1 0 0])
-  ("solarized-light" .
-   [1 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("list" .
-   [3 0 0 0])
-  ("asok/toggle-solarized-theme" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("calc_settle_amount" .
-   [1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("expiration_date" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("Business" .
-   [0 0 0 0 0 1 0 0])
-  ("business_days" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("after" .
-   [2 0 0 0 0])
-  ("Date" .
-   [1 0 0 0])
-  ("todo" .
-   [1 0 0 0])
-  ("today" .
-   [1 0 0 0 0])
-  ("to_date" .
-   [1 0 0 0 0 0 0])
-  ("hedge" .
-   [13 0 0 1 1])
-  ("open?" .
-   [2 0 0 0 0])
-  ("self" .
-   [5 0 0 0])
-  ("settle_amount" .
-   [5 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("amount" .
-   [3 0 0 0 0 0])
-  ("elsif" .
-   [1 0 0 0 0])
-  ("counter_hedge" .
-   [6 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("has_one" .
-   [2 0 0 0 0 0 0])
-  ("source" .
+  ("projectile-rails-find-resource" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 1 0 0 0 0])
+  ("prompt" .
    [2 0 0 0 0 0])
-  ("company_id" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("compare_to" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("same_hedge_types" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("respond_to" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("each_pair" .
-   [1 0 0 0 0 0 0 0 0])
-  ("msg" .
-   [2 0 0])
-  ("error" .
-   [5 0 0 0 0])
-  ("message" .
-   [2 0 0 0 0 0 0])
-  ("inspect" .
-   [2 0 0 0 0 0 0])
-  ("index" .
-   [3 0 0 0 0])
-  ("backtrace" .
-   [1 0 0 0 0 0 0 0 0])
-  ("join" .
-   [1 0 0 0])
-  ("delayed-job-errors-handler" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("execute" .
-   [6 0 0 0 0 0 0])
-  ("SELECT" .
-   [4 0 0 0 0 0])
-  ("users" .
-   [11 0 0 0 0])
-  ("INNER" .
-   [4 0 0 0 0])
-  ("JOIN" .
-   [4 0 0 0])
-  ("profile_id" .
-   [3 0 0 0 0 0 0 0 0 0])
-  ("Hash" .
-   [4 0 0 0])
-  ("unless" .
+  ("projectile-mode-hook" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("compilation-finish-functions" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("run-hook-with-args" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("projectile-rails-apply-ansi-color" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ansi-color-for-comint-mode-on" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("compilation-directory" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0])
+  ("projectile-project-buffer-p" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("compilation-save-buffers-predicate" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("prefix" .
    [1 0 0 0 0 0])
-  ("user_id_to_profile_id" .
-   [0 0 0 0 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 0])
-  ("private" .
-   [1 0 0 0 0 0 0])
-  ("map_user_id_to_profile_id" .
-   [0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("returns" .
-   [1 0 0 0 0 0 0])
-  ("raise" .
+  ("projectile-rails-keymap-prefix" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0])
+  ("projectile-rails-" .
+   [4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Given" .
    [1 0 0 0 0])
-  ("when" .
+  ("projectile-rails-mode" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("call-interactively" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("projectile-rails-declassify" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("-concat" .
+   [1 0 0 0 0 0 0])
+  ("yas-exit-all-snippets" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("yas-exit-snippet" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("projectile-find-file" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("projectile" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("helm-completing-read-default" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("projectile-completing-read" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 1 0 0 0 0 0 0 0 0 0 0])
+  ("setq-local" .
+   [1 0 0 0 0 0 0 0 0 1])
+  ("dark-slate" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("provide-theme" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("hickey-remix" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("ruby-mode" .
+   [1 0 0 0 0 0 0 0 0])
+  ("../snippets/js-mode/" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("../snippets/" .
+   [0 0 0 0 0 0 1 0 0 0 0 0])
+  ("all" .
+   [2 0 0])
+  ("object_id" .
+   [1 0 0 0 0 0 0 0 0])
+  ("pubsub_redis" .
+   [0 0 0 0 0 0 1 0 0 0 0 0])
+  ("magit" .
+   [1 0 0 0 0])
+  ("~/projects/magit/bin/" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("~/projects/magit/" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("~/projects/" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("after_create" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("kbd" .
+   [2 0 0])
+  ("0.1" .
+   [1 0 0])
+  ("setq" .
+   [3 0 0 0])
+  ("save" .
+   [2 0 0 0])
+  ("bid_made" .
+   [1 0 0 0 0 0 0 0])
+  ("global-map" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("provide" .
+   [1 0 0 0 0 0 0])
+  ("email" .
+   [1 0 0 0 0])
+  ("poster" .
+   [1 0 0 0 0 0])
+  ("tap" .
+   [1 0 0])
+  ("build_stubbed" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("kantox" .
+   [1 0 0 0 0 0])
+  ("should_not" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("test" .
+   [4 0 0 0])
+  ("cc_to" .
+   [1 0 0 0 0])
+  ("com" .
+   [6 0 0])
+  ("supervisor" .
+   [9 0 0 0 0 0 0 0 0 2])
+  ("whitelist_company_uids" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("should" .
+   [7 0 0 0 0 0])
+  ("flash" .
+   [1 0 0 0 0])
+  ("profile_ids" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("undefined-variable-or-method-name-bid" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ProfileSetting" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("dup" .
+   [1 0 0])
+  ("input_money" .
+   [1 0 0 0 0 0 0 1 0 0 0])
+  ("current_user" .
+   [0 0 0 0 0 0 0 0 1 0 0 0])
+  ("ApplicationController" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("USD" .
+   [2 0 0])
+  ("get" .
+   [1 0 0])
+  ("EUR" .
+   [4 0 0])
+  ("with" .
    [1 0 0 0])
-  ("migrate" .
+  ("localize_to_usd" .
+   [1 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("Controller" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("Kantox" .
+   [1 0 0 0 0 0])
+  ("include" .
+   [1 0 0 0 0 0 0])
+  ("stub" .
+   [2 0 0 0])
+  ("controller" .
+   [4 0 0 0 0 0 0 0 0 0])
+  ("request" .
+   [1 0 0 0 0 0 0])
+  ("type" .
+   [6 0 0 0])
+  ("minimum_invoice" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 1])
+  ("profile_params" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("zero?" .
+   [1 0 0 0 0])
+  ("inject_minimum_invoice_amount" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("before_filter" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("klass" .
+   [2 0 0 0 0])
+  ("localization_filters" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0])
+  ("localize" .
+   [5 0 0 0 0 0 0 0])
+  ("ProfilesController" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("Admin" .
+   [1 0 0 0 0])
+  ("only" .
+   [3 0 0 0])
+  ("market_trade_limit" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("outstanding_balance_limit" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("old" .
+   [1 0 0])
+  ("ActiveRecord" .
+   [0 0 0 0 0 0 0 0 0 1 0 0])
+  ("invoices" .
+   [1 0 0 0 0 0 0 0])
+  ("clearings" .
+   [1 0 0 0 0 0 0 0 0])
+  ("profile" .
+   [3 0 0 0 0 0 0])
+  ("remove_column" .
+   [0 0 0 0 0 0 0 1 1 0 0 0 0])
+  ("text" .
+   [2 0 0 0])
+  ("add_column" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("client_id" .
+   [3 0 0 0 0 0 0 0 0])
+  ("user" .
+   [7 0 0 0])
+  ("old_results" .
+   [3 0 0 0 0 0 0 0 0 0 0])
+  ("new_results" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("FROM" .
+   [1 0 0 0])
+  ("sql" .
+   [2 0 0])
+  ("hash" .
+   [10 0 0 0])
+  ("integer" .
+   [2 0 0 0 0 0 0])
+  ("SQL" .
+   [10 0 0])
+  ("hedges" .
+   [5 0 0 1 0 0])
+  ("between" .
    [1 0 0 0 0 0 0])
   ("creating" .
    [1 0 0 0 0 0 0 0])
-  ("between" .
+  ("migrate" .
    [1 0 0 0 0 0 0])
-  ("hedges" .
-   [5 0 0 1 0 0])
-  ("SQL" .
-   [10 0 0])
-  ("integer" .
-   [2 0 0 0 0 0 0])
-  ("hash" .
-   [10 0 0 0])
-  ("sql" .
-   [2 0 0])
-  ("FROM" .
-   [1 0 0 0])
-  ("new_results" .
-   [2 0 0 0 0 0 0 0 0 0 0])
-  ("old_results" .
-   [3 0 0 0 0 0 0 0 0 0 0])
-  ("user" .
-   [7 0 0 0])
-  ("client_id" .
-   [3 0 0 0 0 0 0 0 0])
-  ("add_column" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("text" .
+  ("when" .
    [2 0 0 0])
-  ("remove_column" .
-   [0 0 0 0 0 0 0 1 1 0 0 0 0])
-  ("profile" .
-   [3 0 0 0 0 0 0])
-  ("clearings" .
-   [1 0 0 0 0 0 0 0 0])
-  ("invoices" .
-   [1 0 0 0 0 0 0 0])
-  ("ActiveRecord" .
-   [0 0 0 0 0 0 0 0 0 1 0 0])
-  ("old" .
-   [1 0 0])
-  ("outstanding_balance_limit" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("market_trade_limit" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("only" .
-   [3 0 0 0])
-  ("Admin" .
+  ("raise" .
    [1 0 0 0 0])
-  ("ProfilesController" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("localize" .
-   [5 0 0 0 0 0 0 0])
-  ("localization_filters" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0])
-  ("klass" .
-   [2 0 0 0 0])
-  ("before_filter" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("inject_minimum_invoice_amount" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("zero?" .
-   [1 0 0 0 0])
-  ("profile_params" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("minimum_invoice" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 1])
-  ("type" .
-   [6 0 0 0])
-  ("request" .
+  ("returns" .
    [1 0 0 0 0 0 0])
-  ("controller" .
-   [4 0 0 0 0 0 0 0 0 0])
-  ("stub" .
-   [2 0 0 0])
-  ("include" .
+  ("map_user_id_to_profile_id" .
+   [0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("private" .
    [1 0 0 0 0 0 0])
-  ("Kantox" .
+  ("user_id_to_profile_id" .
+   [0 0 0 0 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 0])
+  ("unless" .
    [1 0 0 0 0 0])
-  ("Controller" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("localize_to_usd" .
-   [1 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("with" .
-   [1 0 0 0])
-  ("EUR" .
-   [4 0 0])
-  ("get" .
-   [1 0 0])
-  ("USD" .
-   [2 0 0])
-  ("ApplicationController" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("current_user" .
-   [0 0 0 0 0 0 0 0 1 0 0 0])
-  ("input_money" .
-   [1 0 0 0 0 0 0 1 0 0 0])
-  ("dup" .
-   [1 0 0])
-  ("ProfileSetting" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("undefined-variable-or-method-name-bid" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("profile_ids" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("flash" .
-   [1 0 0 0 0])
-  ("should" .
-   [7 0 0 0 0 0])
-  ("whitelist_company_uids" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("supervisor" .
-   [9 0 0 0 0 0 0 0 0 2])
-  ("com" .
-   [6 0 0])
-  ("cc_to" .
-   [1 0 0 0 0])
-  ("test" .
+  ("Hash" .
    [4 0 0 0])
-  ("should_not" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("kantox" .
-   [1 0 0 0 0 0])
-  ("build_stubbed" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 2])
-  ("tap" .
-   [1 0 0])
-  ("poster" .
-   [1 0 0 0 0 0])
-  ("email" .
-   [1 0 0 0 0])
-  ("provide" .
-   [1 0 0 0 0 0 0])
-  ("global-map" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("bid_made" .
-   [1 0 0 0 0 0 0 0])
-  ("save" .
-   [2 0 0 0])
-  ("setq" .
-   [2 0 0 0])
-  ("0.1" .
-   [1 0 0])
-  ("kbd" .
-   [2 0 0])
-  ("after_create" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("~/projects/" .
-   [0 0 0 0 0 1 0 0 0 0 0])
-  ("~/projects/magit/" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("~/projects/magit/bin/" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
-  ("magit" .
-   [1 0 0 0 0])
-  ("pubsub_redis" .
-   [0 0 0 0 0 0 1 0 0 0 0 0])
-  ("object_id" .
+  ("profile_id" .
+   [3 0 0 0 0 0 0 0 0 0])
+  ("JOIN" .
+   [4 0 0 0])
+  ("INNER" .
+   [4 0 0 0 0])
+  ("users" .
+   [11 0 0 0 0])
+  ("SELECT" .
+   [4 0 0 0 0 0])
+  ("execute" .
+   [6 0 0 0 0 0 0])
+  ("delayed-job-errors-handler" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("join" .
+   [1 0 0 0])
+  ("backtrace" .
    [1 0 0 0 0 0 0 0 0])
-  ("all" .
+  ("index" .
+   [3 0 0 0 0])
+  ("inspect" .
+   [2 0 0 0 0 0 0])
+  ("message" .
+   [2 0 0 0 0 0 0])
+  ("error" .
+   [5 0 0 0 0])
+  ("msg" .
    [2 0 0])
-  ("../snippets/" .
-   [0 0 0 0 0 0 1 0 0 0 0 0])
-  ("../snippets/js-mode/" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("ruby-mode" .
+  ("each_pair" .
    [1 0 0 0 0 0 0 0 0])
-  ("hickey-remix" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("provide-theme" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0])
-  ("dark-slate" .
+  ("respond_to" .
    [1 0 0 0 0 0 0 0 0 0])
-  ("setq-local" .
-   [1 0 0 0 0 0 0 0 0 1])
-  ("projectile-completing-read" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 1 0 0 0 0 0 0 0 0 0 0])
-  ("helm-completing-read-default" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("projectile" .
+  ("same_hedge_types" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("compare_to" .
    [1 0 0 0 0 0 0 0 0 0])
-  ("projectile-find-file" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("yas-exit-snippet" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("yas-exit-all-snippets" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("-concat" .
-   [1 0 0 0 0 0 0])
-  ("projectile-rails-declassify" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("call-interactively" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("projectile-rails-mode" .
-   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("Given" .
-   [1 0 0 0 0])
-  ("projectile-rails-" .
-   [4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("projectile-rails-keymap-prefix" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0])
-  ("prefix" .
-   [1 0 0 0 0 0])
-  ("compilation-save-buffers-predicate" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("projectile-project-buffer-p" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("compilation-directory" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0])
-  ("ansi-color-for-comint-mode-on" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("projectile-rails-apply-ansi-color" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("run-hook-with-args" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("compilation-finish-functions" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("projectile-mode-hook" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
-  ("prompt" .
+  ("company_id" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("source" .
    [2 0 0 0 0 0])
-  ("projectile-rails-find-resource" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 1 0 0 0 0])))
+  ("has_one" .
+   [2 0 0 0 0 0 0])
+  ("counter_hedge" .
+   [6 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("elsif" .
+   [1 0 0 0 0])
+  ("amount" .
+   [3 0 0 0 0 0])
+  ("settle_amount" .
+   [5 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("self" .
+   [5 0 0 0])
+  ("open?" .
+   [2 0 0 0 0])
+  ("hedge" .
+   [13 0 0 1 1])
+  ("to_date" .
+   [1 0 0 0 0 0 0])
+  ("today" .
+   [1 0 0 0 0])
+  ("todo" .
+   [1 0 0 0])
+  ("Date" .
+   [1 0 0 0])
+  ("after" .
+   [2 0 0 0 0])
+  ("business_days" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Business" .
+   [0 0 0 0 0 1 0 0])
+  ("expiration_date" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("calc_settle_amount" .
+   [1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("asok/toggle-solarized-theme" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("list" .
+   [3 0 0 0])
+  ("solarized-light" .
+   [1 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("cdr" .
+   [1 0 0])
+  ("opts" .
+   [3 0 0 0])
+  ("car" .
+   [1 0 0])
+  ("load-theme" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("cond" .
+   [1 0 0 0])
+  ("case" .
+   [1 0 0 0])
+  ("custom-enabled-themes" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("member" .
+   [1 0 0 0 0 0])
+  ("interactive" .
+   [0 0 0 0 0 0 0 2 0 0 0])
+  ("Trader" .
+   [1 0 0 0 0 0])
+  ("current_client" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("try" .
+   [5 0 0])
+  ("Supervisor" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("title" .
+   [1 0 0 0 0])
+  ("new" .
+   [17 0 0])
+  ("Role" .
+   [6 0 0 0])
+  ("roles" .
+   [5 0 0 0 0])
+  ("Client" .
+   [4 0 0 1 1 2])
+  ("invalid" .
+   [1 0 0 0 0 0 0])
+  ("base" .
+   [1 0 0 0])
+  ("errors" .
+   [1 0 0 0 0 0])
+  ("bid" .
+   [19 0 0])
+  ("before" .
+   [7 0 0 0 0 0])
+  ("to_money" .
+   [6 0 0 0 0 0 0 0])
+  ("normalize_to_usd" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1])
+  ("flexmock" .
+   [0 0 0 0 0 0 0 2])
+  ("transaction" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("counter_hedge_id" .
+   [4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("foreign_key" .
+   [0 0 0 0 1 0 0 1 0 0 1])
+  ("bids" .
+   [3 0 0 0])
+  ("through" .
+   [4 0 0 0 0 0 0])
+  ("Hedge" .
+   [4 0 0 0 0])
+  ("class_name" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("destroy" .
+   [1 0 0 0 0 0 0])
+  ("git" .
+   [5 0 0])
+  ("develop" .
+   [5 0 0 0 0 0 0])
+  ("master" .
+   [5 0 0 0 0 1])
+  ("install" .
+   [1 0 0 0 0 0 0])
+  ("rbenv" .
+   [1 0 0 0 0])
+  ("local" .
+   [1 0 0 0 0])
+  ("shell" .
+   [1 0 0 0 0])
+  ("inverse_of" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("bank_account" .
+   [2 0 0 0 0 0 0 0 0 0 0 0])
+  ("update" .
+   [6 0 0 0 0 0])
+  ("BENEFICIARY" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("read_attribute" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("company_name" .
+   [6 0 0 0 0 0 0 0 0 0 0 0])
+  ("provider_owned?" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("PROVIDER_OWNED" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("beneficiary_name" .
+   [0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 0])
+  ("def" .
+   [16 0 0])
+  ("validate" .
+   [2 0 0 0 0 0 0 0])
+  ("end" .
+   [13 0 0])
+  ("nil" .
+   [9 0 0])
+  ("to_i" .
+   [1 0 0 0])
+  ("provider_id" .
+   [3 0 0 0 0 0 0 0 0 0 0])
+  ("params" .
+   [3 0 0 0 0 0])
+  ("present?" .
+   [1 0 0 0 0 0 0 0])
+  ("providers" .
+   [1 0 0 0 0 0 0 0 0])
+  ("provider" .
+   [3 0 0 0 0 0 0 0])
+  ("profiles" .
+   [13 0 0 0 0 0 0 0])
+  ("Rails" .
+   [1 0 0 0 0])
+  ("robe" .
+   [1 0 0 0])
+  ("to_s" .
+   [3 0 0 0])
+  ("bundle" .
+   [1 0 0 0 0 0])
+  ("rails" .
+   [1 0 0 0 0])
+  ("ac-modes" .
+   [1 0 0 0 0 0 0 0])
+  ("true" .
+   [5 0 0 0])
+  ("file" .
+   [5 0 0 0])
+  ("each" .
+   [2 0 0 0])
+  ("push" .
+   [2 0 0 0])
+  ("files" .
+   [8 0 0 0 0])
+  ("hide" .
+   [2 0 0 0])
+  ("replaceFileInput" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("false" .
+   [4 0 0 0 0])
+  ("singleFileUploads" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("else" .
+   [7 0 0 0])
+  ("first_data_with_file" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("FileUpload" .
+   [4 0 0 0 0 3 0 0 0 3])
+  ("return" .
+   [3 0 0 0 0 0])
+  ("null" .
+   [4 0 0 0])
+  ("data" .
+   [20 0 0 0])
+  ("var" .
+   [6 0 0])
+  ("js2-mode" .
+   [1 0 0 0 0 0 0 0])
+  ("load" .
+   [1 0 0 0])
+  ("concat" .
+   [7 0 0 0 0 0])
+  ("ag/helm-init" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("shell-command-to-string" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0])
+  ("shell-environment-variable-completion" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ag/arguments" .
+   [0 0 0 0 0 0 2 0 0 0 0 0])
+  ("ag/command" .
+   [1 0 0 0 0 1 0 0 0 0])
+  ("ag/with-default-directory" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("arguments" .
+   [2 0 0 0 0 0 0 0 0])
+  ("let" .
+   [15 0 0])
+  ("ag-highlight-search" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("append" .
+   [1 0 0 0 0 0])
+  ("regexp" .
+   [6 0 0 0 0 0])
+  ("directory" .
+   [3 0 0 0 0 0 1 0 0])
+  ("string" .
+   [7 0 0 0 0 0])
+  ("defvar" .
+   [1 0 0 0 0 0])
+  ("insert" .
+   [2 0 0 0 0 0])
+  ("defun" .
+   [11 0 0 0 0])
+  ("ag/setup-arguments" .
+   [0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 1])
+  ("expression" .
+   [5 0 0 0 0 1 0 0 0 0])
+  ("defmacro" .
+   [4 0 0 0 0 0 0 0])
+  ("funcall" .
+   [1 0 0 0 0 0 0])
+  ("enh-ruby-heredoc-delimiter-face" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("enh-ruby-regexp-delimiter-face" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("red" .
+   [1 0 0])
+  ("enh-ruby-string-delimiter-face" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0])
+  ("default" .
+   [2 0 0 0 0 0 0])
+  (":inherit" .
+   [1 0 0 0 0 0 1 0])
+  (":foreground" .
+   [0 0 0 0 0 2 0 0 0 0 0])
+  ("class" .
+   [1 0 0 0 0])
+  ("enh-ruby-op-face" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("enh-ruby-mode" .
+   [0 0 0 1 1 3 0 0 0 0 0 0 1])
+  ("auto-complete-autoloads" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("auto-complete" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("require" .
+   [9 0 0 0 0 0 0])
+  ("ac-source-filename" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("ac-source-yasnippet" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0])
+  ("/etc/" .
+   [0 1 0 0 0])
+  ("mapc" .
+   [1 0 0 0])
+  ("s" .
+   [1])
+  ("peep-dired" .
+   [0 0 0 1 1 0 0 0 0 0])
+  ("mapcar" .
+   [3 0 0 0 0 0])
+  ("symbol-name" .
+   [3 0 0 0 0 0 0 0 0 0 0])
+  ("lambda" .
+   [6 0 0 0 0 0])
+  ("add-to-list" .
+   [0 0 0 0 0 0 0 0 0 0 2])
+  ("load-path" .
+   [1 0 0 0 0 0 0 0 0])
+  ("intern" .
+   [3 0 0 0 0 0])
+  ("asok/discover-site-lisp-packages" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("solarized" .
+   [0 0 0 0 0 0 1 0 1])
+  ("flymake-warnline" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("eval-after-load" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ignore" .
+   [1 0 0 0 0 0])
+  ("console" .
+   [1 0 0 0 0 0 0])
+  ("log" .
+   [1 0 0])
+  ("document" .
+   [1 0 0 0 0 0 0 0])
+  ("ready" .
+   [1 0 0 0 0])
+  ("function" .
+   [10 0 0 0 0 0 0 0])
+  ("window" .
+   [2 0 0 0 0 0])
+  ("dataType" .
+   [1 0 0 0 0 0 0 0])
+  ("progn" .
+   [2 0 0 0 0])
+  ("inf-ruby" .
+   [1 0 0 0 0 0 0 0])
+  ("c" .
+   [1])
+  ("comint-" .
+   [1 0 0 0 0 0 0])
+  ("HedgeForm" .
+   [1 0 0 0 1 3 2 0 0])
+  ("_setup_currencies" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("currency" .
+   [5 0 0 0 0 0 0 0])
+  ("val" .
+   [2 0 0])
+  ("config" .
+   [2 0 0 1 0 1])
+  ("change" .
+   [1 0 0 0 0 0])
+  ("hedge_currency_changed" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("counter_currency" .
+   [0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 3])
+  ("counter_currencies" .
+   [1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("format" .
+   [1 0 0 0 0 0])
+  ("disable" .
+   [1 0 0 0 0 0 0])
+  ("ShowHedge" .
+   [0 0 0 0 1 0 0 0 0])
+  ("confirm_bid_deletion" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("present" .
+   [1 0 0 0 0 0 0])
+  ("site-lisp" .
+   [0 0 0 0 0 1 0 0 0])
+  ("Emacs-wgrep" .
+   [0 0 0 0 0 0 0 0 0 0 1])
+  ("remove-search-boxes-and-change-position-of-bank-transfer-concept" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("origin" .
+   [3 0 0 0 0 0])
+  ("add" .
+   [1 0 0])
+  ("rename_column" .
+   [0 0 0 0 0 0 1 0 1 0 0 0 0])
+  ("company" .
+   [13 0 0 0 0 0 0])
+  ("alias_attribute" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("has" .
+   [4 0 0])
+  ("Profile" .
+   [1 0 0 0 0 0 0])
+  ("name" .
+   [6 0 0 0])
+  ("args" .
+   [2 0 0 0])
+  ("send" .
+   [2 0 0 0])
+  ("clients" .
+   [8 0 0 2 1 0 0])
+  ("first" .
+   [6 0 0 0 0])
+  ("super" .
+   [1 0 0 0 0])
+  ("display" .
+   [1 0 0 0 0 0 0])
+  ("trader" .
+   [3 0 0 0 0 0])
+  ("client" .
+   [17 0 0 3 4 0])
+  ("companies" .
+   [1 0 0 0 0 0 0 0 0])
+  ("bank_accounts" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("create" .
+   [5 0 0 0 0 0])
+  ("debugger" .
+   [11 0 0 0 0 0 0 0])
+  ("made" .
+   [1 0 0 0])
+  ("build" .
+   [1 0 0 0 0])
+  ("handler" .
+   [3 0 0 0 0 0 0])
+  ("handlers" .
+   [1 0 0 0 0 0 0 0])
+  ("events" .
+   [1 0 0 0 0 0])
+  ("describe" .
+   [5 0 0 0 0 0 0 0])
+  ("beforeEach" .
+   [0 0 0 0 0 0 0 1 0 0])
+  ("expect" .
+   [1 0 0 0 0 0])
+  ("attr" .
+   [2 0 0 0])
+  ("toEqual" .
+   [0 0 0 1 0 0 1])
+  ("type_radio_button_selector" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("checked" .
+   [2 0 0 0 0 0 0])
+  ("checked_rb" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("find" .
+   [2 0 0 0])
+  ("protected_numbers" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("event" .
+   [3 0 0 0 0])
+  ("_toHandle" .
+   [0 0 0 0 1 0 0 0 0])
+  ("eventName" .
+   [7 0 0 0 0 0 0 0 0])
+  ("handlerName" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("eventHandler" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("this" .
+   [4 0 0 0])
+  ("jasmin" .
+   [1 0 0 0 0 0])
+  ("jQuery" .
+   [1 0 0 0 0 0])
+  ("matchers" .
+   [1 0 0 0 0 0 0 0])
+  ("jasmine" .
+   [3 0 0 0 0 0 0])
+  ("jQueryMatchers" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("JQuery" .
+   [3 0 0 0 0 0])
+  ("helpers" .
+   [3 0 0 0 0 0 0])
+  ("apply" .
+   [2 0 0 0 0])
+  ("last" .
+   [1 0 0 0])
+  ("settings" .
+   [5 0 0 0 0 0 0 0])
+  ("setting" .
+   [1 0 0 0 0 0 0])
+  ("reload" .
+   [2 0 0 0 0 0])
+  ("current_company" .
+   [8 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("usd_client" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("stub_out_general_before_filters" .
+   [0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("joins" .
+   [1 0 0 0 0])
+  ("group" .
+   [3 0 0 0 0])
+  ("count" .
+   [2 0 0 0 0])
+  ("require_current_company" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("merge" .
+   [1 0 0 0 0])
+  ("skip_full_validation" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("arm/open-log" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("robe-doc" .
+   [1 0 0 0 0 0 0 0])
+  ("asok/org-notes" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("fav" .
+   [2 0 0])
+  ("command-execute" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("right" .
+   [5 0 0 0 0])
+  ("left" .
+   [16 0 0 0])
+  ("calc_rates" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("set_rates" .
+   [1 0 0 0 0 0 0 0 0])
+  ("value" .
+   [2 0 0 0 0])
+  ("nil?" .
+   [2 0 0 0])
+  ("and" .
+   [2 0 0])
+  ("rate" .
+   [2 0 0 0])
+  ("inverse_rate" .
+   [2 0 0 0 0 0 0 0 0 0 0 0])
+  ("invert_using_flt" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("rates" .
+   [1 0 0 0 0])
+  ("counter_company" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("_percent_covered" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("perform_auto_instructions" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("percent_covered" .
+   [0 0 0 0 0 0 0 0 0 0 2 0 0 0 0])
+  ("suite" .
+   [1 0 0 0 0])
+  ("migration" .
+   [1 0 0 0 0 0 0 0 0])
+  ("puts" .
+   [5 0 0 0])
+  ("scope" .
+   [1 0 0 0 0])
+  ("biddable_state" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("where" .
+   [3 0 0 0 0])
+  ("hedge_type" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("workflow_state" .
+   [6 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("new_hedge" .
+   [2 0 0 0 0 0 0 0 0])
+  ("bid_accepted" .
+   [0 0 0 0 0 0 0 1 0 0 0 0])
+  ("receivable" .
+   [0 0 0 0 4 0 0 0 0 0])
+  ("times" .
+   [1 0 0 0 0])
+  ("payable" .
+   [3 0 0 0 0 0 0])
+  ("Bid" .
+   [3 0 0])
+  ("make_bid" .
+   [2 0 0 0 0 0 0 0])
+  ("hedge_id" .
+   [3 0 0 0 0 0 0 0])
+  ("do_accept" .
+   [0 0 0 0 1 0 0 0 0])
+  ("update_column" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("accepted" .
+   [1 0 0 0 0 0 0 0])
+  ("context" .
+   [1 0 0 0 0 0 0])
+  ("one" .
+   [1 0 0])
+  ("order" .
+   [1 0 0 0 0])
+  ("orders" .
+   [1 0 0 0 0 0])
+  ("created" .
+   [1 0 0 0 0 0 0])
+  ("creates" .
+   [1 0 0 0 0 0 0])
+  ("reverse" .
+   [1 0 0 0 0 0 0])
+  ("protected" .
+   [1 0 0 0 0 0 0 0 0])
+  ("counter_hedges_according_to_currencies_and_hedge_type" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("or_operand" .
+   [1 0 0 0 0 0 1 0 0 0])
+  ("Map" .
+   [2 0 0])
+  ("opposite_type" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("created_at" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("decrypt_signing_key" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("init" .
+   [1 0 0 0])
+  ("add-supervisor-birthday-field-to-profile-form" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("subject" .
+   [5 0 0 0 0 0 0])
+  ("active" .
+   [1 0 0 0 0 0])
+  ("suspended" .
+   [2 0 0 0 3 1 0 0 0])
+  ("suspend" .
+   [2 0 0 0 0 0 1])
+  ("map" .
+   [1 0 0])
+  ("Delayed" .
+   [0 0 0 1 0 0 0])
+  ("Job" .
+   [1 0 0])
+  ("enqueue" .
+   [1 0 0 0 0 0 0])
+  ("hickey-remix-theme" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("length" .
+   [1 0 0 1 0 0])
+  ("buffer-size" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("counter_currency:" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("object" .
+   [1 0 0 0 0 0])
+  ("projectile-global-mode" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("print" .
+   [15 0 0 0 0])
+  ("filepath" .
+   [5 0 0 0 0 0 0 0])
+  ("names" .
+   [3 0 0 0 0])
+  ("projectile-rails-mode-hook" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0])
+  ("add-hook" .
+   [0 0 0 0 0 1 0 0])
+  ("projectile-rails-on" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("button-get" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("button-label" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("s-starts-with?" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("projectile-project-root" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("projectile-current-project" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("abbrev-file-name" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("abbreviate-file-name" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("compilation-start" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("output" .
+   [3 0 0 0 0 0])
+  ("When" .
+   [4 0 0 0])
+  ("compilation-filter" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("get-buffer-process" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("current-buffer" .
+   [0 0 0 0 0 0 0 0 0 0 2 0 0 0])
+  ("compilation-filter-start" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("point" .
+   [3 0 0 0 0])
+  ("re-search-forward" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("s-+" .
+   [1 0 0])
+  ("toggle-read-only" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("ansi-color-apply" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("arg" .
+   [1 0 0])
+  ("s-lex-format" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("compilation-parse-errors" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("max-char" .
+   [0 0 0 0 0 0 1 0])
+  ("projectile-rails-hash-keys" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 2 0 0 0])
+  ("dir" .
+   [1 0 0])
+  ("projectile-rails-candidates" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 1 1 0 0 0 0])
+  ("candidates" .
+   [4 0 0 0 0 0 0 0 0 0])
+  ("gethash" .
+   [1 0 0 0 1 0 0])
+  ("string=" .
+   [2 0 0 0 0 0 0])
+  ("paths" .
+   [1 0 0 0 0])
+  ("s-join" .
+   [2 0 0 0 0 0])
+  ("subpaths" .
+   [3 0 0 0 0 0 0 0])
+  ("choices" .
+   [7 0 0 0 0 0 0])
+  ("-first-item" .
+   [0 0 0 0 0 0 0 0 0 1 0])
+  ("short-names" .
+   [1 0 0 0 1 0 0 0 0 0 0])
+  ("projectile-rails-goto-file" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("projectile-rails-choices" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("projectile-dir-files" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("projectile-expand-root" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("--filter" .
+   [1 0 0 0 0 0 0 0])
+  ("string-match-p" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("magit-emacsclient-executable" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])))

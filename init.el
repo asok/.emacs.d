@@ -15,7 +15,9 @@
       ido-auto-merge-work-directories-length -1
       ;;global-auto-revert-non-file-buffers t
       ns-right-alternate-modifier nil
-      comint-process-echoes t)
+      comint-process-echoes t
+      split-height-threshold nil
+      split-width-threshold 100)
 
 
 (push "/usr/local/bin" exec-path)

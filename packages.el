@@ -47,7 +47,7 @@
     ag
     ;; rhtml-mode
     scss-mode
-    ;; web-mode
+    web-mode
     ruby-refactor
     lorem-ipsum
     feature-mode
