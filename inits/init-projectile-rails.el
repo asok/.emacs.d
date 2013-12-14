@@ -19,3 +19,6 @@
 (add-hook 'projectile-mode-hook 'projectile-rails-on)
 
 (diminish 'projectile-rails-mode " Ρ")
+
+(evil-define-key 'normal web-mode-map (kbd "RET") 'projectile-rails-goto-file-at-point)
+(evil-define-key 'normal haml-mode-map (kbd "RET") 'projectile-rails-goto-file-at-point)
