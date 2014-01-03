@@ -8,3 +8,5 @@
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 
 (add-to-list 'auto-mode-alist '("\\.js\\.erb\\'" . js-mode))
+
+(setq web-mode-symbol-face 'font-lock-constant-face)
