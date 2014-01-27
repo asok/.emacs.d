@@ -55,7 +55,9 @@
     projectile
     pretty-lambdada
     ruby-dev
-    helm-rails)
+    helm-rails
+    wgrep
+    wgrep-ag)
   "List of packages installed via package.el")
 
 (defun asok/install-packages ()

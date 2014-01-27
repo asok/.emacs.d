@@ -16,7 +16,7 @@
       ;;global-auto-revert-non-file-buffers t
       ns-right-alternate-modifier nil
       comint-process-echoes t
-      split-height-threshold nil
+      split-height-threshold 50
       split-width-threshold 100)
 
 
