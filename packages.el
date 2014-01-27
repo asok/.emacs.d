@@ -54,6 +54,7 @@
     powerline
     projectile
     pretty-lambdada
+    ruby-dev
     helm-rails)
   "List of packages installed via package.el")
 
