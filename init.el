@@ -45,6 +45,9 @@
 (add-to-list 'auto-mode-alist '("\\.css$" . css-mode))
 (add-to-list 'auto-mode-alist '("\\.zsh$" . sh-mode))
 
+(add-hook 'after-save-hook
+  'executable-make-buffer-file-executable-if-script-p)
+
 (load "~/.emacs.d/bindings")
 (load "~/.emacs.d/packages")
 (asok/install-packages)
