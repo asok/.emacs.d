@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ex
+# key: ex
+# group: rspec
+# --
+expect($1).to $2

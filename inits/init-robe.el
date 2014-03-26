@@ -6,10 +6,11 @@
 (add-hook 'enh-ruby-mode-hook 'robe-mode)
 (add-hook 'ruby-mode-hook 'robe-mode)
 
-(require 'auto-complete)
-(push 'ac-source-robe ac-sources)
-
 (setq robe-turn-on-eldoc nil)
+
+(evil-define-key 'normal robe-mode-map (kbd "M-.") 'robe-jump)
+
+;; (add-hook 'robe-mode-hook 'robe-ac-setup)
 
 (eval-after-load 'robe
   '(diminish 'robe-mode " Ροβε"))

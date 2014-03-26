@@ -1,6 +1,5 @@
 (setq ag-highlight-search t)
 
-(evil-define-key 'normal global-map (kbd ", a") 'ag-project)
 
 ;; (defun ag/helm-init ()
 ;;   (helm-init-candidates-in-buffer
@@ -22,8 +21,5 @@
 ;;         :prompt "Search string: "
 ;;         :input (ag/dwim-at-point)))
 
-(defun af-helm-ff (c)
-  ()
-  )
-
+(evil-define-key 'normal global-map (kbd ", a") 'ag-project)
 (evil-define-key 'normal global-map (kbd ", w") 'ag)

@@ -54,4 +54,4 @@
                              (powerline-fill face1 (powerline-width rhs))
                              (powerline-render rhs)))))))
 
-(asok/powerline-center-evil-theme)
+;; (asok/powerline-center-evil-theme)

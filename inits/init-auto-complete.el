@@ -1,4 +1,5 @@
-(require 'auto-complete-autoloads)
+(require 'auto-complete)
+(global-auto-complete-mode t)
 ;; (add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
 (setq rsense-home "/usr/local/Cellar/rsense/0.3/libexec")
 (add-to-list 'load-path (concat rsense-home "/etc"))
@@ -8,21 +9,17 @@
       ac-use-quick-help t
       ac-dwim t) ; To get pop-ups with docs even if a word is uniquely completed
 
-(eval-after-load "auto-complete"
-  '(progn
-     (add-to-list 'ac-modes 'enh-ruby-mode)
-     (add-to-list 'ac-modes 'ruby-mode)
-     (add-to-list 'ac-modes 'shell-mode)
-     (add-to-list 'ac-modes 'rhtml-mode)
-     (add-to-list 'ac-modes 'html-mode)
+(add-to-list 'ac-modes 'enh-ruby-mode)
+(add-to-list 'ac-modes 'ruby-mode)
+(add-to-list 'ac-modes 'shell-mode)
+(add-to-list 'ac-modes 'rhtml-mode)
+(add-to-list 'ac-modes 'html-mode)
 
-     (define-key ac-completing-map (kbd "C-n") 'ac-next)
-     (define-key ac-completing-map (kbd "C-p") 'ac-previous)
-     ;; (define-key ac-completing-map [return] nil)
-     (define-key ac-completing-map "\r" nil)
-     (define-key ac-completing-map (kbd "<tab>") nil)
-
-     (global-auto-complete-mode t)))
+(define-key ac-completing-map (kbd "C-n") 'ac-next)
+(define-key ac-completing-map (kbd "C-p") 'ac-previous)
+;; (define-key ac-completing-map [return] nil)
+(define-key ac-completing-map "\r" nil)
+(define-key ac-completing-map (kbd "<tab>") nil)
 
 ;; hook AC into completion-at-point
 (defun set-auto-complete-as-completion-at-point-function ()

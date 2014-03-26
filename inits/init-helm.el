@@ -4,8 +4,16 @@
 
 (global-set-key (kbd "s-a") 'asok/helm-mini)
 (global-set-key (kbd "s-i") 'helm-imenu)
-(global-set-key (kbd "s-x") 'helm-M-x)
+(global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-c SPC") 'helm-all-mark-rings)
+
+(evil-define-key 'normal global-map (kbd ", e") 'helm-etags-select)
+
+;; (define-key helm-find-files-map (kbd "RET") 'helm-execute-persistent-action)
+
+(setq helm-ff-directory 'font-lock-constant-face)
+(set-face-attribute 'helm-ff-directory (selected-frame) :background nil)
+;; (evil-define-key 'normal global-map (kbd "C-x C-f") 'helm-find-files)
 
 (defvar helm-source-asok-config-files
   '((name . "My config files")

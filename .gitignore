@@ -3,4 +3,6 @@ elpa/*
 auto-save-list
 site-lisp/*
 .cask/*
+projectile-bookmarks.eld
+tramp
 

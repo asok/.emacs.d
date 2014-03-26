@@ -38,10 +38,11 @@
     ;; volatile-highlights
     yasnippet
     exec-path-from-shell
-    ;; ruby-end
+    ruby-end
     zenburn-theme
     grizzl
     auto-complete
+    ;; company
     helm-ag
     js2-mode
     ag
@@ -54,8 +55,9 @@
     powerline
     projectile
     pretty-lambdada
-    ruby-dev
+    ;; ruby-dev
     helm-rails
+    helm-dash
     wgrep
     wgrep-ag)
   "List of packages installed via package.el")
