@@ -16,6 +16,7 @@
       ;;global-auto-revert-non-file-buffers t
       ns-right-alternate-modifier nil
       comint-process-echoes t
+      browse-url-browser-function 'eww-browse-url
       split-height-threshold 100
       ;; split-width-threshold 100
       )
