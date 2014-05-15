@@ -1,6 +1,5 @@
 (require 'projectile-rails)
 (setq projectile-completion-system 'grizzl)
-(add-hook 'projectile-mode-hook 'projectile-rails-on)
 
 (evil-define-key 'normal projectile-rails-mode-map (kbd "s-t") 'projectile-rails-find-controller)
 (evil-define-key 'normal projectile-rails-mode-map (kbd "s-y") 'projectile-rails-find-model)

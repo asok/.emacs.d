@@ -9,4 +9,4 @@
 (evil-define-key 'normal peep-dired-mode-map (kbd "j") 'peep-dired-next-file)
 (evil-define-key 'normal peep-dired-mode-map (kbd "k") 'peep-dired-prev-file)
 
-(add-hook 'peep-dired-mode-hook 'evil-normalize-keymaps)
+(add-hook 'peep-dired-hook 'evil-normalize-keymaps)
