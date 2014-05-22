@@ -49,6 +49,7 @@
     ;; rhtml-mode
     scss-mode
     web-mode
+    jsx-mode
     ruby-refactor
     lorem-ipsum
     feature-mode
