@@ -7,7 +7,6 @@
       make-backup-files nil
       make-inhibited t
       auto-save-default nil
-      indent-tabs-mode nil
       font-lock-maximum-decoration t
       auto-revert-verbose nil
       org-src-fontify-natively t
@@ -20,7 +19,8 @@
       split-height-threshold 100
       ;; split-width-threshold 100
       )
-
+(setq-default indent-tabs-mode nil
+              tab-width 2)
 
 (push "/usr/local/bin" exec-path)
 (push "/opt/local/bin" exec-path)
