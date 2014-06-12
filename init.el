@@ -56,4 +56,6 @@
 (asok/init-packages)
 (load "~/.emacs.d/theming")
 
+(add-hook 'emacs-lisp-mode-hook 'asok/delete-trailing-whitespace-on-file-write)
+
 (server-start)

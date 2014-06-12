@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ren
+# key: ren
+# --
+render: function(){
+  return $1
+}

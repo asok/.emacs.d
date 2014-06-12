@@ -32,6 +32,7 @@
     helm
     ido-ubiquitous
     rainbow-mode
+    rainbow-delimiters
     smex
     solarized-theme
     undo-tree
@@ -73,7 +74,7 @@
 (defun asok/init-packages ()
   (loop for package in (append asok/packages (asok/discover-site-lisp-packages)) do
         (let ((file (concat "~/.emacs.d/inits/init-" (symbol-name package))))
-          (when (file-exists-p (concat file ".el")) 
+          (when (file-exists-p (concat file ".el"))
             (load file)))))
 
 (defun asok/discover-site-lisp-packages ()
