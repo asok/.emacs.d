@@ -15,5 +15,3 @@
 (defun asok/add-indend-ruby-to-ruby-mode-hook ()
   (add-hook 'evil-insert-state-exit-hook 'asok/indend-ruby nil t))
 (add-hook 'ruby-mode-hook 'asok/add-indend-ruby-to-ruby-mode-hook)
-
-

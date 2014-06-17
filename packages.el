@@ -60,6 +60,7 @@
     ;; ruby-dev
     helm-rails
     helm-dash
+    discover
     wgrep
     wgrep-ag)
   "List of packages installed via package.el")

@@ -5,7 +5,6 @@
 (evil-define-key 'normal projectile-rails-mode-map (kbd "s-y") 'projectile-rails-find-model)
 (evil-define-key 'normal projectile-rails-mode-map (kbd "s-u") 'projectile-rails-find-view)
 (evil-define-key 'normal projectile-rails-mode-map (kbd "s-o") 'projectile-rails-find-spec)
-(evil-define-key 'normal projectile-rails-mode-map (kbd "s-r") 'projectile-find-file)
 
 (evil-define-key 'normal ruby-mode-map (kbd "RET") '(lambda ()
 						      (interactive)
