@@ -5,4 +5,8 @@ site-lisp/*
 .cask/*
 projectile-bookmarks.eld
 tramp
+url/*
+bookmarks
+ac-comphist.dat
+projectile-bookmarks.eld
 

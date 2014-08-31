@@ -17,4 +17,3 @@
 (add-hook 'projectile-mode-hook 'asok/set-compilation-save-buffer-predicate nil t)
 
 (diminish 'projectile-mode " Π")
-

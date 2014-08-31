@@ -1,4 +1,4 @@
-(defadvice load-theme 
+(defadvice load-theme
   (before theme-dont-propagate activate)
   (mapcar #'disable-theme custom-enabled-themes))
 
@@ -6,4 +6,4 @@
 
 (setq evil-default-cursor t)
 
-(load-theme 'tangotango)
+(load-theme 'solarized-dark)

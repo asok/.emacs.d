@@ -29,6 +29,3 @@
   (kbd ", 1") 'delete-other-windows
   (kbd ", 0") 'delete-window
   )
-
-(when (string= system-type "darwin")
-  (setq magit-emacsclient-executable "/usr/local/Cellar/emacs/24.3/bin/emacsclient"))
