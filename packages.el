@@ -61,6 +61,7 @@
     helm-rails
     helm-dash
     discover
+    cider
     wgrep
     wgrep-ag)
   "List of packages installed via package.el")
