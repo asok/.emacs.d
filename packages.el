@@ -23,7 +23,6 @@
     rspec-mode
     robe
     slim-mode
-    ;; paredit-mode
     dash
     elisp-slime-nav
     expand-region
@@ -42,6 +41,7 @@
     exec-path-from-shell
     ruby-end
     zenburn-theme
+    ample-theme
     grizzl
     auto-complete
     ;; company

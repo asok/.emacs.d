@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: omrs
+# key: omrs
+# --
+om/IRenderState
+(render-state [${1:_} ${2:state}]
+  $3)

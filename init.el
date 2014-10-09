@@ -17,6 +17,7 @@
       comint-process-echoes t
       browse-url-browser-function 'eww-browse-url
       split-height-threshold 100
+      css-indent-offset 2
       ;; split-width-threshold 100
       )
 (setq-default indent-tabs-mode nil
@@ -56,6 +57,4 @@
 (asok/init-packages)
 (load "~/.emacs.d/theming")
 
-(add-hook 'emacs-lisp-mode-hook 'asok/delete-trailing-whitespace-on-file-write)
-
-(server-start)
+;; (server-start)

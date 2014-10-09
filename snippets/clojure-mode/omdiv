@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: omdiv
+# key: omdiv
+# --
+(dom/div ${1:#js \{\}}
+  $2)

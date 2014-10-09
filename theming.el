@@ -6,4 +6,4 @@
 
 (setq evil-default-cursor t)
 
-(load-theme 'solarized-dark)
+(load-theme 'ample)

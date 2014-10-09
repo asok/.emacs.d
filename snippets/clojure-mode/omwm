@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: omwm
+# key: omwm
+# --
+om/IWillMount
+(will-mount [${1:_}]
+  $2)
