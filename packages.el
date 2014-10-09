@@ -62,6 +62,9 @@
     helm-dash
     discover
     cider
+    cljsbuild-mode
+    whitespace-cleanup-mode
+    web-beautify
     wgrep
     wgrep-ag)
   "List of packages installed via package.el")
