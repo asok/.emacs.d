@@ -31,6 +31,7 @@
     ;; gist
     helm
     ido-ubiquitous
+    flx-ido
     rainbow-mode
     rainbow-delimiters
     smex
