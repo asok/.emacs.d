@@ -33,9 +33,7 @@
   (helm-other-buffer (append '(helm-source-buffers-list
                                helm-source-recentf
                                helm-source-asok-config-files)
-                             (if (and
-                                  (fboundp 'projectile-project-p)
-                                  (projectile-project-p))
-                                 '(helm-source-projectile-files-list)
-                               '(helm-source-projectile-projects)))
+                             (when (projectile-project-p)
+                               '(helm-source-projectile-files-list))
+                             '(helm-source-projectile-projects))
                      "*helm mini*"))
