@@ -1,6 +1,7 @@
 (require 'helm-mode)
 
-(setq helm-buffer-max-length 40)
+(setq helm-buffer-max-length 40
+      helm-buffer-details-flag nil)
 
 (global-set-key (kbd "s-a") 'asok/helm-mini)
 (global-set-key (kbd "s-i") 'helm-imenu)
