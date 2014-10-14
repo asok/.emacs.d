@@ -93,16 +93,5 @@ or start a new one while killing a defunt one"
   (insert (concat "* " (format-time-string "%d-%m-%Y @ %H:%M") "\n** "))
   (evil-insert-state))
 
-;; stolen from https://github.com/magnars/.emacs.d/blob/master/setup-paredit.el
-(defun asok/paredit-wrap-round-from-behind ()
-  (interactive)
-  (forward-sexp -1)
-  (paredit-wrap-round)
-  (insert " ")
-  (forward-char -1))
-
-(defun asok/setup-paredit-keys ()
-  (define-key paredit-mode-map (kbd "M-(") 'paredit-wrap-round)
-  (define-key paredit-mode-map (kbd "M-)") 'asok/paredit-wrap-round-from-behind))
-
-(add-hook 'paredit-mode-hook 'asok/setup-paredit-keys)
+(add-hook 'clojure-mode-hook 'paredit-mode)
+(add-hook 'emacs-lisp-mode-hook 'paredit-mode)

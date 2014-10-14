@@ -118,3 +118,13 @@
 
 
 (add-to-list 'evil-emacs-state-modes 'makey-key-mode)
+
+(evil-define-key 'normal paredit-mode-map (kbd ", 9") 'paredit-wrap-round)
+(evil-define-key 'normal paredit-mode-map (kbd ", [") 'paredit-wrap-square)
+(evil-define-key 'normal paredit-mode-map (kbd ", {") 'paredit-wrap-curly)
+(evil-define-key 'normal paredit-mode-map (kbd ", <right>") 'paredit-forward-slurp-sexp)
+(evil-define-key 'normal paredit-mode-map (kbd ", <left>") 'paredit-backward-slurp-sexp)
+(evil-define-key 'normal paredit-mode-map (kbd ", <up>") 'paredit-forward-barf-sexp)
+(evil-define-key 'normal paredit-mode-map (kbd ", <down>") 'paredit-backward-barf-sexp)
+
+(add-to-list 'evil-motion-state-modes 'package-menu-mode)

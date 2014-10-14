@@ -1,4 +1,5 @@
 (projectile-global-mode)
+(require 'helm-projectile)
 
 (define-prefix-command 'evil-projectile-mode-map)
 (evil-define-key 'normal projectile-mode-map (kbd ", p") 'evil-projectile-mode-map)

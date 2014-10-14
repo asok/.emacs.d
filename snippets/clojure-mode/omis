@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: omis
+# key: omis
+# --
+om/IInitState
+(init-state []
+  {$1})
