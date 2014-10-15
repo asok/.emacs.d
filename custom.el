@@ -23,8 +23,6 @@
      ("#93115C" . 85)
      ("#073642" . 100))))
  '(linum-format " %7i ")
- '(magit-diff-use-overlays nil)
- '(magit-use-overlays nil)
  '(safe-local-variable-values
    (quote
     ((eval when
