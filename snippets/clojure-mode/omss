@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: omss
+# key: omss
+# --
+(om/set-state! ${1:owner} :$2 $3)

@@ -92,6 +92,3 @@ or start a new one while killing a defunt one"
   (org-mode)
   (insert (concat "* " (format-time-string "%d-%m-%Y @ %H:%M") "\n** "))
   (evil-insert-state))
-
-(add-hook 'clojure-mode-hook 'paredit-mode)
-(add-hook 'emacs-lisp-mode-hook 'paredit-mode)

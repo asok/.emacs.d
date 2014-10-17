@@ -35,6 +35,8 @@
 (blink-cursor-mode -1)
 (electric-pair-mode)
 
+(global-prettify-symbols-mode 1)
+
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file 'noerror)
 
@@ -50,6 +52,11 @@
 
 (add-hook 'after-save-hook
   'executable-make-buffer-file-executable-if-script-p)
+
+(add-hook 'clojure-mode-hook 'paredit-mode)
+(add-hook 'emacs-lisp-mode-hook 'paredit-mode)
+
+(add-hook 'dired-mode-hook 'auto-revert-mode)
 
 (load "~/.emacs.d/bindings")
 (load "~/.emacs.d/packages")

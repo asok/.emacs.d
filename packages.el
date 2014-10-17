@@ -57,7 +57,6 @@
     feature-mode
     powerline
     projectile
-    pretty-lambdada
     ;; ruby-dev
     helm-dash
     helm-projectile
