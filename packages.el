@@ -63,7 +63,6 @@
     discover
     cider
     cljsbuild-mode
-    ac-cider
     engine-mode
     whitespace-cleanup-mode
     web-beautify

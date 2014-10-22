@@ -1,5 +1,3 @@
-(add-hook 'ruby-mode-hook 'asok/delete-trailing-whitespace-on-file-write)
-
 (evil-define-key 'insert ruby-mode-map (kbd "RET") 'evil-ret-and-indent)
 
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
