@@ -52,8 +52,8 @@ Keybinding      | Command                | Description
 `<s-a>`         | asok/helm-mini         | Normal helm-mini command (opened buffers and recently visited files) + shows files in the current project
 `kj`            | cofi/maybe-exit        | When in Evil's insert-state when you press "k" and immediately after that "j" it will go back to the normal-state
 `<C-backspace>` | backward-kill-word     | Instead of deleting 1 character before the point it deletes whole word. 3rd item in the [Steve Yegge's tips](https://sites.google.com/site/steveyegge2/effective-emacs)
-`<, f>`         | ido-find-file          | Uses to open a file
-`<, d>`         | ido-dired              | Uses to open a directory
+`<, f>`         | ido-find-file          | Uses ido to open a file
+`<, d>`         | ido-dired              | Uses ido to open a directory
 
 ## Keybindings that are in use when some mode is on
 
