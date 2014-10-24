@@ -7,6 +7,8 @@ I don't find it particulary well suited for Emacs newbies but maybe it might be 
 You might want to look at the way I use packages, customize them, load them and incorporate it to your Emacs setup.
 Also if you want to use Evil *maybe* the file `inits/init-evil.el` will be of some help to you.
 
+For a full blown Emacs setup see [Emacs prelude](http://batsov.com/prelude/).
+
 ## Files
 
 File or directory       | Description
@@ -69,3 +71,4 @@ TODO
 * [Mastering Emacs blog](http://www.masteringemacs.org/)
 * [Emacs introduction](http://tuhdo.github.io/)
 * [Emacs screencasts](http://emacsrocks.com/)
+* [Emacs prelude](http://batsov.com/prelude/)
