@@ -3,10 +3,10 @@ elpa/*
 auto-save-list
 site-lisp/*
 .cask/*
-projectile-bookmarks.eld
 tramp
 url/*
 bookmarks
 ac-comphist.dat
 projectile-bookmarks.eld
+helm-adaptive-history
 
