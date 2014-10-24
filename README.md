@@ -73,3 +73,8 @@ TODO
 * [Emacs introduction](http://tuhdo.github.io/)
 * [Emacs screencasts](http://emacsrocks.com/)
 * [Emacs prelude](http://batsov.com/prelude/)
+
+# Emacs setup for Ruby on Rails
+
+* [Setup with projectile-rails package](http://lorefnon.me/2014/02/02/configuring-emacs-for-rails.html)
+* [Setup with plain projectile package](http://crypt.codemancers.com/posts/2013-09-26-setting-up-emacs-as-development-environment-on-osx/)
