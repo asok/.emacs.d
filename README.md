@@ -52,7 +52,7 @@ Keybinding      | Evil state    | Command              | Description
 `<, 2>`         | normal/motion | split-window-below   | Like Vim's horizontal split
 `<, 3>`         | normal/motion | split-window-right   | Like Vim's vertical split
 `<, 0>`         | normal/motion | delete-window        | Deletes the current window
-`<s-a>`         | *any*         | asok/helm-mini       | Normal helm-mini command (opened buffers and recently visited files) + shows files in the current project
+`<s-a>`         | *any*         | asok/helm-mini       | Normal helm-mini command (opened buffers and recently visited files) + shows files in the current project and in the `~/.emacs.d/` directory
 `kj`            | insert        | cofi/maybe-exit      | When you press "k" and immediately after that "j" it will go back to the normal-state
 `<C-backspace>` | insert/normal | backward-kill-word   | Instead of deleting 1 character before the point it deletes whole word. 3rd item in the [Steve Yegge's tips](https://sites.google.com/site/steveyegge2/effective-emacs)
 `<, f>`         | normal        | ido-find-file        | Uses ido to open a file
