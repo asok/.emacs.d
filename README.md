@@ -63,18 +63,24 @@ Keybinding      | Evil state    | Command              | Description
 TODO
 
 
-## Todo
+# Todos
 
 * integrate Evil with magit better
 
 # Useful links for newbies
+
+## Emacs in general
 
 * [Mastering Emacs blog](http://www.masteringemacs.org/)
 * [Emacs introduction](http://tuhdo.github.io/)
 * [Emacs screencasts](http://emacsrocks.com/)
 * [Emacs prelude](http://batsov.com/prelude/)
 
-# Emacs setup for Ruby on Rails
+## Emacs setup for Ruby on Rails
 
 * [Setup with projectile-rails package](http://lorefnon.me/2014/02/02/configuring-emacs-for-rails.html)
 * [Setup with plain projectile package](http://crypt.codemancers.com/posts/2013-09-26-setting-up-emacs-as-development-environment-on-osx/)
+
+# Help
+
+Feel free to use [Issues](https://github.com/asok/.emacs.d/issues) to ask me a question.
