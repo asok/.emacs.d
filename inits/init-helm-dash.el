@@ -7,4 +7,4 @@
 (add-hook 'projectile-rails-mode-hook '(lambda()
 																				 (setq-local helm-dash-docsets '("Redis" "Ruby on Rails" "Ruby" "jQuery"))))
 
-(evil-define-key 'normal global-map (kbd "M-SPC") 'helm-dash )
+(evil-define-key 'normal global-map (kbd "M-SPC") 'helm-dash-at-point)
