@@ -39,23 +39,23 @@ buffer      | buffer/file
 
 ## Custom "Global" keybindings (that are in use in 99% of the time)
 
-Keybinding      | Command                | Description
-----------------|------------------------|--------------------------------------------------
-`<s-d>`         | previous-buffer        | Shows the previous buffer in the current window
-`<s-f>`         | next-buffer            | Shows the next buffer in the current window
-`<s-j>`         | windmove-down          | Puts the cursor in the window below the current one
-`<s-k>`         | windmove-up            | Puts the cursor in the window above the current one
-`<s-l>`         | windmove-right         | Puts the cursor in the window to the rigth of the current one
-`<s-h>`         | windmove-left          | Puts the cursor in the window to the left of the current one
-`<, 1>`         | delete-other-windows   | Closes all windows except for the current one
-`<, 2>`         | split-window-below     | Like Vim's horizontal split
-`<, 3>`         | split-window-right     | Like Vim's vertical split
-`<, 0>`         | delete-window          | Deletes the current window
-`<s-a>`         | asok/helm-mini         | Normal helm-mini command (opened buffers and recently visited files) + shows files in the current project
-`kj`            | cofi/maybe-exit        | When in Evil's insert-state when you press "k" and immediately after that "j" it will go back to the normal-state
-`<C-backspace>` | backward-kill-word     | Instead of deleting 1 character before the point it deletes whole word. 3rd item in the [Steve Yegge's tips](https://sites.google.com/site/steveyegge2/effective-emacs)
-`<, f>`         | ido-find-file          | Uses ido to open a file
-`<, d>`         | ido-dired              | Uses ido to open a directory
+Keybinding      | Evil state    | Command              | Description
+----------------|---------------|----------------------|--------------------------------------------------
+`<s-d>`         | *any*         | previous-buffer      | Shows the previous buffer in the current window
+`<s-f>`         | *any*         | next-buffer          | Shows the next buffer in the current window
+`<s-j>`         | *any*         | windmove-down        | Puts the cursor in the window below the current one
+`<s-k>`         | *any*         | windmove-up          | Puts the cursor in the window above the current one
+`<s-l>`         | *any*         | windmove-right       | Puts the cursor in the window to the rigth of the current one
+`<s-h>`         | *any*         | windmove-left        | Puts the cursor in the window to the left of the current one
+`<, 1>`         | normal/motion | delete-other-windows | Closes all windows except for the current one
+`<, 2>`         | normal/motion | split-window-below   | Like Vim's horizontal split
+`<, 3>`         | normal/motion | split-window-right   | Like Vim's vertical split
+`<, 0>`         | normal/motion | delete-window        | Deletes the current window
+`<s-a>`         | *any*         | asok/helm-mini       | Normal helm-mini command (opened buffers and recently visited files) + shows files in the current project
+`kj`            | insert        | cofi/maybe-exit      | When you press "k" and immediately after that "j" it will go back to the normal-state
+`<C-backspace>` | insert/normal | backward-kill-word   | Instead of deleting 1 character before the point it deletes whole word. 3rd item in the [Steve Yegge's tips](https://sites.google.com/site/steveyegge2/effective-emacs)
+`<, f>`         | normal        | ido-find-file        | Uses ido to open a file
+`<, d>`         | normal        | ido-dired            | Uses ido to open a directory
 
 ## Keybindings that are in use when some mode is on
 
