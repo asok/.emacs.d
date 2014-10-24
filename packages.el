@@ -19,7 +19,6 @@
     ack-and-a-half
     magit
     ;readline-complete
-    ;; enh-ruby-mode
     rspec-mode
     robe
     slim-mode
@@ -27,7 +26,6 @@
     elisp-slime-nav
     expand-region
     flycheck
-    ;; gist
     helm
     ido-ubiquitous
     flx-ido
@@ -48,22 +46,18 @@
     helm-ag
     js2-mode
     ag
-    ;; rhtml-mode
     scss-mode
     web-mode
     jsx-mode
     ruby-refactor
     lorem-ipsum
     feature-mode
-    powerline
     projectile
-    ;; ruby-dev
     helm-dash
     helm-projectile
     discover
     cider
     cljsbuild-mode
-    engine-mode
     whitespace-cleanup-mode
     web-beautify
     wgrep
