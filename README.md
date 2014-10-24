@@ -19,6 +19,7 @@ packages.el             | Sets up the packages. It sets [melpa](http://melpa.org
 theming.el              | Small file that sets up a theme.
 inits/                  | A directory where the customization of the packages takes place. Files from this directory are loaded from `packages.el` file.
 site-lisp/              | Manually installed packages go here. Files from this directory are loaded from `packages.el` file.
+snippets/               | Snippets for [yasnippet](https://github.com/capitaomorte/yasnippet)
 
 ## Keybindings
 
@@ -28,7 +29,7 @@ Emacs       | Rest of the world
 ------------|-----------------------------------------
 frame       | window
 point       | cursor
-window      | a part of a window displaying its own buffer
+window      | a part of a window displaying its own buffer/file
 buffer      | buffer/file
 `<s-x>`     | Hold down Super/Command key and press x
 `<M-x>`     | Hold down Meta/Alt key and press x
