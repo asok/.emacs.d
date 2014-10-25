@@ -126,4 +126,6 @@
 (evil-define-key 'normal paredit-mode-map (kbd ", <up>") 'paredit-forward-barf-sexp)
 (evil-define-key 'normal paredit-mode-map (kbd ", <down>") 'paredit-backward-barf-sexp)
 
-(add-to-list 'evil-motion-state-modes 'package-menu-mode)
+(add-to-list 'evil-motion-state-modes 'package-menu-mode 'occur-mode)
+
+(evil-define-key 'motion occur-mode-map (kbd "RET") 'occur-mode-goto-occurrence)
