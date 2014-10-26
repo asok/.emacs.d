@@ -41,18 +41,28 @@ buffer      | buffer/file
 
 ## Custom "Global" keybindings (that are in use in 99% of the time)
 
+### Emacs windows navigation
+
+Often instead of opening a buffer list and selecting a buffer to switch to I just cycle the buffers through with `<s-d>` and `<s-f>`.
+Rationale behind it is that when I edit a file and I know that a moment ago I was editing another file, instead of making a mental effort to remember the file's name, opening the buffer list, reading it and selecting the corrent one I just cycle to the previous buffer. Maybe it will not be the buffer right before the current one, but I will just keep cycling back by 1-4 buffers and once I see it I just stop.
+
+Keybinding | Evil state    | Command              | Description
+-----------|---------------|----------------------|--------------------------------------------------
+`<s-d>`    | *any*         | previous-buffer      | Shows the previous buffer in the current window
+`<s-f>`    | *any*         | next-buffer          | Shows the next buffer in the current window
+`<s-j>`    | *any*         | windmove-down        | Puts the cursor in the window below the current one
+`<s-k>`    | *any*         | windmove-up          | Puts the cursor in the window above the current one
+`<s-l>`    | *any*         | windmove-right       | Puts the cursor in the window to the rigth of the current one
+`<s-h>`    | *any*         | windmove-left        | Puts the cursor in the window to the left of the current one
+`<, 1>`    | normal/motion | delete-other-windows | Closes all windows except for the current one
+`<, 2>`    | normal/motion | split-window-below   | Like Vim's horizontal split
+`<, 3>`    | normal/motion | split-window-right   | Like Vim's vertical split
+`<, 0>`    | normal/motion | delete-window        | Deletes the current window
+
+### Miscellaneous
+
 Keybinding      | Evil state    | Command              | Description
 ----------------|---------------|----------------------|--------------------------------------------------
-`<s-d>`         | *any*         | previous-buffer      | Shows the previous buffer in the current window
-`<s-f>`         | *any*         | next-buffer          | Shows the next buffer in the current window
-`<s-j>`         | *any*         | windmove-down        | Puts the cursor in the window below the current one
-`<s-k>`         | *any*         | windmove-up          | Puts the cursor in the window above the current one
-`<s-l>`         | *any*         | windmove-right       | Puts the cursor in the window to the rigth of the current one
-`<s-h>`         | *any*         | windmove-left        | Puts the cursor in the window to the left of the current one
-`<, 1>`         | normal/motion | delete-other-windows | Closes all windows except for the current one
-`<, 2>`         | normal/motion | split-window-below   | Like Vim's horizontal split
-`<, 3>`         | normal/motion | split-window-right   | Like Vim's vertical split
-`<, 0>`         | normal/motion | delete-window        | Deletes the current window
 `<s-a>`         | *any*         | asok/helm-mini       | Normal helm-mini command (opened buffers and recently visited files) + shows files in the current project and in the `~/.emacs.d/` directory
 `<s-s>`         | *any*         | save-buffer          | Saves the buffer to the file
 `kj`            | insert        | cofi/maybe-exit      | When you press "k" and immediately after that "j" it will go back to the normal-state
