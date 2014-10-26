@@ -31,6 +31,7 @@ frame       | window
 point       | cursor
 window      | a part of a window displaying its own buffer/file
 buffer      | buffer/file
+`SPC`       | The Space button
 `<s-x>`     | Hold down Super/Command key and press x
 `<M-x>`     | Hold down Meta/Alt key and press x
 `<C-x>`     | Hold down Control key and press x
@@ -61,8 +62,17 @@ Keybinding      | Evil state    | Command              | Description
 
 ## Keybindings that are in use when some mode is on
 
-TODO
+### Ido
 
+Keybinding | Command        | Description
+-----------|----------------|------------------
+`<SPC>`    | ido-next-match | Cycles to the next choice. Normally I use ido to choose a function or a file. Functions in Emacs they never have a space in their name. When I look at my files I do not put spaces in the names of my files neither. So hitting `<SPC>` is much faster then hitting `<C-n>` which is the default binding for `ido-next-match`.
+`<C-SPC>`  | ido-prev-match | Cyccles to prev choice. Rational behind this as described for `ido-next-match`.
+
+#### Notes
+
+* hit `<C-d>` when running `ido-find-file` to drop down to the current directory in dired (the directory editor of Emacs).
+* there's packages called [ido-vertical-mode](https://github.com/gempesaw/ido-vertical-mode.el) which changes orientation of ido from a horizontal to vertical
 
 # Todos
 
