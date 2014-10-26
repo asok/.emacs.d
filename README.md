@@ -39,9 +39,9 @@ buffer      | buffer/file
 `<C-x C-c>` | Hold down Control key and while it's down press first x and then c
 `<C-x c>`   | Hold down Control key and press x, release the Control key and press c
 
-## Custom "Global" keybindings (that are in use in 99% of the time)
+### Custom "Global" keybindings (that are in use in 99% of the time)
 
-### Emacs windows navigation
+#### Emacs windows navigation
 
 Often instead of opening a buffer list and selecting a buffer to switch to I just cycle the buffers through with `<s-d>` and `<s-f>`.
 Rationale behind it is that when I edit a file and I know that a moment ago I was editing another file, instead of making a mental effort to remember the file's name, opening the buffer list, reading it and selecting the corrent one I just cycle to the previous buffer. Maybe it will not be the buffer right before the current one, but I will just keep cycling back by 1-4 buffers and once I see it I just stop.
@@ -59,7 +59,7 @@ Keybinding | Evil state    | Command              | Description
 `<, 3>`    | normal/motion | split-window-right   | Like Vim's vertical split
 `<, 0>`    | normal/motion | delete-window        | Deletes the current window
 
-### Miscellaneous
+#### Miscellaneous
 
 Keybinding      | Evil state    | Command              | Description
 ----------------|---------------|----------------------|--------------------------------------------------
@@ -70,38 +70,38 @@ Keybinding      | Evil state    | Command              | Description
 `<, f>`         | normal        | ido-find-file        | Uses ido to open a file
 `<, d>`         | normal        | ido-dired            | Uses ido to open a directory
 
-## Keybindings that are in use when some mode is on
+### Keybindings that are in use when some mode is on
 
-### Ido
+#### Ido
 
 Keybinding | Command        | Description
 -----------|----------------|------------------
 `<SPC>`    | ido-next-match | Cycles to the next choice. Normally I use ido to choose a function or a file. Functions in Emacs they never have a space in their name. When I look at my files I do not put spaces in the names of my files neither. So hitting `<SPC>` is much faster then hitting `<C-n>` which is the default binding for `ido-next-match`.
-`<C-SPC>`  | ido-prev-match | Cyccles to prev choice. Rational behind this as described for `ido-next-match`.
+`<C-SPC>`  | ido-prev-match | Cycles to prev choice. Rational behind this as described for `ido-next-match`.
 
-#### Notes
+##### Notes
 
 * hit `<C-d>` when running `ido-find-file` to drop down to the current directory in dired (the directory editor of Emacs).
-* there's packages called [ido-vertical-mode](https://github.com/gempesaw/ido-vertical-mode.el) which changes orientation of ido from a horizontal to vertical
+* there's packages called [ido-vertical-mode](https://github.com/gempesaw/ido-vertical-mode.el) which changes orientation of ido from a horizontal to a vertical one.
 
-# Todos
+## Todos
 
 * integrate Evil with magit better
 
-# Useful links for newbies
+## Useful links for newbies
 
-## Emacs in general
+### Emacs in general
 
 * [Mastering Emacs blog](http://www.masteringemacs.org/)
 * [Emacs introduction](http://tuhdo.github.io/)
 * [Emacs screencasts](http://emacsrocks.com/)
 * [Emacs prelude](http://batsov.com/prelude/)
 
-## Emacs setup for Ruby on Rails
+### Emacs setup for Ruby on Rails
 
 * [Setup with projectile-rails package](http://lorefnon.me/2014/02/02/configuring-emacs-for-rails.html)
 * [Setup with plain projectile package](http://crypt.codemancers.com/posts/2013-09-26-setting-up-emacs-as-development-environment-on-osx/)
 
-# Help
+## Help
 
 Feel free to use [Issues](https://github.com/asok/.emacs.d/issues) to ask me a question.
