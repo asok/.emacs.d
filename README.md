@@ -15,10 +15,10 @@ File or directory       | Description
 ------------------------|------------------------------------------------------------------------------------------
 init.el                 | This file is loaded by Emacs when it starts up. It holds customization of Emacs and the packages that are shipped with it. This file also loads `bindings.el`, `packages.el`, `theming.el`.
 bindings.el             | File that mainly holds keybindings to the Emacs' global map and some commands written by me or found in the depths of the Internet.
-packages.el             | Sets up the packages. It sets [melpa](http://melpa.org/#/) as the package's archive. It lists the packages used by me. Loads the init files of each package in the `inits` directory. Also it looks up in the `site-lisp/` for packages and loads them. The idea is that if I do not want to install a package from melpa I just clone it to `site-lisp/`. There I can change something in the package or develop my own.
+packages.el             | Sets up the packages. It sets [melpa](http://melpa.org/#/) as the package's archive. It lists the packages used by me. Loads the init files of each package in the `inits` directory. Also it looks up in the `site-lisp/` for packages and loads them.
 theming.el              | Small file that sets up a theme.
 inits/                  | A directory where the customization of the packages takes place. Files from this directory are loaded from `packages.el` file.
-site-lisp/              | Manually installed packages go here. Files from this directory are loaded from `packages.el` file.
+site-lisp/              | Manually installed packages go here. Files from this directory are loaded from `packages.el` file. The idea is that if I do not want to install a package from melpa I just clone it to `site-lisp/`. There I can change something in the package or develop my own.
 snippets/               | Snippets for [yasnippet](https://github.com/capitaomorte/yasnippet)
 
 ## Keybindings
