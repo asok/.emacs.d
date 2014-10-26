@@ -15,7 +15,7 @@
       ;;global-auto-revert-non-file-buffers t
       ns-right-alternate-modifier nil
       comint-process-echoes t
-      browse-url-browser-function 'eww-browse-url
+      browse-url-browser-function 'browse-url-default-browser
       split-height-threshold 100
       css-indent-offset 2
       ;; split-width-threshold 100

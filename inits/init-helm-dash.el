@@ -8,3 +8,5 @@
 																				 (setq-local helm-dash-docsets '("Redis" "Ruby on Rails" "Ruby" "jQuery"))))
 
 (evil-define-key 'normal global-map (kbd "M-SPC") 'helm-dash-at-point)
+
+(setq helm-dash-browser-func 'eww-browse-url)
