@@ -69,6 +69,8 @@ Keybinding      | Evil state    | Command              | Description
 `<C-backspace>` | insert/normal | backward-kill-word   | Instead of deleting 1 character before the point it deletes whole word. 3rd item in the [Steve Yegge's tips](https://sites.google.com/site/steveyegge2/effective-emacs)
 `<, f>`         | normal        | ido-find-file        | Uses ido to open a file
 `<, d>`         | normal        | ido-dired            | Uses ido to open a directory
+`<, a>`         | normal        | ag-project           | Runs (ag)[https://github.com/Wilfred/ag.el] in the current project
+`<, w>`         | normal        | ag                   | Runs (ag)[https://github.com/Wilfred/ag.el] in the specified directory
 
 ### Keybindings that are in use when some mode is on
 
