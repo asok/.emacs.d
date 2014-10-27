@@ -2,7 +2,7 @@
 (require 'cl)
 
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+             '("melpa" . "http://melpa.org/packages/") t)
 
 (defvar asok/packages
   '(evil
@@ -29,6 +29,7 @@
     helm
     ido-ubiquitous
     flx-ido
+    ido-vertical-mode
     rainbow-mode
     rainbow-delimiters
     smex
@@ -58,6 +59,7 @@
     discover
     cider
     cljsbuild-mode
+    aggressive-indent
     whitespace-cleanup-mode
     web-beautify
     wgrep
