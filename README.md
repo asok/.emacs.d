@@ -54,10 +54,10 @@ Keybinding | Evil state    | Command              | Description
 `<s-k>`    | *any*         | windmove-up          | Puts the cursor in the window above the current one
 `<s-l>`    | *any*         | windmove-right       | Puts the cursor in the window to the rigth of the current one
 `<s-h>`    | *any*         | windmove-left        | Puts the cursor in the window to the left of the current one
-`<SPC 1>`    | normal/motion | delete-other-windows | Closes all windows except for the current one
-`<SPC 2>`    | normal/motion | split-window-below   | Like Vim's horizontal split
-`<SPC 3>`    | normal/motion | split-window-right   | Like Vim's vertical split
-`<SPC 0>`    | normal/motion | delete-window        | Deletes the current window
+`<, 1>`    | normal/motion | delete-other-windows | Closes all windows except for the current one
+`<, 2>`    | normal/motion | split-window-below   | Like Vim's horizontal split
+`<, 3>`    | normal/motion | split-window-right   | Like Vim's vertical split
+`<, 0>`    | normal/motion | delete-window        | Deletes the current window
 
 #### Miscellaneous
 
@@ -67,10 +67,10 @@ Keybinding      | Evil state    | Command              | Description
 `<s-s>`         | *any*         | save-buffer          | Saves the buffer to the file
 `kj`            | insert        | cofi/maybe-exit      | When you press "k" and immediately after that "j" it will go back to the normal-state
 `<C-backspace>` | insert/normal | backward-kill-word   | Instead of deleting 1 character before the point it deletes whole word. 3rd item in the [Steve Yegge's tips](https://sites.google.com/site/steveyegge2/effective-emacs)
-`<SPC f>`         | normal        | ido-find-file        | Uses ido to open a file
-`<SPC d>`         | normal        | ido-dired            | Uses ido to open a directory
-`<SPC a>`         | normal        | ag-project           | Runs (ag)[https://github.com/Wilfred/ag.el] in the current project
-`<SPC w>`         | normal        | ag                   | Runs (ag)[https://github.com/Wilfred/ag.el] in the specified directory
+`<, f>`         | normal        | ido-find-file        | Uses ido to open a file
+`<, d>`         | normal        | ido-dired            | Uses ido to open a directory
+`<, a>`         | normal        | ag-project           | Runs (ag)[https://github.com/Wilfred/ag.el] in the current project
+`<, w>`         | normal        | ag                   | Runs (ag)[https://github.com/Wilfred/ag.el] in the specified directory
 
 ### Keybindings that are in use when some mode is on
 

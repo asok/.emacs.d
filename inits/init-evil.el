@@ -1,9 +1,6 @@
 (require 'evil)
 (evil-mode 1)
 
-(defun asok/leader-kbd (key)
-  (kbd (format "<SPC> %s" key)))
-
 (defun match-paren (arg)
   "Go to the matching paren if on a paren."
   (interactive "p")
@@ -31,27 +28,26 @@
         do (evil-define-key state global-map ,@bindings)))
 
 (asok/evil-define-key-when-global-map '(normal motion)
-                                      (asok/leader-kbd "0") 'delete-window
-                                      (asok/leader-kbd "1") 'delete-other-windows
-                                      (asok/leader-kbd "2") 'split-window-below
-                                      (asok/leader-kbd "3") 'split-window-right
-                                      (asok/leader-kbd "x") 'smex
-                                      (asok/leader-kbd "k") 'helm-show-kill-ring
-                                      (asok/leader-kbd "b") 'helm-bookmarks
-                                      (asok/leader-kbd "f") 'ido-find-file
-                                      (asok/leader-kbd "s") 'save-buffer
-                                      (asok/leader-kbd "d") 'ido-dired
-                                      (asok/leader-kbd "g") 'google-query
-                                      (asok/leader-kbd "c") 'magit-status
-                                      (asok/leader-kbd "C-c") 'magit-checkout
-                                      (asok/leader-kbd "o") 'asok/helm-occur)
+  (kbd ", 0") 'delete-window
+  (kbd ", 1") 'delete-other-windows
+  (kbd ", 2") 'split-window-below
+  (kbd ", 3") 'split-window-right
+  (kbd ", x") 'smex
+  (kbd ", k") 'helm-show-kill-ring
+  (kbd ", b") 'helm-bookmarks
+  (kbd ", f") 'ido-find-file
+  (kbd ", d") 'ido-dired
+  (kbd ", g") 'google-query
+  (kbd ", c") 'magit-status
+  (kbd ", C-c") 'magit-checkout
+  (kbd ", o") 'asok/helm-occur)
 
-(evil-define-key 'visual global-map (asok/leader-kbd "g") 'google-query)
+(evil-define-key 'visual global-map (kbd ", g") 'google-query)
 
 (evil-define-key 'emacs global-map
-  (asok/leader-kbd "f") 'ido-find-file
-  (asok/leader-kbd "C-c") 'magit-checkout
-  (asok/leader-kbd "d") 'ido-dired)
+  (kbd ", f") 'ido-find-file
+  (kbd ", C-c") 'magit-checkout
+  (kbd ", d") 'ido-dired)
 
 (add-hook 'compilation-mode-hook '(lambda ()
                                     (local-unset-key "g")
@@ -59,7 +55,7 @@
                                     (evil-define-key 'motion compilation-mode-map "r" 'recompile)
                                     (evil-define-key 'motion compilation-mode-map "h" 'evil-backward-char)))
 
-(evil-define-key 'normal dired-mode-map (asok/leader-kbd "k") 'dired-up-directory)
+(evil-define-key 'normal dired-mode-map (kbd ", k") 'dired-up-directory)
 
 (evil-define-key 'motion help-mode-map
   (kbd "<left>") 'help-go-back
@@ -99,7 +95,7 @@
 
 (evil-define-key 'normal emacs-lisp-mode-map (kbd "RET") 'elisp-slime-nav-find-elisp-thing-at-point)
 
-(evil-define-key 'normal emacs-lisp-mode-map (asok/leader-kbd "e") 'eval-expression)
+(evil-define-key 'normal emacs-lisp-mode-map (kbd ", e") 'eval-expression)
 
 (require 'evil-integration)
 
@@ -110,42 +106,25 @@
     (sgml-skip-tag-forward 1)))
 (evil-define-key 'normal html-mode-map (kbd "%") 'asok/sgml-skip-tag-forward-or-backward)
 
+
 (add-to-list 'evil-emacs-state-modes 'makey-key-mode)
 
-(evil-define-command asok/open-below-within-sexp ()
-  :repeat t
-  (interactive)
-  (forward-sexp 1)
-  (indent-new-comment-line)
-  (evil-insert-state))
-
-(evil-define-command asok/change-sexp ()
-  :repeat t
-  (interactive)
-  (paredit-kill)
-  (evil-insert-state))
-
-(evil-define-key 'normal paredit-mode-map
-  (asok/leader-kbd "9") '(lambda ()
-                 (interactive)
-                 (paredit-wrap-round)
-                 (evil-insert 1))
-  (asok/leader-kbd "[") '(lambda ()
-                 (interactive)
-                 (paredit-wrap-square)
-                 (evil-insert 1))
-  (asok/leader-kbd "{") '(lambda ()
-                 (interactive)
-                 (paredit-wrap-curly)
-                 (evil-insert 1))
-  (asok/leader-kbd "<right>") 'paredit-forward-slurp-sexp
-  (asok/leader-kbd "<left>") 'paredit-backward-slurp-sexp
-  (asok/leader-kbd "<up>") 'paredit-forward-barf-sexp
-  (asok/leader-kbd "<down>") 'paredit-backward-barf-sexp
-
-  (kbd "M-o") 'asok/open-below-within-sexp
-  (kbd "M-c") 'asok/change-sexp
-  )
+(evil-define-key 'normal paredit-mode-map (kbd ", 9") '(lambda ()
+                                                         (interactive)
+                                                         (paredit-wrap-round)
+                                                         (evil-insert 1)))
+(evil-define-key 'normal paredit-mode-map (kbd ", [") '(lambda ()
+                                                         (interactive)
+                                                         (paredit-wrap-square)
+                                                         (evil-insert 1)))
+(evil-define-key 'normal paredit-mode-map (kbd ", {") '(lambda ()
+                                                         (interactive)
+                                                         (paredit-wrap-curly)
+                                                         (evil-insert 1)))
+(evil-define-key 'normal paredit-mode-map (kbd ", <right>") 'paredit-forward-slurp-sexp)
+(evil-define-key 'normal paredit-mode-map (kbd ", <left>") 'paredit-backward-slurp-sexp)
+(evil-define-key 'normal paredit-mode-map (kbd ", <up>") 'paredit-forward-barf-sexp)
+(evil-define-key 'normal paredit-mode-map (kbd ", <down>") 'paredit-backward-barf-sexp)
 
 (add-to-list 'evil-motion-state-modes 'package-menu-mode 'occur-mode)
 
