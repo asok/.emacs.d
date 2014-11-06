@@ -8,6 +8,7 @@
   '(evil
     surround
     evil-indent-textobject
+    evil-matchit
     diminish
     haml-mode
     markdown-mode
@@ -18,7 +19,7 @@
     ace-jump-mode
     ack-and-a-half
     magit
-    ;readline-complete
+                                        ;readline-complete
     rspec-mode
     robe
     slim-mode
