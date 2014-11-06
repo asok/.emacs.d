@@ -21,9 +21,9 @@
     (disable-shortcuts)
     (init . (lambda ()
               (helm-init-candidates-in-buffer
-               'local
-               (append (directory-files "~/.emacs.d/" t "\\.el$")
-                  (directory-files "~/.emacs.d/inits/" t "\\.el$")))))
+                  'local
+                (append (directory-files "~/.emacs.d/" t "\\.el$")
+                        (directory-files "~/.emacs.d/inits/" t "\\.el$")))))
     (candidates-in-buffer)
     (help-message . helm-generic-file-help-message)
     (mode-line . helm-generic-file-mode-line-string)))
