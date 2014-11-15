@@ -119,32 +119,50 @@
   (indent-new-comment-line)
   (evil-insert-state))
 
-(evil-define-command asok/change-sexp ()
+(defun asok/at-comment-p ()
+  (let ((face (face-at-point t)))
+    (or
+     (eq face 'font-lock-comment-delimiter-face)
+     (eq face 'font-lock-comment-face))))
+
+(evil-define-command asok/paredit-change-line ()
   :repeat t
   (interactive)
-  (paredit-kill)
-  (evil-insert-state))
+  (if (asok/at-comment-p) 
+      (call-interactively 'evil-change-line)
+    (paredit-kill)
+    (evil-insert-state)))
+
+(evil-define-command asok/paredit-delete-line ()
+  :repeat t
+  (interactive)
+  (if (asok/at-comment-p) 
+      (call-interactively 'evil-delete-line)
+    (paredit-kill)))
 
 (evil-define-key 'normal paredit-mode-map
   (asok/leader-kbd "9") '(lambda ()
-                 (interactive)
-                 (paredit-wrap-round)
-                 (evil-insert 1))
+                           (interactive)
+                           (paredit-wrap-round)
+                           (evil-insert 1))
   (asok/leader-kbd "[") '(lambda ()
-                 (interactive)
-                 (paredit-wrap-square)
-                 (evil-insert 1))
+                           (interactive)
+                           (paredit-wrap-square)
+                           (evil-insert 1))
   (asok/leader-kbd "{") '(lambda ()
-                 (interactive)
-                 (paredit-wrap-curly)
-                 (evil-insert 1))
+                           (interactive)
+                           (paredit-wrap-curly)
+                           (evil-insert 1))
   (asok/leader-kbd "<right>") 'paredit-forward-slurp-sexp
   (asok/leader-kbd "<left>") 'paredit-backward-slurp-sexp
   (asok/leader-kbd "<up>") 'paredit-forward-barf-sexp
   (asok/leader-kbd "<down>") 'paredit-backward-barf-sexp
 
   (kbd "M-o") 'asok/open-below-within-sexp
-  (kbd "M-c") 'asok/change-sexp
+  (kbd "C") 'asok/paredit-change-line
+  (kbd "D") 'asok/paredit-delete-line
+
+  
   )
 
 (add-to-list 'evil-motion-state-modes 'package-menu-mode 'occur-mode)
