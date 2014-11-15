@@ -3,5 +3,5 @@
 # key: omis
 # --
 om/IInitState
-(init-state []
+(init-state [_]
   {$1})
