@@ -20,6 +20,7 @@ theming.el              | Small file that sets up a theme.
 inits/                  | A directory where the customization of the packages takes place. Files from this directory are loaded from `packages.el` file.
 site-lisp/              | Manually installed packages go here. Files from this directory are loaded from `packages.el` file. The idea is that if I do not want to install a package from melpa I just clone it to `site-lisp/`. There I can change something in the package or develop my own.
 snippets/               | Snippets for [yasnippet](https://github.com/capitaomorte/yasnippet)
+themes/                 | Custom themes that are just plain el files and need to be loaded manually from `theming.el` file
 
 ## Keybindings
 
