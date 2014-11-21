@@ -6,11 +6,11 @@
     (recompile)))
 
 (evil-define-key 'normal rspec-verifiable-mode-map
-  (kbd ", p") 'rspec-toggle-example-pendingness
-  (kbd ", s") 'rspec-verify-single
-  (kbd ", v") 'rspec-verify
-  (kbd ", t") 'rspec-toggle-spec-and-target
-  (kbd ", r") 'asok/rspec-recompile)
+  (asok/leader-kbd "p") 'rspec-toggle-example-pendingness
+  (asok/leader-kbd "s") 'rspec-verify-single
+  (asok/leader-kbd "v") 'rspec-verify
+  (asok/leader-kbd "t") 'rspec-toggle-spec-and-target
+  (asok/leader-kbd "r") 'asok/rspec-recompile)
 
 (add-hook 'enh-ruby-mode-hook 'rspec-verifiable-mode)
 (add-hook 'ruby-mode-hook 'rspec-verifiable-mode)
