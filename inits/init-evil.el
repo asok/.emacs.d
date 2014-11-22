@@ -168,3 +168,5 @@
 (add-to-list 'evil-motion-state-modes 'package-menu-mode 'occur-mode)
 
 (evil-define-key 'motion occur-mode-map (kbd "RET") 'occur-mode-goto-occurrence)
+
+(evil-define-key 'insert global-map (kbd "RET") #'newline-and-indent)
