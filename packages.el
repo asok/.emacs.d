@@ -21,7 +21,6 @@
     magit
                                         ;readline-complete
     rspec-mode
-    robe
     slim-mode
     dash
     elisp-slime-nav
@@ -43,8 +42,9 @@
     zenburn-theme
     ample-theme
     grizzl
-    auto-complete
-    ;; company
+    ;; auto-complete
+    company
+    robe
     helm-ag
     js2-mode
     ag

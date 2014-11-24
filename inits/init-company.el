@@ -2,7 +2,10 @@
 (add-hook 'after-init-hook 'global-company-mode)
 (setq company-idle-delay .2)
 
-(define-key company-active-map (kbd "C-n") 'company-select-next)
-(define-key company-active-map (kbd "C-p") 'company-select-previous)
-;; (defadvice company-select-next (after asok/company-selecr-next-and-insert activate)
-;;     (company--insert-candidate (nth company-selection company-candidates)))
+(setq company-auto-complete t)
+
+(define-key evil-insert-state-map "\C-n" nil)
+(evil-define-key 'insert company-mode-map (kbd "C-n") 'company-complete)
+
+(define-key company-active-map (kbd "C-n") #'company-select-next)
+(define-key company-active-map (kbd "C-p") #'company-select-previous)
