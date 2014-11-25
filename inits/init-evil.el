@@ -170,3 +170,5 @@
 (evil-define-key 'motion occur-mode-map (kbd "RET") 'occur-mode-goto-occurrence)
 
 (evil-define-key 'insert global-map (kbd "RET") #'newline-and-indent)
+(evil-define-key 'insert comint-mode-map (kbd "RET") #'comint-send-input)
+(evil-define-key 'insert inf-ruby-mode-map (kbd "RET") #'comint-send-input)
