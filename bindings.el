@@ -83,8 +83,6 @@ or start a new one while killing a defunt one"
 
 (global-set-key (kbd "C-x C-k") 'delete-current-buffer-file)
 
-(define-key emacs-lisp-mode-map (kbd "RET") 'newline-and-indent)
-
 (defun asok/org-notes ()
   (interactive)
   (switch-to-buffer
