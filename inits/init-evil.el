@@ -4,17 +4,11 @@
 (defun asok/leader-kbd (key)
   (kbd (format "<SPC> %s" key)))
 
-(defun match-paren (arg)
-  "Go to the matching paren if on a paren."
-  (interactive "p")
-  (cond ((looking-at "\\s\(") (forward-list 1) (backward-char 1))
-        ((looking-at "\\s\)") (forward-char 1) (backward-list 1))))
-
 (defun comint-goto-end-and-insert ()
   (interactive)
   (if (not (comint-after-pmark-p))
       (progn (comint-goto-process-mark)
-       (evil-append-line nil))
+             (evil-append-line nil))
     (evil-insert 1)))
 
 (evil-define-key 'normal comint-mode-map "i" 'comint-goto-end-and-insert)
@@ -28,7 +22,7 @@
 
 (defmacro asok/evil-define-key-when-global-map (states &rest bindings)
   `(loop for state in ,states
-        do (evil-define-key state global-map ,@bindings)))
+         do (evil-define-key state global-map ,@bindings)))
 
 (asok/evil-define-key-when-global-map '(normal motion)
                                       (asok/leader-kbd "0") 'delete-window
