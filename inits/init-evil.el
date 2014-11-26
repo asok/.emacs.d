@@ -158,7 +158,8 @@
 
 (add-to-list 'evil-motion-state-modes 'package-menu-mode 'occur-mode)
 
-(evil-define-key 'insert global-map (kbd "RET") 'comint-send-input)
+(evil-define-key 'insert global-map          (kbd "RET") #'newline-and-indent)
+(evil-define-key 'insert comint-mode-map     (kbd "RET") #'comint-send-input)
 (evil-define-key 'insert cider-repl-mode-map (kbd "RET") #'cider-repl-return)
 
 (evil-define-key 'motion occur-mode-map (kbd "RET") 'occur-mode-goto-occurrence)
