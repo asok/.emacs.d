@@ -1,9 +1,6 @@
 (require 'evil)
 (evil-mode 1)
 
-(defun asok/leader-kbd (key)
-  (kbd (format "<SPC> %s" key)))
-
 (defun comint-goto-end-and-insert ()
   (interactive)
   (if (not (comint-after-pmark-p))

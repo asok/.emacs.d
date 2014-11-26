@@ -92,3 +92,6 @@ or start a new one while killing a defunt one"
   (org-mode)
   (insert (concat "* " (format-time-string "%d-%m-%Y @ %H:%M") "\n** "))
   (evil-insert-state))
+
+(defun asok/leader-kbd (key)
+  (kbd (format "<SPC> %s" key)))
