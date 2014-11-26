@@ -5,12 +5,12 @@
      (diminish 'flycheck-mode " Φ")
      (add-hook 'web-mode-hook '(lambda () (flycheck-mode -1)))
      (add-hook 'js-mode-hook '(lambda ()
-				(when (and
-				       (buffer-file-name)
-				       (string-match-p "\\.js\\.+$" (buffer-file-name)))
-				  (flycheck-mode -1))))
-     (when (file-exists-p "~/.rubocop.yml")
-       (setq flycheck-rubocoprc "~/.rubocop.yml"))
+                                (when (and
+                                       (buffer-file-name)
+                                       (string-match-p "\\.js\\.+$" (buffer-file-name)))
+                                  (flycheck-mode -1))))
+     ;; (when (file-exists-p "~/.rubocop.yml")
+     ;;   (setq flycheck-rubocoprc "~/.rubocop.yml"))
      (setq flycheck-highlighting-mode 'lines)
      (setq flycheck-idle-change-delay 1)
      (setq flycheck-checkers (delq 'emacs-lisp-checkdoc flycheck-checkers))))
