@@ -62,6 +62,7 @@
     cljsbuild-mode
     aggressive-indent
     whitespace-cleanup-mode
+    highlight-indentation
     web-beautify
     wgrep
     wgrep-ag)
