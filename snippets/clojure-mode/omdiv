@@ -2,5 +2,5 @@
 # name: omdiv
 # key: omdiv
 # --
-(dom/div ${1:#js \{\}}
-  $2)
+(dom/div ${1:#js \{${2::className "$3"}\}}
+  $0)
