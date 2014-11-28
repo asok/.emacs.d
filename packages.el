@@ -63,6 +63,7 @@
     aggressive-indent
     whitespace-cleanup-mode
     highlight-indentation
+    lorem-ipsum
     web-beautify
     wgrep
     wgrep-ag)
