@@ -1,3 +1,5 @@
+(require 'magit)
+
 (evil-add-hjkl-bindings magit-branch-manager-mode-map 'emacs
   (kbd "C-f") 'evil-scroll-page-down
   (kbd "C-b") 'evil-scroll-page-up
@@ -28,3 +30,5 @@
   (asok/leader-kbd "1") 'delete-other-windows
   (asok/leader-kbd "0") 'delete-window
   )
+
+(require 'magit-blame)
