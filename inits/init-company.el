@@ -1,8 +1,8 @@
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
-(setq company-idle-delay .2)
 
-(setq company-auto-complete t)
+(setq company-idle-delay nil
+      company-auto-complete nil)
 
 (define-key evil-insert-state-map "\C-n" nil)
 (evil-define-key 'insert company-mode-map (kbd "C-n") 'company-complete)
