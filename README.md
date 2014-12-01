@@ -62,16 +62,20 @@ Keybinding | Evil state    | Command              | Description
 
 #### Miscellaneous
 
-Keybinding      | Evil state    | Command              | Description
-----------------|---------------|----------------------|--------------------------------------------------
-`<s-a>`         | *any*         | asok/helm-mini       | Normal helm-mini command (opened buffers and recently visited files) + shows files in the current project and in the `~/.emacs.d/` directory
-`<s-s>`         | *any*         | save-buffer          | Saves the buffer to the file
-`kj`            | insert        | cofi/maybe-exit      | When you press "k" and immediately after that "j" it will go back to the normal-state
-`<C-backspace>` | insert/normal | backward-kill-word   | Instead of deleting 1 character before the point it deletes whole word. 3rd item in the [Steve Yegge's tips](https://sites.google.com/site/steveyegge2/effective-emacs)
-`<SPC f>`         | normal        | ido-find-file        | Uses ido to open a file
-`<SPC d>`         | normal        | ido-dired            | Uses ido to open a directory
-`<SPC a>`         | normal        | ag-project           | Runs (ag)[https://github.com/Wilfred/ag.el] in the current project
-`<SPC w>`         | normal        | ag                   | Runs (ag)[https://github.com/Wilfred/ag.el] in the specified directory
+Keybinding      | Evil state    | Command                 | Description
+----------------|---------------|-------------------------|--------------------------------------------------
+`<s-a>`         | *any*         | asok/helm-mini          | Normal helm-mini command (opened buffers and recently visited files) + shows files in the current project and in the `~/.emacs.d/` directory
+`<s-s>`         | *any*         | save-buffer             | Saves the buffer to the file
+`kj`            | insert        | cofi/maybe-exit         | When you press "k" and immediately after that "j" it will go back to the normal-state
+`<C-backspace>` | insert/normal | backward-kill-word      | Instead of deleting 1 character before the point it deletes whole word. 3rd item in the [Steve Yegge's tips](https://sites.google.com/site/steveyegge2/effective-emacs)
+`<SPC f>`       | normal        | ido-find-file           | Uses ido to open a file
+`<SPC d>`       | normal        | ido-dired               | Uses ido to open a directory
+`<SPC a>`       | normal        | ag-project              | Runs (ag)[https://github.com/Wilfred/ag.el] in the current project
+`<SPC w>`       | normal        | ag                      | Runs (ag)[https://github.com/Wilfred/ag.el] in the specified directory
+`<SPC k>`       | normal        | helm-show-kill-ring     | Shows kill ring using the helm interface
+`<SPC c>`       | normal        | magit-status            | Shows git status using magit
+`<SPC SPC>`     | normal        | evil-ace-jump-word-mode | Runs (ace-jump)[https://github.com/winterTTr/ace-jump-mode] on words
+`<SPC C-SPC>`   | normal        | evil-ace-jump-char-mode | Runs (ace-jump)[https://github.com/winterTTr/ace-jump-mode] on chars
 
 ### Keybindings that are in use when some mode is on
 
