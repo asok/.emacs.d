@@ -32,7 +32,7 @@
                                       (asok/leader-kbd "f") 'ido-find-file
                                       (asok/leader-kbd "s") 'save-buffer
                                       (asok/leader-kbd "d") 'ido-dired
-                                      (asok/leader-kbd "h") 'google-query
+                                      (asok/leader-kbd "h") asok/highlight-map
                                       (asok/leader-kbd "c") 'magit-status
                                       (asok/leader-kbd "C-c") 'magit-checkout
                                       (asok/leader-kbd "o") 'asok/helm-occur)

@@ -93,3 +93,9 @@ or start a new one while killing a defunt one"
 
 (defun asok/leader-kbd (key)
   (kbd (format "<SPC> %s" key)))
+
+(defvar asok/highlight-map
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "s") 'highlight-symbol-at-point)
+    (define-key map (kbd "h") 'hi-lock-mode)
+    map))
