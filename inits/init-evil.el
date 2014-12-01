@@ -67,7 +67,8 @@
       (read-string "Google: " (concat (thing-at-point 'symbol) " "))))))
 
 ;; (setq evil-want-fine-undo t)
-(setq evil-default-cursor t)
+(setq evil-default-cursor t
+      evil-regexp-search t)
 
 (define-key evil-insert-state-map "k" #'cofi/maybe-exit)
 
@@ -77,15 +78,15 @@
   (let ((modified (buffer-modified-p)))
     (insert "k")
     (let ((evt (read-event (format "Insert %c to exit insert state" ?j)
-			   nil 0.5)))
+                           nil 0.5)))
       (cond
        ((null evt) (message ""))
        ((and (integerp evt) (char-equal evt ?j))
-	(delete-char -1)
-	(set-buffer-modified-p modified)
-	(push 'escape unread-command-events))
+        (delete-char -1)
+        (set-buffer-modified-p modified)
+        (push 'escape unread-command-events))
        (t (setq unread-command-events (append unread-command-events
-					      (list evt))))))))
+                                              (list evt))))))))
 
 
 (evil-define-key 'normal emacs-lisp-mode-map (kbd "RET") 'elisp-slime-nav-find-elisp-thing-at-point)
