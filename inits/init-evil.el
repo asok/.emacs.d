@@ -29,6 +29,7 @@
                                       (asok/leader-kbd "x") 'smex
                                       (asok/leader-kbd "k") 'helm-show-kill-ring
                                       (asok/leader-kbd "b") 'helm-bookmarks
+                                      (asok/leader-kbd "g") 'google-query
                                       (asok/leader-kbd "f") 'ido-find-file
                                       (asok/leader-kbd "s") 'save-buffer
                                       (asok/leader-kbd "d") 'ido-dired
