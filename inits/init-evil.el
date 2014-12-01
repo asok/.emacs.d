@@ -90,7 +90,7 @@
 
 (evil-define-key 'normal emacs-lisp-mode-map (kbd "RET") 'elisp-slime-nav-find-elisp-thing-at-point)
 
-(evil-define-key 'normal emacs-lisp-mode-map (asok/leader-kbd "e") 'eval-expression)
+(evil-define-key 'normal global-map (asok/leader-kbd "e") 'eval-expression)
 
 (require 'evil-integration)
 
