@@ -107,7 +107,7 @@
 (evil-define-command asok/open-below-within-sexp ()
   :repeat t
   (interactive)
-  (forward-sexp 1)
+  (end-of-line)
   (indent-new-comment-line)
   (evil-insert-state))
 
