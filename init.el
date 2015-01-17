@@ -59,9 +59,6 @@
 (add-hook 'after-save-hook
           'executable-make-buffer-file-executable-if-script-p)
 
-(add-hook 'clojure-mode-hook 'paredit-mode)
-(add-hook 'emacs-lisp-mode-hook 'paredit-mode)
-
 (add-hook 'dired-mode-hook 'auto-revert-mode)
 
 (load "~/.emacs.d/bindings")

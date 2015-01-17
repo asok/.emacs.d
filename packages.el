@@ -5,8 +5,9 @@
              '("melpa" . "http://melpa.org/packages/") t)
 
 (defvar asok/packages
-  '(evil
-    surround
+  '(paredit
+    evil
+    evil-surround
     evil-indent-textobject
     evil-matchit
     diminish
@@ -17,9 +18,8 @@
     ;; mmm-mode
     rbenv
     ace-jump-mode
-    ack-and-a-half
     magit
-                                        ;readline-complete
+    ;readline-complete
     rspec-mode
     slim-mode
     dash
@@ -66,7 +66,8 @@
     lorem-ipsum
     web-beautify
     wgrep
-    wgrep-ag)
+    wgrep-ag
+    sublime-themes)
   "List of packages installed via package.el")
 
 (defun asok/install-packages ()
