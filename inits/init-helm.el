@@ -31,10 +31,7 @@
 (defun asok/helm-mini ()
   "Same as `helm-mini' but with extra source for config files"
   (interactive)
-  (helm-other-buffer (append '(helm-source-buffers-list
-                               helm-source-recentf
-                               helm-source-asok-config-files)
-                             (when (projectile-project-p)
-                               '(helm-source-projectile-files-list))
-                             '(helm-source-projectile-projects))
+  (helm-other-buffer '(helm-source-buffers-list
+                       helm-source-recentf
+                       helm-source-asok-config-files)
                      "*helm mini*"))
