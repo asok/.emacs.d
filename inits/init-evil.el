@@ -21,7 +21,7 @@
   `(loop for state in ,states
          do (evil-define-key state global-map ,@bindings)))
 
-(asok/evil-define-key-when-global-map '(normal motion)
+(asok/evil-define-key-when-global-map '(normal motion emacs)
                                       (asok/leader-kbd "0") 'delete-window
                                       (asok/leader-kbd "1") 'delete-other-windows
                                       (asok/leader-kbd "2") 'split-window-below
@@ -36,7 +36,8 @@
                                       (asok/leader-kbd "h") asok/highlight-map
                                       (asok/leader-kbd "c") 'magit-status
                                       (asok/leader-kbd "C-c") 'magit-checkout
-                                      (asok/leader-kbd "o") 'asok/helm-occur)
+                                      (asok/leader-kbd "o") 'asok/helm-occur
+                                      (asok/leader-kbd "j") 'switch-to-buffer)
 
 (evil-define-key 'visual global-map (asok/leader-kbd "g") 'google-query)
 
