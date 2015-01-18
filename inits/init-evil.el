@@ -105,6 +105,7 @@
 (evil-define-key 'normal html-mode-map (kbd "%") 'asok/sgml-skip-tag-forward-or-backward)
 
 (add-to-list 'evil-emacs-state-modes 'makey-key-mode)
+(add-to-list 'evil-emacs-state-modes 'prodigy-mode)
 
 (evil-define-command asok/open-below-within-sexp ()
   :repeat t

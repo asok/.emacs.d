@@ -42,6 +42,7 @@
     zenburn-theme
     ample-theme
     grizzl
+    prodigy
     ;; auto-complete
     company
     robe
