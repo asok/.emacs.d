@@ -18,6 +18,7 @@
       browse-url-browser-function 'browse-url-default-browser
       split-height-threshold 100
       css-indent-offset 2
+      js-indent-level 2
       ;; split-width-threshold 100
       )
 (setq-default indent-tabs-mode nil
