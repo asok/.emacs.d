@@ -16,10 +16,11 @@
     bundler
     yaml-mode
     ;; mmm-mode
-    rbenv
+    ;; rbenv
+    chruby
     ace-jump-mode
     magit
-    ;readline-complete
+    ;; readline-complete
     rspec-mode
     slim-mode
     dash
