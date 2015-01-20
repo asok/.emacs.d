@@ -40,25 +40,25 @@ buffer      | buffer/file
 `<C-x C-c>` | Hold down Control key and while it's down press first x and then c
 `<C-x c>`   | Hold down Control key and press x, release the Control key and press c
 
-### Custom "Global" keybindings (that are in use in 99% of the time)
+### Custom "Global" keybindings
 
 #### Emacs windows navigation
 
 Often instead of opening a buffer list and selecting a buffer to switch to I just cycle the buffers through with `<s-d>` and `<s-f>`.
 Rationale behind it is that when I edit a file and I know that a moment ago I was editing another file, instead of making a mental effort to remember the file's name, opening the buffer list, reading it and selecting the corrent one I just cycle to the previous buffer. Maybe it will not be the buffer right before the current one, but I will just keep cycling back by 1-4 buffers and once I see it I just stop.
 
-Keybinding | Evil state    | Command              | Description
------------|---------------|----------------------|--------------------------------------------------
-`<s-d>`    | *any*         | previous-buffer      | Shows the previous buffer in the current window
-`<s-f>`    | *any*         | next-buffer          | Shows the next buffer in the current window
-`<s-j>`    | *any*         | windmove-down        | Puts the cursor in the window below the current one
-`<s-k>`    | *any*         | windmove-up          | Puts the cursor in the window above the current one
-`<s-l>`    | *any*         | windmove-right       | Puts the cursor in the window to the rigth of the current one
-`<s-h>`    | *any*         | windmove-left        | Puts the cursor in the window to the left of the current one
-`<SPC 1>`    | normal/motion | delete-other-windows | Closes all windows except for the current one
-`<SPC 2>`    | normal/motion | split-window-below   | Like Vim's horizontal split
-`<SPC 3>`    | normal/motion | split-window-right   | Like Vim's vertical split
-`<SPC 0>`    | normal/motion | delete-window        | Deletes the current window
+Keybinding | Evil state          | Command              | Description
+-----------|---------------------|----------------------|--------------------------------------------------
+`<s-d>`    | *any*               | previous-buffer      | Shows the previous buffer in the current window
+`<s-f>`    | *any*               | next-buffer          | Shows the next buffer in the current window
+`<s-j>`    | *any*               | windmove-down        | Puts the cursor in the window below the current one
+`<s-k>`    | *any*               | windmove-up          | Puts the cursor in the window above the current one
+`<s-l>`    | *any*               | windmove-right       | Puts the cursor in the window to the rigth of the current one
+`<s-h>`    | *any*               | windmove-left        | Puts the cursor in the window to the left of the current one
+`<SPC 1>`  | emacs/normal/motion | delete-other-windows | Closes all windows except for the current one
+`<SPC 2>`  | emacs/normal/motion | split-window-below   | Like Vim's horizontal split
+`<SPC 3>`  | emacs/normal/motion | split-window-right   | Like Vim's vertical split
+`<SPC 0>`  | emacs/normal/motion | delete-window        | Deletes the current window
 
 #### Miscellaneous
 
@@ -68,14 +68,14 @@ Keybinding      | Evil state    | Command                 | Description
 `<s-s>`         | *any*         | save-buffer             | Saves the buffer to the file
 `kj`            | insert        | cofi/maybe-exit         | When you press "k" and immediately after that "j" it will go back to the normal-state
 `<C-backspace>` | insert/normal | backward-kill-word      | Instead of deleting 1 character before the point it deletes whole word. 3rd item in the [Steve Yegge's tips](https://sites.google.com/site/steveyegge2/effective-emacs)
-`<SPC f>`       | normal        | ido-find-file           | Uses ido to open a file
-`<SPC d>`       | normal        | ido-dired               | Uses ido to open a directory
-`<SPC a>`       | normal        | ag-project              | Runs (ag)[https://github.com/Wilfred/ag.el] in the current project
-`<SPC w>`       | normal        | ag                      | Runs (ag)[https://github.com/Wilfred/ag.el] in the specified directory
-`<SPC k>`       | normal        | helm-show-kill-ring     | Shows kill ring using the helm interface
-`<SPC c>`       | normal        | magit-status            | Shows git status using magit
-`<SPC SPC>`     | normal        | evil-ace-jump-word-mode | Runs (ace-jump)[https://github.com/winterTTr/ace-jump-mode] on words
-`<SPC C-SPC>`   | normal        | evil-ace-jump-char-mode | Runs (ace-jump)[https://github.com/winterTTr/ace-jump-mode] on chars
+`<SPC f>`       | emacs/normal  | ido-find-file           | Uses ido to open a file
+`<SPC d>`       | emacs/normal  | ido-dired               | Uses ido to open a directory
+`<SPC a>`       | emacs/normal  | ag-project              | Runs [ag](https://github.com/Wilfred/ag.el) in the current project
+`<SPC w>`       | emacs/normal  | ag                      | Runs [ag](https://github.com/Wilfred/ag.el) in the specified directory
+`<SPC k>`       | emacs/normal  | helm-show-kill-ring     | Shows kill ring using the helm interface
+`<SPC c>`       | emacs/normal  | magit-status            | Shows git status using magit
+`<SPC SPC>`     | emacs/normal  | evil-ace-jump-word-mode | Runs [ace-jump](https://github.com/winterTTr/ace-jump-mode) on words
+`<SPC C-SPC>`   | emacs/normal  | evil-ace-jump-char-mode | Runs [ace-jump](https://github.com/winterTTr/ace-jump-mode) on chars
 
 ### Keybindings that are in use when some mode is on
 
