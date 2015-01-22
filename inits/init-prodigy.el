@@ -29,4 +29,12 @@
   :tags '(macbook)
   :kill-signal 'sigkill)
 
+(prodigy-define-service
+  :name "Mongo DB"
+  :command "mongod"
+  :args '("--config" "/usr/local/etc/mongod.conf")
+  :cwd "~"
+  :tags '(macbook)
+  :kill-signal 'sigkill)
+
 (evil-add-hjkl-bindings prodigy-mode-map 'emacs)
