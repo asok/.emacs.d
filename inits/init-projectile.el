@@ -19,4 +19,4 @@
 
 (diminish 'projectile-mode " Π")
 
-(setq projectile-completion-system 'ido)
+(setq projectile-completion-system 'grizzl)
