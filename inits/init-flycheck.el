@@ -13,6 +13,5 @@
      ;;   (setq flycheck-rubocoprc "~/.rubocop.yml"))
      (setq flycheck-highlighting-mode 'lines
            flycheck-idle-change-delay 1
-           flycheck-global-modes '(not compilation-mode)
            flycheck-disabled-checkers '(ruby-rubocop emacs-lisp-checkdoc))))
 
