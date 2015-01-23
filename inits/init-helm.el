@@ -31,7 +31,11 @@
 (defun asok/helm-mini ()
   "Same as `helm-mini' but with extra source for config files"
   (interactive)
-  (helm-other-buffer '(helm-source-buffers-list
-                       helm-source-recentf
-                       helm-source-asok-config-files)
-                     "*helm mini*"))
+  (unless helm-source-buffers-list
+    (setq helm-source-buffers-list
+          (helm-make-source "Buffers" 'helm-source-buffers)))
+  (let ((helm-ff-transformer-show-only-basename nil))
+    (helm-other-buffer '(helm-source-buffers-list
+                         helm-source-recentf
+                         helm-source-asok-config-files)
+                       "*helm mini*")))
