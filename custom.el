@@ -39,7 +39,7 @@
    (quote
     ("#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3")))
  '(linum-format " %7i ")
- '(magit-use-overlays nil)
+ '(magit-use-overlays t)
  '(safe-local-variable-values
    (quote
     ((eval when
