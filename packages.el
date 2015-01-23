@@ -67,6 +67,7 @@
     highlight-indentation
     lorem-ipsum
     web-beautify
+    coffee-mode
     wgrep
     wgrep-ag
     sublime-themes)
