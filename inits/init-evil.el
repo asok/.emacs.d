@@ -36,7 +36,7 @@
                                       (asok/leader-kbd "h") asok/highlight-map
                                       (asok/leader-kbd "c") 'magit-status
                                       (asok/leader-kbd "C-c") 'magit-checkout
-                                      (asok/leader-kbd "o") 'asok/helm-occur
+                                      (asok/leader-kbd "o") 'helm-occur
                                       (asok/leader-kbd "j") 'switch-to-buffer)
 
 (evil-define-key 'visual global-map (asok/leader-kbd "g") 'google-query)

@@ -37,4 +37,21 @@
   :tags '(macbook)
   :kill-signal 'sigkill)
 
+(prodigy-define-service
+  :name "MySQL"
+  :command "mysql.server"
+  :args '("start")
+  :cwd "~"
+  :tags '(macbook)
+  :kill-signal 'sigkill)
+
+(prodigy-define-service
+  :name "Postgres"
+  :command "postgres"
+  :args '("-D" "/usr/local/var/postgres")
+  :cwd "~"
+  :tags '(macbook)
+  :kill-signal 'sigkill)
+
+
 (evil-add-hjkl-bindings prodigy-mode-map 'emacs)
