@@ -9,4 +9,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.js\\.erb\\'" . js-mode))
 
-(setq web-mode-symbol-face 'font-lock-constant-face)
+(setq web-mode-symbol-face 'font-lock-constant-face
+      web-mode-markup-indent-offset 2
+      web-mode-css-indent-offset 2
+      web-mode-code-indent-offset 2)
