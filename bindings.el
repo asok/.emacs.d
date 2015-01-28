@@ -19,20 +19,6 @@
   (define-key ido-completion-map (kbd "<SPC>") 'ido-next-match)
   (define-key ido-completion-map [?\C- ] 'ido-prev-match))
 
-;; Original idea from
-;; http://www.opensubscriber.com/message/emacs-devel@gnu.org/10971693.html
-(defun comment-dwim-line (&optional arg)
-  "Replacement for the comment-dwim command.
-        If no region is selected and current line is not blank and we are not at the end of the line,
-        then comment current line.
-        Replaces default behaviour of comment-dwim, when it inserts comment at the end of the line."
-  (interactive "*P")
-  (comment-normalize-vars)
-  (if (not (region-active-p))
-      (comment-or-uncomment-region (line-beginning-position) (line-end-position))
-    (comment-dwim arg)))
-(global-set-key (kbd "M-;") 'comment-dwim-line)
-
 (defun visit-shell ()
   "If the current buffer is:
   1) a running shell named *shell*, rename it.

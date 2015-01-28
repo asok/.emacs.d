@@ -68,6 +68,8 @@
     lorem-ipsum
     web-beautify
     coffee-mode
+    emmet-mode
+    evil-commentary
     wgrep
     wgrep-ag
     sublime-themes)
