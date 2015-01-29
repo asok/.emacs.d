@@ -87,3 +87,9 @@ or start a new one while killing a defunt one"
     (define-key map (kbd "s") 'highlight-symbol-at-point)
     (define-key map (kbd "h") 'hi-lock-mode)
     map))
+
+(defun asok/at-comment-p ()
+  (let ((face (face-at-point t)))
+    (or
+     (eq face 'font-lock-comment-delimiter-face)
+     (eq face 'font-lock-comment-face))))

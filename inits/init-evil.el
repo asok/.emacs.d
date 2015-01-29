@@ -114,12 +114,6 @@
   (indent-new-comment-line)
   (evil-insert-state))
 
-(defun asok/at-comment-p ()
-  (let ((face (face-at-point t)))
-    (or
-     (eq face 'font-lock-comment-delimiter-face)
-     (eq face 'font-lock-comment-face))))
-
 (add-to-list 'evil-motion-state-modes 'package-menu-mode 'occur-mode)
 
 (evil-define-key 'insert global-map          (kbd "RET") #'newline-and-indent)

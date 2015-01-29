@@ -5,11 +5,11 @@
              '("melpa" . "http://melpa.org/packages/") t)
 
 (defvar asok/packages
-  '(paredit
-    evil
+  '(evil
     evil-surround
     evil-indent-textobject
     evil-matchit
+    smartparens
     diminish
     haml-mode
     markdown-mode
