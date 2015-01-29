@@ -70,6 +70,7 @@
     coffee-mode
     emmet-mode
     evil-commentary
+    fullframe
     wgrep
     wgrep-ag
     sublime-themes)
