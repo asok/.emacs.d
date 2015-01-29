@@ -14,6 +14,8 @@
 (global-set-key (kbd "C-q") (lambda () (interactive) (switch-to-prev-buffer (previous-window))))
 (global-set-key (kbd "C-w") (lambda () (interactive) (switch-to-next-buffer (previous-window))))
 
+(global-set-key (kbd "C-h C-f") #'find-function)
+
 (add-hook 'ido-setup-hook 'asok/ido-keys)
 (defun asok/ido-keys ()
   (define-key ido-completion-map (kbd "<SPC>") 'ido-next-match)
