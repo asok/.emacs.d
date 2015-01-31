@@ -19,6 +19,7 @@
       split-height-threshold 100
       css-indent-offset 2
       js-indent-level 2
+      dired-hide-details-hide-symlink-targets nil
       ;; split-width-threshold 100
       )
 (setq-default indent-tabs-mode nil
@@ -60,7 +61,8 @@
 (add-hook 'after-save-hook
           'executable-make-buffer-file-executable-if-script-p)
 
-(add-hook 'dired-mode-hook 'auto-revert-mode)
+(add-hook 'dired-mode-hook #'auto-revert-mode)
+(add-hook 'dired-mode-hook #'dired-hide-details-mode)
 
 (load "~/.emacs.d/bindings")
 (load "~/.emacs.d/packages")
