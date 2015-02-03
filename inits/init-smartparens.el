@@ -1,5 +1,6 @@
 (add-hook 'clojure-mode-hook 'smartparens-mode)
 (add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
+(add-hook 'ruby-mode-hook 'smartparens-mode)
 
 (defun asok/sp-change-line ()
   (interactive)
