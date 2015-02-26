@@ -11,4 +11,4 @@
 
 (require 'solarized)
 
-(load-theme 'granger)
+(load-theme 'solarized-dark)
