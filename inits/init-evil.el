@@ -26,7 +26,6 @@
                                       (asok/leader-kbd "1") 'delete-other-windows
                                       (asok/leader-kbd "2") 'split-window-below
                                       (asok/leader-kbd "3") 'split-window-right
-                                      (asok/leader-kbd "x") 'smex
                                       (asok/leader-kbd "k") 'helm-show-kill-ring
                                       (asok/leader-kbd "b") 'helm-bookmarks
                                       (asok/leader-kbd "g") 'google-query
@@ -121,5 +120,6 @@
 (evil-define-key 'insert cider-repl-mode-map (kbd "RET") #'cider-repl-return)
 (evil-define-key 'insert org-mode-map        (kbd "RET") #'org-return)
 (evil-define-key 'insert eshell-mode-map     (kbd "RET") #'eshell-send-input)
+(evil-define-key 'insert ielm-map            (kbd "RET") #'ielm-send-input)
 
 (evil-define-key 'motion occur-mode-map (kbd "RET") 'occur-mode-goto-occurrence)
