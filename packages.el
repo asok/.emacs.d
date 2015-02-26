@@ -57,6 +57,8 @@
     lorem-ipsum
     feature-mode
     projectile
+    helm-projectile
+    less-css-mode
     helm-dash
     helm-projectile
     discover
