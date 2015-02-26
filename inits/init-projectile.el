@@ -19,4 +19,5 @@
 
 (diminish 'projectile-mode " Π")
 
-(setq projectile-completion-system 'grizzl)
+(eval-after-load 'helm
+  '(setq projectile-completion-system 'asok/helm-fuzzy-comp-read))

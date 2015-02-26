@@ -44,3 +44,11 @@
                          helm-source-recentf
                          helm-source-asok-config-files)
                        "*helm mini*")))
+
+
+(defun asok/helm-fuzzy-comp-read (prompt choices &optional initial-input)
+  (helm-comp-read prompt choices
+                  :initial-input initial-input
+                  :candidates-in-buffer t
+                  :fuzzy t
+                  :must-match 'confirm))
