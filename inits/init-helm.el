@@ -1,13 +1,18 @@
 (require 'helm-mode)
 
 (setq helm-buffer-max-length 40
-      helm-buffer-details-flag nil)
+      helm-buffer-details-flag nil
+      helm-buffers-fuzzy-matching t
+      helm-recentf-fuzzy-match t
+      helm-recentf-fuzzy-match t
+      helm-imenu-fuzzy-match t)
 
 (global-set-key (kbd "s-a") 'asok/helm-mini)
 (global-set-key (kbd "s-i") 'helm-imenu)
 (global-set-key (kbd "C-c SPC") 'helm-all-mark-rings)
 
 (evil-define-key 'normal global-map (kbd ", e") 'helm-etags-select)
+(evil-define-key 'normal global-map (asok/leader-kbd "x") 'helm-M-x)
 
 ;; (define-key helm-find-files-map (kbd "RET") 'helm-execute-persistent-action)
 
