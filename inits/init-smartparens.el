@@ -1,6 +1,11 @@
 (add-hook 'clojure-mode-hook 'smartparens-mode)
 (add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
-(add-hook 'ruby-mode-hook 'smartparens-mode)
+
+(defun asok/ruby-setup-sp ()
+  (smartparens-mode)
+  (setq-local sp-autoescape-string-quote nil))
+
+(add-hook 'ruby-mode-hook #'asok/ruby-setup-sp)
 
 (defun asok/sp-change-line ()
   (interactive)
