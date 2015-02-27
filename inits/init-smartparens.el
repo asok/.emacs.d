@@ -3,7 +3,8 @@
 
 (defun asok/ruby-setup-sp ()
   (smartparens-mode)
-  (setq-local sp-autoescape-string-quote nil))
+  (setq-local sp-autoescape-string-quote nil)
+  (setq-local sp-autoescape-string-quote-if-empty nil))
 
 (add-hook 'ruby-mode-hook #'asok/ruby-setup-sp)
 
