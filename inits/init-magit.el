@@ -27,3 +27,20 @@
   (kbd "K") 'magit-discard-item)
 
 (require 'magit-blame)
+
+(defun asok/visit-github (arg)
+  (interactive "P")
+  (unless arg
+    (setq arg '(0)))
+  (let ((url (or
+              (magit-get "remote"
+                         (if (= (car arg) 4) "upstream" "origin")
+                         "url")
+              (magit-get "remote" "origin" "url"))))
+
+    (browse-url
+     (if (s-contains? "@" url)
+         (replace-regexp-in-string "\\(.+\\)@" "https://"
+                                   (s-replace ".git" ""
+                                              (s-replace ":" "/" url))))
+     url)))
