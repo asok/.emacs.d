@@ -36,6 +36,7 @@
 (auto-fill-mode nil)
 (blink-cursor-mode -1)
 (electric-pair-mode)
+(add-hook 'ruby-mode #'electric-pair-mode) ; to disable it for ruby-mode
 
 (global-prettify-symbols-mode 1)
 
