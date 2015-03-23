@@ -88,6 +88,14 @@ or start a new one while killing a defunt one"
     (define-key map (kbd "h") 'hi-lock-mode)
     map))
 
+(defvar asok/eval-map
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "e") #'eval-expression)
+    (define-key map (kbd "d") #'eval-defun)
+    (define-key map (kbd "b") #'eval-buffer)
+    (define-key map (kbd "l") #'eval-last-sexp)
+    map))
+
 (defun asok/at-comment-p ()
   (let ((face (face-at-point t)))
     (or
