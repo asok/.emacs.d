@@ -28,6 +28,8 @@
 (push "/usr/local/bin" exec-path)
 (push "/opt/local/bin" exec-path)
 
+(setenv "LANG" "en_US.UTF-8")
+
 (set-frame-font "Inconsolata-14")
 (fset 'yes-or-no-p 'y-or-n-p)
 (set-variable 'shell-file-name "/bin/bash")
