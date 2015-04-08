@@ -9,6 +9,7 @@
     evil-surround
     evil-indent-textobject
     evil-matchit
+    string-inflection
     smartparens
     diminish
     haml-mode
