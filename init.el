@@ -30,7 +30,7 @@
 
 (setenv "LANG" "en_US.UTF-8")
 
-(set-frame-font "Inconsolata-14")
+(set-frame-font "Source code pro-14")
 (fset 'yes-or-no-p 'y-or-n-p)
 (set-variable 'shell-file-name "/bin/bash")
 (winner-mode 1)
