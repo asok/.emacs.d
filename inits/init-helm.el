@@ -5,19 +5,30 @@
       helm-buffers-fuzzy-matching t
       helm-recentf-fuzzy-match t
       helm-recentf-fuzzy-match t
+      helm-ff-skip-boring-files t
+      ;; helm-ff-directory 'font-lock-constant-face
+      helm-boring-file-regexp-list '("/\\.$" "/\\.\\.$" "\\.DS_Store$")
       helm-imenu-fuzzy-match t)
 
 (global-set-key (kbd "s-a") 'asok/helm-mini)
 (global-set-key (kbd "s-i") 'helm-imenu)
 (global-set-key (kbd "C-c SPC") 'helm-all-mark-rings)
 
-(evil-define-key 'normal global-map (kbd ", e") 'helm-etags-select)
-(evil-define-key 'normal global-map (asok/leader-kbd "x") 'helm-M-x)
+(global-set-key (kbd "M-x") 'helm-M-x)
+
+(defun asok/helm-execute-persistent-action ()
+  "Run `helm-execute-persistent-action' if a directory is selected.
+If not run `helm-maybe-exit-minibuffer'."
+  (interactive)
+  (if (file-directory-p (helm-get-selection))
+      (helm-execute-persistent-action)
+    (helm-maybe-exit-minibuffer)))
+
+(define-key helm-find-files-map (kbd "RET") 'asok/helm-execute-persistent-action)
 
 ;; (define-key helm-find-files-map (kbd "RET") 'helm-execute-persistent-action)
 
-(setq helm-ff-directory 'font-lock-constant-face)
-(set-face-attribute 'helm-ff-directory (selected-frame) :background nil)
+;; (set-face-attribute 'helm-ff-directory (selected-frame) :background nil)
 ;; (evil-define-key 'normal global-map (kbd "C-x C-f") 'helm-find-files)
 
 (defvar helm-source-asok-config-files
