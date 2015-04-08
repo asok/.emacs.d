@@ -28,7 +28,8 @@
     expand-region
     flycheck
     helm
-    ido-ubiquitous
+    helm-swoop
+    ;; ido-ubiquitous
     flx-ido
     ido-vertical-mode
     rainbow-mode
