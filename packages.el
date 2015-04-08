@@ -76,7 +76,8 @@
     fullframe
     wgrep
     wgrep-ag
-    sublime-themes)
+    skewer-mode
+    )
   "List of packages installed via package.el")
 
 (defun asok/install-packages ()
