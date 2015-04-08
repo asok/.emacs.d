@@ -53,7 +53,7 @@
     js2-mode
     ag
     scss-mode
-    web-mode
+    ;; web-mode
     jsx-mode
     ruby-refactor
     lorem-ipsum

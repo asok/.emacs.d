@@ -2,6 +2,7 @@
 
 (add-hook 'clojure-mode-hook 'smartparens-mode)
 (add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
+(add-hook 'js2-mode 'smartparens-mode)
 
 (add-to-list 'sp-autoescape-string-quote-if-empty 'ruby-mode)
 (setq sp-autoescape-string-quote nil)

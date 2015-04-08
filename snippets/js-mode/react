@@ -8,4 +8,4 @@ var $1 = React.createClass({
       $2
     )
   }
-})
+});
