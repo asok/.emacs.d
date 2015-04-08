@@ -67,6 +67,8 @@
 (add-hook 'dired-mode-hook #'auto-revert-mode)
 (add-hook 'dired-mode-hook #'dired-hide-details-mode)
 
+(add-hook 'edebug-mode-hook 'evil-emacs-state)
+
 (load "~/.emacs.d/bindings")
 (load "~/.emacs.d/packages")
 (asok/install-packages)
