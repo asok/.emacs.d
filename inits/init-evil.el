@@ -27,6 +27,7 @@
                                       (asok/leader-kbd "k") 'helm-show-kill-ring
                                       (asok/leader-kbd "b") 'helm-bookmarks
                                       (asok/leader-kbd "o") 'helm-swoop
+                                      (asok/leader-kbd "m") 'helm-all-mark-rings
                                       (asok/leader-kbd "g") 'google-query
                                       (asok/leader-kbd "f") 'helm-find-files
                                       (asok/leader-kbd "s") 'save-buffer

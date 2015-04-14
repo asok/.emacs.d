@@ -12,7 +12,7 @@
 
 (global-set-key (kbd "s-a") 'asok/helm-mini)
 (global-set-key (kbd "s-i") 'helm-imenu)
-(global-set-key (kbd "C-c SPC") 'helm-all-mark-rings)
+(global-set-key (kbd "C-c SPC") 'helm-resume)
 
 (global-set-key (kbd "M-x") 'helm-M-x)
 
