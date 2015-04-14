@@ -98,6 +98,7 @@
 
 (add-to-list 'evil-emacs-state-modes 'makey-key-mode)
 (add-to-list 'evil-emacs-state-modes 'prodigy-mode)
+(add-to-list 'evil-insert-state-modes 'magit-commit-mode)
 
 (evil-define-command asok/open-below-within-sexp ()
   :repeat t
