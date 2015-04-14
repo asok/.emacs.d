@@ -15,6 +15,12 @@
       web-mode-enable-auto-quoting nil
       web-mode-code-indent-offset 2)
 
+(defun asok/turn-on-sp-maybe ()
+  (when (string-match-p "\\.js$" (buffer-file-name))
+    (smartparens-mode +1)))
+
+(add-hook 'web-mode-hook #'asok/turn-on-sp-maybe)
+
 ;; (eval-after-load 'flycheck
 ;;   '(progn
 ;;      (flycheck-define-checker jsxhint-checker
