@@ -20,6 +20,7 @@
       css-indent-offset 2
       js-indent-level 2
       dired-hide-details-hide-symlink-targets nil
+      vc-handled-backends nil ; disable vc-mode-line
       ;; split-width-threshold 100
       )
 (setq-default indent-tabs-mode nil
