@@ -39,28 +39,50 @@
        (asok/sp-delete-line))
 
      (evil-define-key 'normal smartparens-mode-map
-       (asok/leader-kbd "9") '(lambda ()
-                                (interactive)
-                                (sp-wrap-with-pair "(")
-                                (evil-insert 1))
-       (asok/leader-kbd "[") '(lambda ()
-                                (interactive)
-                                (sp-wrap-with-pair "[")
-                                (evil-insert 1))
-       (asok/leader-kbd "'") '(lambda ()
-                                (interactive)
-                                (sp-wrap-with-pair "\"")
-                                (evil-insert 1))
-       (asok/leader-kbd "{") '(lambda ()
-                                (interactive)
-                                (sp-wrap-with-pair "{")
-                                (evil-insert 1))
-       (kbd "S-<right>") 'sp-forward-slurp-sexp
-       (kbd "S-<left>") 'sp-backward-slurp-sexp
-       (kbd "S-<up>") 'sp-forward-barf-sexp
-       (kbd "S-<down>") 'sp-backward-barf-sexp
-
        (kbd "M-r") #'sp-raise-sexp
        (kbd "M-o") #'asok/sp-open-line-below-sexp
-       (kbd "C") 'asok/sp-change-line-command
-       (kbd "D") 'asok/sp-delete-line-command)))
+       (kbd "C") #'asok/sp-change-line-command
+       (kbd "D") #'asok/sp-delete-line-command)))
+
+(eval-after-load 'hydra
+  '(progn
+     (defhydra hydra-sp (:color red)
+       "Smartparens"
+       ("h" sp-backward-slurp-sexp "backward-slurp")
+       ("j" sp-backward-barf-sexp "backward-barf")
+       ("k" sp-forward-barf-sexp "forward-barf")
+       ("l" sp-forward-slurp-sexp "forward-slurp"))
+
+     (setq asok/hydra-sp-heads
+           '(("9" (lambda ()
+                    (interactive)
+                    (sp-wrap-with-pair "(")
+                    (evil-insert 1))
+              "wrap (")
+             ("[" (lambda ()
+                    (interactive)
+                    (sp-wrap-with-pair "[")
+                    (evil-insert 1))
+              "wrap [")
+             ("{" (lambda ()
+                    (interactive)
+                    (sp-wrap-with-pair "{")
+                    (evil-insert 1))
+              "wrap {")
+             ("'" (lambda ()
+                    (interactive)
+                    (sp-wrap-with-pair "\"")
+                    (evil-insert 1))
+              "wrap \"")
+             ("s" hydra-sp/body "sp")
+             ))
+
+     (eval
+      `(defhydra hydra-spawn-sp (:color blue)
+         "Hydra"
+         ,@asok/hydra-global-heads
+         ,@asok/hydra-sp-heads))
+
+     (evil-define-key 'normal smartparens-mode-map
+       (kbd "<SPC>") 'hydra-spawn-sp/body)))
+

@@ -9,6 +9,7 @@
     evil-surround
     evil-indent-textobject
     evil-matchit
+    hydra
     string-inflection
     smartparens
     diminish
@@ -37,6 +38,7 @@
     rainbow-delimiters
     smex
     solarized-theme
+    anti-zenburn-theme
     undo-tree
     ;; volatile-highlights
     yasnippet
