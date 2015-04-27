@@ -21,6 +21,7 @@
       js-indent-level 2
       dired-hide-details-hide-symlink-targets nil
       vc-handled-backends nil ; disable vc-mode-line
+      calendar-week-start-day 1
       ;; split-width-threshold 100
       )
 (setq-default indent-tabs-mode nil
