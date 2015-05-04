@@ -35,6 +35,11 @@
   ("i" highlight-indentation-mode "indentation")
   ("h" hi-lock-mode "toggle hi-lock-mode"))
 
+(defhydra hydra-winner (:color red)
+  "Winner"
+  ("h" winner-undo "undo")
+  ("l" winner-redo "redo"))
+
 (setq asok/hydra-global-heads
       '(("h" hydra-hl/body "highlight")
         ("p" hydra-projectile/body "projectile")
@@ -43,7 +48,9 @@
         ("1" delete-other-windows "delete other windows")
         ("2" split-window-below "split horizontally")
         ("3" split-window-right "split vertically")
+        ("w" hydra-winner/body "winner")
         ("o" helm-swoop "swoop")
+        ("k" helm-show-kill-ring "kill ring")
         ("m" helm-all-mark-rings "all mark rings")
         ("f" helm-find-files "find files")
         ("d" ido-dired "dired")
