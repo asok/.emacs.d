@@ -72,4 +72,4 @@
 (evil-define-key 'normal global-map (kbd "<SPC>") 'hydra-spawn-global/body)
 (evil-define-key 'motion global-map (kbd "<SPC>") 'hydra-spawn-global/body)
 
-(evil-define-command hydra-spawn-global/body)
+(evil-declare-not-repeat 'hydra-spawn-global/body)

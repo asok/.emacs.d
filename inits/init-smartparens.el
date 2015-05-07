@@ -88,5 +88,7 @@
        (kbd "<SPC>") 'hydra-spawn-sp/body)
      (evil-define-key 'motion smartparens-mode-map
        (kbd "<SPC>") 'hydra-spawn-sp/body)
+
+     (evil-declare-not-repeat 'hydra-spawn-sp/body)
      ))
 
