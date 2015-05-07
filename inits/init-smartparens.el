@@ -2,7 +2,8 @@
 
 (add-hook 'clojure-mode-hook 'smartparens-mode)
 (add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
-(add-hook 'js2-mode 'smartparens-mode)
+(add-hook 'js2-mode-hook 'smartparens-mode)
+(add-hook 'web-mode-hook 'smartparens-mode)
 
 (add-to-list 'sp-autoescape-string-quote-if-empty 'ruby-mode)
 (setq sp-autoescape-string-quote nil)
@@ -84,5 +85,8 @@
          ,@asok/hydra-sp-heads))
 
      (evil-define-key 'normal smartparens-mode-map
-       (kbd "<SPC>") 'hydra-spawn-sp/body)))
+       (kbd "<SPC>") 'hydra-spawn-sp/body)
+     (evil-define-key 'motion smartparens-mode-map
+       (kbd "<SPC>") 'hydra-spawn-sp/body)
+     ))
 

@@ -41,9 +41,7 @@
   ("l" winner-redo "redo"))
 
 (setq asok/hydra-global-heads
-      '(("h" hydra-hl/body "highlight")
-        ("p" hydra-projectile/body "projectile")
-        ("e" hydra-eval/body "eval")
+      '(
         ("0" delete-window "delete window")
         ("1" delete-other-windows "delete other windows")
         ("2" split-window-below "split horizontally")
@@ -54,11 +52,17 @@
         ("m" helm-all-mark-rings "all mark rings")
         ("f" helm-find-files "find files")
         ("d" ido-dired "dired")
+        ("x" helm-M-x "M-x")
         ("c" magit-status "git status")
         ("C" magit-checkout "git checkout")
         ("a" ag-project "ag project")
         ("A" ag "ag dir")
-        ("SPC" evil-ace-jump-word-mode "ace jump")))
+        ("SPC" evil-ace-jump-word-mode "ace jump")
+        ("h" hydra-hl/body "highlight")
+        ("p" hydra-projectile/body "projectile")
+        ("e" hydra-eval/body "eval")
+        )
+      )
 
 (eval
  `(defhydra hydra-spawn-global (:color blue)
@@ -66,3 +70,6 @@
     ,@asok/hydra-global-heads))
 
 (evil-define-key 'normal global-map (kbd "<SPC>") 'hydra-spawn-global/body)
+(evil-define-key 'motion global-map (kbd "<SPC>") 'hydra-spawn-global/body)
+
+(evil-define-command hydra-spawn-global/body)
