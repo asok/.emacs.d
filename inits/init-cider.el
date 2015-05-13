@@ -7,7 +7,8 @@
 (require 'clojure-mode)
 (define-key clojure-mode-map (kbd "RET") 'newline-and-indent)
 
-(add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'cider-repl-mode-hook #'rainbow-delimiters-mode)
+(add-hook 'cider-repl-mode-hook #'smartparens-strict-mode)
 
 (defun asok/cider-repl-clear-input ()
   (interactive)
