@@ -78,28 +78,6 @@ If not run `helm-maybe-exit-minibuffer'."
 ;; (set-face-attribute 'helm-ff-directory (selected-frame) :background nil)
 ;; (evil-define-key 'normal global-map (kbd "C-x C-f") 'helm-find-files)
 
-(defvar helm-source-asok-config-files
-  '((name . "My config files")
-    (type . file)
-    (disable-shortcuts)
-    (init . (lambda ()
-              (helm-init-candidates-in-buffer
-                  'local
-                (append (directory-files "~/.emacs.d/" t "\\.el$")
-                        (directory-files "~/.emacs.d/inits/" t "\\.el$")))))
-    (candidates-in-buffer)
-    (help-message . helm-generic-file-help-message)
-    (mode-line . helm-generic-file-mode-line-string)))
-
-(defun asok/helm-config-files ()
-  "Finds the Emacs config files"
-  (interactive)
-  (let ((helm-ff-transformer-show-only-basename nil))
-    (helm-other-buffer '(helm-source-asok-config-files)
-                       "*helm config files*")))
-
-(global-set-key (kbd "s-A") 'asok/helm-config-files)
-
 (defun asok/helm-fuzzy-comp-read (prompt choices &optional initial-input)
   (helm-comp-read prompt choices
                   :initial-input initial-input
