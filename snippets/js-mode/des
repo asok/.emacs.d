@@ -2,6 +2,6 @@
 # name: des
 # key: des
 # --
-describe('$1', function(){
+describe('$1', () => {
     $2               
 })

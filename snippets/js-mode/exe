@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: expect toEqual
+# key: exe
+# --
+expect($1).toEqual($0);
