@@ -19,8 +19,6 @@
   `(loop for state in ,states
          do (evil-define-key state global-map ,@bindings)))
 
-;; (evil-define-key 'visual global-map (asok/leader-kbd "g") 'google-query)
-
 (add-hook 'compilation-mode-hook '(lambda ()
                                     (local-unset-key "g")
                                     (local-unset-key "h")
@@ -30,16 +28,6 @@
 (evil-define-key 'motion help-mode-map
   (kbd "<left>") 'help-go-back
   (kbd "<right>") 'help-go-forward)
-
-(defun google-query ()
-  "Googles a query or region if any."
-  (interactive)
-  (browse-url
-   (concat
-    "http://www.google.com/search?ie=utf-8&oe=utf-8&q="
-    (if mark-active
-        (buffer-substring (region-beginning) (region-end))
-      (read-string "Google: " (concat (thing-at-point 'symbol) " "))))))
 
 ;; (setq evil-want-fine-undo t)
 (setq evil-default-cursor t
