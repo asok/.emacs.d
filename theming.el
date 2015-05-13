@@ -11,4 +11,7 @@
 
 (require 'solarized)
 
-(load-theme 'solarized-dark)
+(load-theme
+ (intern
+  (ido-completing-read "In what color you want it? " (mapcar 'symbol-name
+                                                             (custom-available-themes)))))
