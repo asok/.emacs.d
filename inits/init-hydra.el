@@ -8,16 +8,6 @@
    'hydra-face-blue nil
    :foreground (face-attribute 'font-lock-string-face :foreground)))
 
-(defun google-query ()
-  "Googles a query or region if any."
-  (interactive)
-  (browse-url
-   (concat
-    "http://www.google.com/search?ie=utf-8&oe=utf-8&q="
-    (if mark-active
-        (buffer-substring (region-beginning) (region-end))
-      (read-string "Google: " (concat (thing-at-point 'symbol) " "))))))
-
 (defadvice load-theme
     (after set-hydra-faces activate)
   (asok/set-hydra-faces))
@@ -58,14 +48,15 @@
         ("2" split-window-below "split horizontally")
         ("3" split-window-right "split vertically")
         ("w" hydra-winner/body "winner")
-        ("o" helm-swoop "swoop")
+        ("8" helm-swoop "swoop")
+        ("o" helm-global-mark-ring)
         ("k" helm-show-kill-ring "kill ring")
         ("m" helm-all-mark-rings "all mark rings")
         ("f" helm-find-files "find files")
         ("d" ido-dired "dired")
         ("x" helm-M-x "M-x")
         ("." helm-resume "helm resume")
-        ("g" google-query "google query")
+        ("g" hydra-engine/body "engine")
         ("c" magit-status "git status")
         ("C" magit-checkout "git checkout")
         ("a" ag-project "ag project")

@@ -80,6 +80,7 @@
     wgrep
     wgrep-ag
     skewer-mode
+    engine-mode
     )
   "List of packages installed via package.el")
 
