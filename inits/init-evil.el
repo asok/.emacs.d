@@ -1,6 +1,8 @@
 (require 'evil)
 (evil-mode 1)
 
+(require 'cl-macs)
+
 (defun comint-goto-end-and-insert ()
   (interactive)
   (if (not (comint-after-pmark-p))
@@ -16,8 +18,8 @@
   (kbd "<down>") 'comint-next-input)
 
 (defmacro asok/evil-define-key-when-global-map (states &rest bindings)
-  `(loop for state in ,states
-         do (evil-define-key state global-map ,@bindings)))
+  `(cl-loop for state in ,states
+            do (evil-define-key state global-map ,@bindings)))
 
 (add-hook 'compilation-mode-hook '(lambda ()
                                     (local-unset-key "g")
@@ -63,8 +65,12 @@
     (sgml-skip-tag-forward 1)))
 (evil-define-key 'normal html-mode-map (kbd "%") 'asok/sgml-skip-tag-forward-or-backward)
 
-(add-to-list 'evil-emacs-state-modes 'makey-key-mode)
-(add-to-list 'evil-emacs-state-modes 'prodigy-mode)
+(cl-loop for mode in '(makey-key-mode prodigy-mode)
+         do (add-to-list 'evil-emacs-state-modes mode))
+
+(cl-loop for mode in '(package-menu-mode occur-mode messages-buffer-mode)
+         do (add-to-list 'evil-motion-state-modes mode))
+
 (add-to-list 'evil-insert-state-modes 'git-commit-mode)
 
 (evil-define-command asok/open-below-within-sexp ()
@@ -73,8 +79,6 @@
   (end-of-line)
   (indent-new-comment-line)
   (evil-insert-state))
-
-(add-to-list 'evil-motion-state-modes 'package-menu-mode 'occur-mode)
 
 (evil-define-key 'insert global-map          (kbd "RET") #'newline-and-indent)
 (evil-define-key 'insert comint-mode-map     (kbd "RET") #'comint-send-input)
