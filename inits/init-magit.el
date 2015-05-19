@@ -44,3 +44,7 @@
                                    (s-replace ".git" ""
                                               (s-replace ":" "/" url))))
      url)))
+
+
+(fset 'asok/magit-pull-upstream
+      (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([70 21 70 117 112 115 116 114 101 97 109 return 134217848 107 109 97 99 99 114 backspace backspace 114 111 45 101 110 100 45 14 14] 0 "%d")) arg)))
