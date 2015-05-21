@@ -71,6 +71,8 @@
 
 (add-hook 'edebug-mode-hook 'evil-emacs-state)
 
+(add-hook 'sql-interactive-mode 'toggle-truncate-lines)
+
 (load "~/.emacs.d/bindings")
 (load "~/.emacs.d/packages")
 (asok/install-packages)
