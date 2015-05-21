@@ -68,7 +68,10 @@
 (cl-loop for mode in '(makey-key-mode prodigy-mode)
          do (add-to-list 'evil-emacs-state-modes mode))
 
-(cl-loop for mode in '(package-menu-mode occur-mode messages-buffer-mode)
+(cl-loop for mode in '(package-menu-mode
+                       occur-mode
+                       messages-buffer-mode
+                       eww-mode)
          do (add-to-list 'evil-motion-state-modes mode))
 
 (add-to-list 'evil-insert-state-modes 'git-commit-mode)
