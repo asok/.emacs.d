@@ -33,6 +33,7 @@
 (defhydra hydra-hl (:color blue)
   "Highlight"
   ("s" highlight-symbol-at-point "symbol at point")
+  ("r" highlight-regexp "regexp")
   ("i" highlight-indentation-mode "indentation")
   ("h" hi-lock-mode "toggle hi-lock-mode"))
 
