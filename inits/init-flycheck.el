@@ -11,7 +11,8 @@
                                   (flycheck-mode -1))))
      ;; (when (file-exists-p "~/.rubocop.yml")
      ;;   (setq flycheck-rubocoprc "~/.rubocop.yml"))
-     (setq flycheck-highlighting-mode 'lines
-           flycheck-idle-change-delay 1
-           flycheck-disabled-checkers '(ruby-rubocop emacs-lisp-checkdoc))))
-
+     (flycheck-add-mode 'javascript-eslint 'web-mode)
+     (setq-default flycheck-highlighting-mode 'lines
+                   flycheck-eslintrc "~/.eslintrc"
+                   flycheck-idle-change-delay 1
+                   flycheck-disabled-checkers '(ruby-rubocop javascript-jshint emacs-lisp-checkdoc))))
