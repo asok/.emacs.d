@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: setState
+# key: ss
+# --
+this.setState({$1: $2});
