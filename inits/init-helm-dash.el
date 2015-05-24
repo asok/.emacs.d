@@ -4,6 +4,7 @@
 (add-hook 'ruby-mode-hook '(lambda () (setq-local helm-dash-docsets '("Redis" "Ruby on Rails" "Ruby"))))
 (add-hook 'clojure-mode-hook '(lambda () (setq-local helm-dash-docsets '("Clojure"))))
 (add-hook 'js-mode-hook '(lambda () (setq-local helm-dash-docsets '("UnderscoreJS"))))
+(add-hook 'web-mode-hook '(lambda () (setq-local helm-dash-docsets '("UnderscoreJS"))))
 
 (add-hook 'projectile-rails-mode-hook '(lambda()
 																				 (setq-local helm-dash-docsets '("Redis" "Ruby on Rails" "Ruby" "jQuery"))))
