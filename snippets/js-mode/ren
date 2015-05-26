@@ -2,6 +2,8 @@
 # name: ren
 # key: ren
 # --
-render: function(){
-  return $1
-}
+render() {
+  return ${2:(
+    $3
+  )}
+}${1:,}
