@@ -71,6 +71,7 @@
 (cl-loop for mode in '(package-menu-mode
                        occur-mode
                        messages-buffer-mode
+                       flycheck-error-list-mode
                        eww-mode)
          do (add-to-list 'evil-motion-state-modes mode))
 
