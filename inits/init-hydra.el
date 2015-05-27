@@ -42,6 +42,17 @@
   ("h" winner-undo "undo")
   ("l" winner-redo "redo"))
 
+(defhydra hydra-help (:color blue)
+  ("f" describe-function "function")
+  ("F" Info-goto-emacs-command-node "goto command")
+  ("v" describe-variable "variable")
+  ("m" describe-mode "mode")
+  ("@" describe-face "face")
+  ("k" describe-key "key")
+  ("t" describe-theme "theme")
+  ("b" describe-bindings "bindings")
+  ("p" describe-package "package"))
+
 (setq asok/hydra-global-heads
       '(
         ("0" delete-window "delete window")
@@ -66,6 +77,7 @@
         ("h" hydra-hl/body "highlight")
         ("p" hydra-projectile/body "projectile")
         ("e" hydra-eval/body "eval")
+        ("?" hydra-help/body "help")
         )
       )
 
