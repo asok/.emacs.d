@@ -58,7 +58,7 @@
   ("C" magit-checkout "checkout")
   ("v" magit-branch-manager "branch manager")
   ("m" magit-merge "merge")
-  ("m" magit-log "log")
+  ("l" magit-log "log")
   ("!" magit-git-command "command")
   ("$" magit-process "process"))
 
