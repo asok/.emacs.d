@@ -53,6 +53,15 @@
   ("b" describe-bindings "bindings")
   ("p" describe-package "package"))
 
+(defhydra hydra-magit (:color blue)
+  ("c" magit-status "status")
+  ("C" magit-checkout "checkout")
+  ("v" magit-branch-manager "branch manager")
+  ("m" magit-merge "merge")
+  ("m" magit-log "log")
+  ("!" magit-git-command "command")
+  ("$" magit-process "process"))
+
 (setq asok/hydra-global-heads
       '(
         ("0" delete-window "delete window")
@@ -69,8 +78,7 @@
         ("x" helm-M-x "M-x")
         ("." helm-resume "helm resume")
         ("g" hydra-engine/body "engine")
-        ("c" magit-status "git status")
-        ("C" magit-checkout "git checkout")
+        ("c" hydra-magit/body "magit")
         ("a" ag-project "ag project")
         ("A" ag "ag dir")
         ("SPC" evil-ace-jump-word-mode "ace jump")
