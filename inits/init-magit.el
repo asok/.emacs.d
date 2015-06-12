@@ -45,6 +45,25 @@
                                               (s-replace ":" "/" url))))
      url)))
 
+(defun asok/github-new-pr (arg)
+  (interactive "P")
+  (unless arg
+    (setq arg '(0)))
+  (let* ((url (magit-get "remote" "origin" "url"))
+         (user (if (string-match "github.com:\\(.+\\)/" url)
+                   (match-string 1 url))))
+
+    (browse-url
+     (concat
+      (if (s-contains? "@" url)
+          (replace-regexp-in-string "\\(.+\\)@" "https://"
+                                    (s-replace ".git" ""
+                                               (s-replace ":" "/" url)))
+        )
+      "/compare/master..."
+      user ":" (magit-get-current-branch)
+      )
+     url)))
 
 (fset 'asok/magit-pull-upstream
       (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([70 21 70 117 112 115 116 114 101 97 109 return 134217848 107 109 97 99 99 114 backspace backspace 114 111 45 101 110 100 45 14 14] 0 "%d")) arg)))
