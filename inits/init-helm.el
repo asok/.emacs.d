@@ -5,11 +5,12 @@
       helm-buffers-fuzzy-matching t
       helm-recentf-fuzzy-match t
       helm-recentf-fuzzy-match t
+      helm-imenu-fuzzy-match t
       helm-ff-skip-boring-files t
       helm-ff-newfile-prompt-p nil
       ;; helm-ff-directory 'font-lock-constant-face
       helm-boring-file-regexp-list '("/\\.$" "/\\.\\.$" "\\.DS_Store$")
-      helm-imenu-fuzzy-match t)
+      )
 
 (defvar asok/helm-source-init-files
   '((name . "My init files")
@@ -31,6 +32,28 @@
         :buffer "*helm init files*"
         :truncate-lines t))
 
+(defun asok/helm-recentf (&optional candidate)
+  (interactive)
+  (let ((helm-ff-transformer-show-only-basename nil))
+    (helm :sources helm-source-recentf
+          :input (or candidate "")
+          :buffer "*helm recent files*"
+          :truncate-lines t)))
+
+(defun asok/helm-projectile-files (&optional candidate)
+  (interactive)
+  (helm :sources helm-source-projectile-files-and-dired-list
+        :input (or candidate "")
+        :buffer "*helm projectile files*"
+        :truncate-lines t))
+
+(defun asok/helm-switch-project (&optional candidate)
+  (interactive)
+  (helm :sources helm-source-projectile-projects
+        :input (or candidate "")
+        :buffer "*helm switch project*"
+        :truncate-lines t))
+
 (defvar asok/helm-dummy-source-init-files
   (helm-build-dummy-source
       "Find init file"
@@ -39,10 +62,36 @@
              (lambda (c)
                (asok/helm-init-files c)))))
 
+(defvar asok/helm-dummy-source-recentf
+  (helm-build-dummy-source
+      "Find recent file"
+    :action (helm-make-actions
+             "Find recent file"
+             (lambda (c)
+               (asok/helm-recentf c)))))
+
+(defvar asok/helm-dummy-source-projectile-files
+  (helm-build-dummy-source
+      "Find projectile files"
+    :action (helm-make-actions
+             "Find projectile files"
+             (lambda (c)
+               (asok/helm-projectile-files c)))))
+
+(defvar asok/helm-dummy-source-switch-project
+  (helm-build-dummy-source
+      "Switch project"
+    :action (helm-make-actions
+             "Switch project"
+             (lambda (c)
+               (asok/helm-switch-project c)))))
+
 (defvar asok/helm-mini-default-sources
   '(helm-source-buffers-list
-    helm-source-recentf
+    asok/helm-dummy-source-recentf
     asok/helm-dummy-source-init-files
+    asok/helm-dummy-source-projectile-files
+    asok/helm-dummy-source-switch-project
     helm-source-buffer-not-found))
 
 (defun asok/helm-mini ()
@@ -57,9 +106,8 @@
           :buffer "*helm mini*"
           :truncate-lines t)))
 
-(global-set-key (kbd "s-a") 'asok/helm-mini)
+;; (global-set-key (kbd "s-a") 'asok/helm-mini)
 (global-set-key (kbd "s-i") 'helm-imenu)
-(global-set-key (kbd "C-c SPC") 'helm-resume)
 
 (global-set-key (kbd "M-x") 'helm-M-x)
 

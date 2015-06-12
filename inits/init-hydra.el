@@ -19,7 +19,8 @@
   ("e" eval-expression "expression")
   ("d" eval-defun "defun")
   ("b" eval-buffer "buffer")
-  ("l" eval-last-sexp "last sexp"))
+  ("l" eval-last-sexp "last sexp")
+  ("1" async-shell-command "shell-command"))
 
 (defhydra hydra-projectile (:color blue)
   "Projectile"
@@ -28,7 +29,8 @@
   ("F" helm-projectile-find-file-in-known-projects "file in projects")
   ("p" helm-projectile-switch-project "switch project")
   ("P" projectile-test-project "test")
-  ("a" helm-projectile-ag "ag"))
+  ("a" helm-projectile-ag "ag")
+  ("b" helm-projectile-switch-to-buffer "buffer"))
 
 (defhydra hydra-hl (:color blue)
   "Highlight"
@@ -76,6 +78,7 @@
         ("f" helm-find-files "find files")
         ("d" ido-dired "dired")
         ("x" helm-M-x "M-x")
+        ("j" asok/helm-mini "helm mini")
         ("." helm-resume "helm resume")
         ("g" hydra-engine/body "engine")
         ("c" hydra-magit/body "magit")
