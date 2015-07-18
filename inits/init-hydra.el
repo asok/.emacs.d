@@ -30,7 +30,7 @@
   ("p" helm-projectile-switch-project "switch project")
   ("P" projectile-test-project "test")
   ("a" helm-projectile-ag "ag")
-  ("b" helm-projectile-switch-to-buffer "buffer"))
+  ("j" helm-projectile-switch-to-buffer "buffer"))
 
 (defhydra hydra-hl (:color blue)
   "Highlight"
