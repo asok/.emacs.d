@@ -72,6 +72,7 @@
                        occur-mode
                        messages-buffer-mode
                        flycheck-error-list-mode
+                       ag-mode
                        eww-mode)
          do (add-to-list 'evil-motion-state-modes mode))
 
