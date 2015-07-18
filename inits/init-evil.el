@@ -31,9 +31,9 @@
   (kbd "<left>") 'help-go-back
   (kbd "<right>") 'help-go-forward)
 
-;; (setq evil-want-fine-undo t)
-(setq evil-default-cursor t
-      evil-regexp-search t)
+(evil-define-state spc
+  "SPC state."
+  :tag "<S> ")
 
 (define-key evil-insert-state-map "k" #'cofi/maybe-exit)
 
@@ -53,7 +53,6 @@
        (t (setq unread-command-events (append unread-command-events
                                               (list evt))))))))
 
-
 (evil-define-key 'normal emacs-lisp-mode-map (kbd "RET") 'elisp-slime-nav-find-elisp-thing-at-point)
 
 (require 'evil-integration)
@@ -65,8 +64,12 @@
     (sgml-skip-tag-forward 1)))
 (evil-define-key 'normal html-mode-map (kbd "%") 'asok/sgml-skip-tag-forward-or-backward)
 
-(cl-loop for mode in '(makey-key-mode prodigy-mode)
-         do (add-to-list 'evil-emacs-state-modes mode))
+(cl-loop for mode in '(makey-key-mode
+                       prodigy-mode)
+         do (add-to-list 'evil-spc-state-modes mode))
+
+(cl-loop for mode in evil-emacs-state-modes
+         do (add-to-list 'evil-spc-state-modes mode))
 
 (cl-loop for mode in '(package-menu-mode
                        occur-mode
@@ -77,6 +80,11 @@
          do (add-to-list 'evil-motion-state-modes mode))
 
 (add-to-list 'evil-insert-state-modes 'git-commit-mode)
+
+(setq evil-default-cursor t
+      ;; evil-want-fine-undo t
+      evil-regexp-search t
+      evil-emacs-state-modes nil)
 
 (evil-define-command asok/open-below-within-sexp ()
   :repeat t

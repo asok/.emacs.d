@@ -1,10 +1,10 @@
 (require 'magit)
 
-(evil-add-hjkl-bindings magit-branch-manager-mode-map 'emacs
+(evil-add-hjkl-bindings magit-branch-manager-mode-map 'spc
   (kbd "C-f") 'evil-scroll-page-down
   (kbd "C-b") 'evil-scroll-page-up)
 
-(evil-add-hjkl-bindings magit-status-mode-map 'emacs
+(evil-add-hjkl-bindings magit-status-mode-map 'spc
   (kbd "C-f") 'evil-scroll-page-down
   (kbd "C-b") 'evil-scroll-page-up
   (kbd "K") 'magit-discard-item
@@ -13,17 +13,17 @@
   (kbd "{") 'magit-goto-previous-sibling-section
   (kbd "}") 'magit-goto-next-sibling-section)
 
-(evil-add-hjkl-bindings magit-commit-mode-map 'emacs
+(evil-add-hjkl-bindings magit-commit-mode-map 'spc
   (kbd "{") 'magit-goto-previous-section
   (kbd "}") 'magit-goto-next-section
   )
 
-(evil-add-hjkl-bindings magit-log-mode-map 'emacs
+(evil-add-hjkl-bindings magit-log-mode-map 'spc
   (kbd "C-f") 'evil-scroll-page-down
   (kbd "C-b") 'evil-scroll-page-up
   )
 
-(evil-add-hjkl-bindings magit-branch-manager-mode-map 'emacs
+(evil-add-hjkl-bindings magit-branch-manager-mode-map 'spc
   (kbd "K") 'magit-discard-item)
 
 (require 'magit-blame)

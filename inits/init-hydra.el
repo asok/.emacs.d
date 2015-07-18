@@ -97,6 +97,7 @@
     "Hydra"
     ,@asok/hydra-global-heads))
 
+(evil-define-key 'spc    global-map (kbd "<SPC>") 'hydra-spawn-global/body)
 (evil-define-key 'normal global-map (kbd "<SPC>") 'hydra-spawn-global/body)
 (evil-define-key 'motion global-map (kbd "<SPC>") 'hydra-spawn-global/body)
 
