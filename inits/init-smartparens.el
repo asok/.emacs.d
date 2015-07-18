@@ -54,7 +54,9 @@
        ("h" sp-backward-slurp-sexp "backward-slurp")
        ("j" sp-backward-barf-sexp "backward-barf")
        ("k" sp-forward-barf-sexp "forward-barf")
-       ("l" sp-forward-slurp-sexp "forward-slurp"))
+       ("l" sp-forward-slurp-sexp "forward-slurp")
+       ("s" sp-splice-sexp "forward-slurp")
+       )
 
      (setq asok/hydra-sp-heads
            '(("9" (lambda ()
