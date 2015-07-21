@@ -72,7 +72,7 @@
         ("3" split-window-right "split vertically")
         ("w" hydra-winner/body "winner")
         ("8" helm-swoop "swoop")
-        ("o" helm-global-mark-ring)
+        ("o" helm-global-mark-ring "global mark ring")
         ("k" helm-show-kill-ring "kill ring")
         ("m" helm-all-mark-rings "all mark rings")
         ("f" helm-find-files "find files")
