@@ -1,7 +1,7 @@
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 
-(setq company-idle-delay nil
+(setq company-idle-delay 0
       company-auto-complete nil
       company-dabbrev-ignore-case nil
       company-dabbrev-code-ignore-case nil)
