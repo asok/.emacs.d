@@ -14,7 +14,7 @@
 
 (asok/set-hydra-faces)
 
-(defhydra hydra-eval (:color blue)
+(defhydra hydra-eval (:color blue :columns 8)
   "Eval"
   ("e" eval-expression "expression")
   ("d" eval-defun "defun")
@@ -22,7 +22,7 @@
   ("l" eval-last-sexp "last sexp")
   ("1" async-shell-command "shell-command"))
 
-(defhydra hydra-projectile (:color blue)
+(defhydra hydra-projectile (:color blue :columns 8)
   "Projectile"
   ("f" helm-projectile-find-file "find file")
   ("g" helm-projectile-find-file-dwim "find file dwim")
@@ -32,19 +32,20 @@
   ("a" helm-projectile-ag "ag")
   ("j" helm-projectile-switch-to-buffer "buffer"))
 
-(defhydra hydra-hl (:color blue)
+(defhydra hydra-hl (:color blue :columns 8)
   "Highlight"
   ("s" highlight-symbol-at-point "symbol at point")
   ("r" highlight-regexp "regexp")
   ("i" highlight-indentation-mode "indentation")
   ("h" hi-lock-mode "toggle hi-lock-mode"))
 
-(defhydra hydra-winner (:color red)
+(defhydra hydra-winner (:color red :columns 8)
   "Winner"
   ("h" winner-undo "undo")
   ("l" winner-redo "redo"))
 
-(defhydra hydra-help (:color blue)
+(defhydra hydra-help (:color blue :columns 8)
+  "Help"
   ("f" describe-function "function")
   ("F" Info-goto-emacs-command-node "goto command")
   ("v" describe-variable "variable")
@@ -55,7 +56,8 @@
   ("b" describe-bindings "bindings")
   ("p" describe-package "package"))
 
-(defhydra hydra-magit (:color blue)
+(defhydra hydra-magit (:color blue :columns 8)
+  "Magit"
   ("c" magit-status "status")
   ("C" magit-checkout "checkout")
   ("v" magit-branch-manager "branch manager")
@@ -93,7 +95,7 @@
       )
 
 (eval
- `(defhydra hydra-spawn-global (:color blue)
+ `(defhydra hydra-spawn-global (:color blue :columns 8)
     "Hydra"
     ,@asok/hydra-global-heads))
 
