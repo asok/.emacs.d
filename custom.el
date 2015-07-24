@@ -47,7 +47,8 @@
  '(magit-use-overlays t)
  '(safe-local-variable-values
    (quote
-    ((eval progn
+    ((flycheck-disabled-checkers emacs-lisp-checkdoc)
+     (eval progn
            (setq web-mode-content-types-alist
                  (\`
                   (("jsx" \,
