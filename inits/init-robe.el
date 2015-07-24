@@ -7,8 +7,11 @@
 
 (evil-define-key 'normal robe-mode-map (kbd "M-.") 'robe-jump)
 
+(defun asok/push-company-robe ()
+  (push 'company-robe company-backends))
+
 (eval-after-load "company"
-  '(push 'company-robe company-backends))
+  '(add-hook 'robe-mode-hook #'asok/push-company-robe))
 
 (eval-after-load 'robe
   '(diminish 'robe-mode " Ροβε"))
