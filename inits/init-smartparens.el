@@ -47,52 +47,22 @@
        (kbd "C") #'asok/sp-change-line-command
        (kbd "D") #'asok/sp-delete-line-command)))
 
-(eval-after-load 'hydra
-  '(progn
-     (defhydra hydra-sp (:color red)
-       "Smartparens"
-       ("h" sp-backward-slurp-sexp "backward-slurp")
-       ("j" sp-backward-barf-sexp "backward-barf")
-       ("k" sp-forward-barf-sexp "forward-barf")
-       ("l" sp-forward-slurp-sexp "forward-slurp")
-       ("s" sp-splice-sexp "forward-slurp")
-       )
+(defun asok/sp-wrap-with-parenthesis ()
+  (interactive)
+  (sp-wrap-with-pair "(")
+  (evil-insert 1))
 
-     (setq asok/hydra-sp-heads
-           '(("9" (lambda ()
-                    (interactive)
-                    (sp-wrap-with-pair "(")
-                    (evil-insert 1))
-              "wrap (")
-             ("[" (lambda ()
-                    (interactive)
-                    (sp-wrap-with-pair "[")
-                    (evil-insert 1))
-              "wrap [")
-             ("{" (lambda ()
-                    (interactive)
-                    (sp-wrap-with-pair "{")
-                    (evil-insert 1))
-              "wrap {")
-             ("'" (lambda ()
-                    (interactive)
-                    (sp-wrap-with-pair "\"")
-                    (evil-insert 1))
-              "wrap \"")
-             ("s" hydra-sp/body "sp")
-             ))
+(defun asok/sp-wrap-with-curly-braces ()
+  (interactive)
+  (sp-wrap-with-pair "{")
+  (evil-insert 1))
 
-     (eval
-      `(defhydra hydra-spawn-sp (:color blue)
-         "Hydra"
-         ,@asok/hydra-global-heads
-         ,@asok/hydra-sp-heads))
+(defun asok/sp-wrap-with-square-brackets ()
+  (interactive)
+  (sp-wrap-with-pair "{")
+  (evil-insert 1))
 
-     (evil-define-key 'normal smartparens-mode-map
-       (kbd "<SPC>") 'hydra-spawn-sp/body)
-     (evil-define-key 'motion smartparens-mode-map
-       (kbd "<SPC>") 'hydra-spawn-sp/body)
-
-     (evil-declare-not-repeat 'hydra-spawn-sp/body)
-     ))
-
+(defun asok/sp-wrap-with-quotes ()
+  (interactive)
+  (sp-wrap-with-pair "\"")
+  (evil-insert 1))

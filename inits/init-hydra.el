@@ -66,6 +66,19 @@
   ("!" magit-git-command "command")
   ("$" magit-process "process"))
 
+(defhydra hydra-sp (:color red :columns 8)
+  "Smartparens"
+  ("h" sp-backward-slurp-sexp "backward-slurp")
+  ("j" sp-backward-barf-sexp "backward-barf")
+  ("k" sp-forward-barf-sexp "forward-barf")
+  ("l" sp-forward-slurp-sexp "forward-slurp")
+  ("s" sp-splice-sexp "forward-slurp")
+  ("9" asok/sp-wrap-with-parenthesis "wrap (")
+  ("[" asok/sp-wrap-with-square-brackets "wrap [")
+  ("{" asok/sp-wrap-with-curly-braces "wrap {")
+  ("'" asok/sp-wrap-with-quotes "wrap \"")
+  )
+
 (setq asok/hydra-global-heads
       '(
         ("0" delete-window "delete window")
@@ -73,6 +86,7 @@
         ("2" split-window-below "split horizontally")
         ("3" split-window-right "split vertically")
         ("w" hydra-winner/body "winner")
+        ("s" hydra-sp/body "sp")
         ("8" helm-swoop "swoop")
         ("o" helm-global-mark-ring "global mark ring")
         ("k" helm-show-kill-ring "kill ring")
