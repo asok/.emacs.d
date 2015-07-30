@@ -1,5 +1,7 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
+(when (string= system-type "gnu/linux")
+  (menu-bar-mode -1))
 
 (setq ring-bell-function 'ignore
       visible-bell nil
