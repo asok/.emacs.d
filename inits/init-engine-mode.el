@@ -1,11 +1,15 @@
 (require 'engine-mode)
 
-(setq engine/browser-function 'browse-url-chromium)
+(if (string= system-type "darwin")
+    (setq engine/browser-function 'browse-url-chromium)
+  (progn
+    (setq engine/browser-function 'browse-url-chromium
+          browse-url-chromium-program "google-chrome")))
 
 (defengine wikipedia
- "http://www.wikipedia.org/search-redirect.php?language=en&go=Go&search=%s"
- :keybinding "w"
- :docstring "Searchin' the wikis.")
+  "http://www.wikipedia.org/search-redirect.php?language=en&go=Go&search=%s"
+  :keybinding "w"
+  :docstring "Searchin' the wikis.")
 
 (defengine duckduckgo
  "https://duckduckgo.com/?q=%s"
