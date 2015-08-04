@@ -4,12 +4,17 @@
     ad-do-it
     (and line (goto-line line))))
 
-(global-set-key (kbd "s-h") 'windmove-left)
-(global-set-key (kbd "s-l") 'windmove-right)
-(global-set-key (kbd "s-j") 'windmove-down)
-(global-set-key (kbd "s-k") 'windmove-up)
-(global-set-key (kbd "s-d") 'previous-buffer)
-(global-set-key (kbd "s-f") 'next-buffer)
+(defun asok/setup-nav-bindings (modifier)
+  (global-set-key (kbd (concat modifier "-h")) 'windmove-left)
+  (global-set-key (kbd (concat modifier "-l")) 'windmove-right)
+  (global-set-key (kbd (concat modifier "-j")) 'windmove-down)
+  (global-set-key (kbd (concat modifier "-k")) 'windmove-up)
+  (global-set-key (kbd (concat modifier "-d")) 'previous-buffer)
+  (global-set-key (kbd (concat modifier "-f")) 'next-buffer))
+
+(if (string= system-type "gnu/linux")
+    (asok/setup-nav-bindings "M")
+  (asok/setup-nav-bindings "s"))
 
 (global-set-key (kbd "C-q") (lambda () (interactive) (switch-to-prev-buffer (previous-window))))
 (global-set-key (kbd "C-w") (lambda () (interactive) (switch-to-next-buffer (previous-window))))
