@@ -59,7 +59,7 @@
 
 (defun asok/sp-wrap-with-square-brackets ()
   (interactive)
-  (sp-wrap-with-pair "{")
+  (sp-wrap-with-pair "[")
   (evil-insert 1))
 
 (defun asok/sp-wrap-with-quotes ()
