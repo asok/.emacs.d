@@ -17,3 +17,7 @@
 
 (eval-after-load 'helm
   '(setq projectile-completion-system 'asok/helm-fuzzy-comp-read))
+
+
+; https://github.com/bbatsov/projectile/issues/830
+(require 'grep)
