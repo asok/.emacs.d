@@ -34,7 +34,7 @@
 
 (setenv "LANG" "en_US.UTF-8")
 
-(set-frame-font "Source code pro-14")
+(set-frame-font "Monospace-12")
 (fset 'yes-or-no-p 'y-or-n-p)
 (set-variable 'shell-file-name "/bin/bash")
 (winner-mode 1)
