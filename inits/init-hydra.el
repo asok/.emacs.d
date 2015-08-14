@@ -79,6 +79,19 @@
   ("'" asok/sp-wrap-with-quotes "wrap \"")
   )
 
+(defhydra hydra-rspec (:color blue :columns 8)
+  "RSpec"
+  ("r" rspec-rerun "rerun")
+  ("v" rspec-verify "verify")
+  ("a" rspec-verify-all "all")
+  ("t" rspec-toggle-spec-and-target "toggle")
+  ("e" rspec-toggle-spec-and-target-find-example "toggle method")
+  ("f" rspec-run-last-failed "failed")
+  ("s" rspec-verify-single "single")
+  ("m" rspec-verify-matching "matching")
+  ("d" rspec-toggle-example-pendingness "pending")
+  )
+
 (setq asok/hydra-global-heads
       '(
         ("0" delete-window "delete window")
@@ -105,6 +118,7 @@
         ("h" hydra-hl/body "highlight")
         ("p" hydra-projectile/body "projectile")
         ("e" hydra-eval/body "eval")
+        ("r" hydra-rspec/body "rspec")
         ("?" hydra-help/body "help")
         )
       )
