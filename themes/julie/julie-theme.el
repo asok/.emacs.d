@@ -79,7 +79,7 @@
    `(fringe ((t (:foreground "#303030" :background ,julie-bg))))
    `(escape-glyph-face ((t (:foreground ,julie-red))))
    `(header-line ((t (:foreground ,julie-yellow :background ,julie-bg-1
-                                 :box (:line-width 5 :color ,julie-bg-1)))))
+                                  :box (:line-width 5 :color ,julie-bg-1)))))
    `(highlight ((t (:background ,julie-bg+1))))
 
    ;; faces used by isearch
@@ -90,14 +90,14 @@
    `(menu ((t (:foreground ,julie-fg :background ,julie-bg))))
    `(minibuffer-prompt ((t (:foreground ,julie-yellow))))
    `(mode-line
-    ((t (:foreground ,julie-fg :background ,julie-bg+1
-                     :box (:line-width 5 :color ,julie-bg+1)))))
+     ((t (:foreground ,julie-fg :background ,julie-bg+1
+                      :box (:line-width 5 :color ,julie-bg+1)))))
    `(mode-line-highlight ((t (:inverse-video t))))
    `(mode-line-inactive ((t (:inherit mode-line :background ,julie-bg-1
-                                     :box (:line-width 5 :color ,julie-bg-1)))))
+                                      :box (:line-width 5 :color ,julie-bg-1)))))
    `(mode-line-buffer-id ((t (:inherit julie-strong-1-face))))
    `(mode-line-inactive
-    ((t (:foreground ,julie-green-1  :background ,julie-bg-1))))
+     ((t (:foreground ,julie-green-1  :background ,julie-bg-1))))
    `(mode-line-folder-face ((t (:foreground ,julie-bg+2))))
    `(mode-line-modified-face ((t (:foreground ,julie-red))))
    `(mode-line-buffer-name ((t (:foreground ,julie-yellow :weight bold))))
@@ -112,11 +112,11 @@
    `(font-lock-builtin-face ((t (:foreground ,julie-blue))))
    `(font-lock-comment-face ((t (:foreground ,julie-bg+2))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,julie-bg+2))))
-   `(font-lock-constant-face ((t (:foreground ,julie-fg))))
+   `(font-lock-constant-face ((t (:foreground ,julie-magenta))))
    `(font-lock-doc-face ((t (:foreground ,julie-green+1))))
    `(font-lock-doc-string-face ((t (:foreground ,julie-blue+1))))
    `(font-lock-function-name-face ((t (:foreground ,julie-blue))))
-   `(font-lock-keyword-face ((t (:inherit julie-strong-1-face))))
+   `(font-lock-keyword-face ((t (:foreground ,julie-orange))))
    `(font-lock-negation-char-face ((t (:foreground ,julie-fg))))
    `(font-lock-preprocessor-face ((t (:foreground ,julie-blue))))
    `(font-lock-string-face ((t (:foreground ,julie-red))))
@@ -132,7 +132,7 @@
    `(diff-removed ((t (:foreground ,julie-red))))
    `(diff-header ((t (:background ,julie-bg+1))))
    `(diff-file-header
-    ((t (:background ,julie-bg+2 :foreground ,julie-fg :bold t))))
+     ((t (:background ,julie-bg+2 :foreground ,julie-fg :bold t))))
 
    ;; eshell
    `(eshell-prompt ((t (:inherit julie-strong-1-face))))
@@ -313,12 +313,12 @@
 
    ;; org-mode
    `(org-agenda-date-today
-    ((t (:foreground "white" :slant italic :weight bold))) t)
+     ((t (:foreground "white" :slant italic :weight bold))) t)
    `(org-agenda-structure
-    ((t (:inherit font-lock-comment-face))))
+     ((t (:inherit font-lock-comment-face))))
    `(org-archived ((t (:foreground ,julie-fg :weight bold))))
    `(org-checkbox ((t (:background ,julie-bg+2 :foreground "white"
-                                  :box (:line-width 1 :style released-button)))))
+                                   :box (:line-width 1 :style released-button)))))
    `(org-date ((t (:foreground ,julie-blue :underline t))))
    `(org-deadline-announce ((t (:foreground ,julie-red-1))))
    `(org-done ((t (:bold t :weight bold :foreground ,julie-green+1))))
@@ -405,7 +405,7 @@
    `(wl-highlight-message-unimportant-header-contents ((t (:foreground ,julie-fg))))
    `(wl-highlight-summary-answered-face ((t (:foreground ,julie-blue))))
    `(wl-highlight-summary-disposed-face ((t (:foreground ,julie-fg
-                                                        :slant italic))))
+                                                         :slant italic))))
    `(wl-highlight-summary-new-face ((t (:foreground ,julie-blue))))
    `(wl-highlight-summary-normal-face ((t (:foreground ,julie-fg))))
    `(wl-highlight-summary-thread-top-face ((t (:foreground ,julie-yellow))))
