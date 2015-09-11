@@ -55,7 +55,7 @@
     js2-mode
     ag
     scss-mode
-    ;; web-mode
+    web-mode
     jsx-mode
     ruby-refactor
     lorem-ipsum
@@ -82,6 +82,7 @@
     skewer-mode
     engine-mode
     )
+    nameless
   "List of packages installed via package.el")
 
 (defun asok/install-packages ()
