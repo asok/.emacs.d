@@ -125,6 +125,10 @@
    `(font-lock-variable-name-face ((t (:foreground ,julie-yellow))))
    `(font-lock-warning-face ((t (:inherit julie-warning-face))))
 
+   `(web-mode-symbol-face ((t (:foreground ,julie-magenta))))
+   `(nameless-face ((t (:foreground ,julie-magenta))))
+   `(ag-hit-face ((t (:foreground ,julie-cyan))))
+
    ;;; external
 
    ;; diff
@@ -311,6 +315,8 @@
    `(nav-face-hdir ((t (:foreground ,julie-red))))
    `(nav-face-file ((t (:foreground ,julie-fg))))
    `(nav-face-hfile ((t (:foreground ,julie-red-1))))
+
+   `(button ((t (:foreground ,julie-cyan :underline t))))
 
    ;; org-mode
    `(org-agenda-date-today
