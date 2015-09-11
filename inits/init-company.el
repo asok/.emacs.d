@@ -3,6 +3,7 @@
 
 (setq company-idle-delay 0
       company-auto-complete nil
+      company-minimum-prefix-length 3
       company-dabbrev-downcase nil
       company-dabbrev-ignore-case nil
       company-dabbrev-code-ignore-case nil)

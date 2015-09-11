@@ -14,5 +14,9 @@
 ;; (defun asok/register-ruby-yas-after-exit-snippet-hook ()
 ;;   (add-hook 'yas-after-exit-snippet-hook 'asok/insert-new-line-maybe t t))
 
+(define-key yas-minor-mode-map (kbd "<tab>") nil)
+(define-key yas-minor-mode-map (kbd "TAB") nil)
+(define-key yas-minor-mode-map (kbd "C-j") 'yas-expand)
+
 (diminish 'yas-minor-mode " Υ")
 
