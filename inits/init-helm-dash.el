@@ -29,6 +29,5 @@
 
 (evil-define-key 'normal global-map (kbd "M-SPC") 'helm-dash-at-point)
 
-(setq helm-dash-browser-func 'eww-browse-url)
-
-(print "ran1!!!!11---11")
+(setq helm-dash-browser-func 'eww-browse-url
+      helm-dash-enable-debugging nil)
