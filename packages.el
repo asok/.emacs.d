@@ -9,6 +9,7 @@
     evil-surround
     evil-indent-textobject
     evil-matchit
+    evil-easymotion
     hydra
     string-inflection
     smartparens
@@ -81,8 +82,8 @@
     wgrep-ag
     skewer-mode
     engine-mode
-    )
     nameless
+    )
   "List of packages installed via package.el")
 
 (defun asok/install-packages ()
