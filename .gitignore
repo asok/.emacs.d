@@ -13,3 +13,4 @@ rake.cache
 eshell/
 recentf
 smex-items
+session.*
