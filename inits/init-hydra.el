@@ -68,6 +68,14 @@
   ("!" magit-git-command "command")
   ("$" magit-process "process"))
 
+(defhydra hydra-evil (:color blue :columns 8)
+  "Evil"
+  ("n"   evil-normal-state "normal")
+  ("i"   evil-insert-state "insert")
+  ("v"   evil-visual-state "visual")
+  ("m"   evil-motion-state "motion")
+  ("SPC" evil-spc-state    "spc"))
+
 (defhydra hydra-sp (:color red :columns 8)
   "Smartparens"
   ("h" sp-backward-slurp-sexp "backward-slurp")
@@ -124,6 +132,7 @@
         ("r" hydra-rspec/body "rspec")
         ("R" hydra-projectile-rails/body "rails")
         ("h" hydra-help/body "help")
+        ("[" hydra-evil/body "evil")
         )
       )
 
