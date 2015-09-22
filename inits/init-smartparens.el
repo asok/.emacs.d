@@ -5,10 +5,9 @@
 (add-hook 'js2-mode-hook 'smartparens-mode)
 (add-hook 'web-mode-hook 'smartparens-mode)
 
-(add-hook 'js2-mode-hook (lambda () (electric-pair-mode -1)) t)
+(add-hook 'smartparens-enabled-hook (lambda () (electric-pair-mode -1)))
 
 (add-to-list 'sp-autoescape-string-quote-if-empty 'ruby-mode)
-(setq sp-autoescape-string-quote nil)
 
 (add-hook 'ruby-mode-hook #'smartparens-mode)
 
