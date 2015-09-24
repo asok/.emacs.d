@@ -83,6 +83,7 @@
     skewer-mode
     engine-mode
     nameless
+    color-theme-sanityinc-tomorrow
     )
   "List of packages installed via package.el")
 
