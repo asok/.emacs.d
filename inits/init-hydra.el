@@ -116,6 +116,7 @@
         ("k" helm-show-kill-ring "kill ring")
         ("m" helm-all-mark-rings "all mark rings")
         ("f" helm-find-files "find files")
+        ("6" helm-top "top")
         ("d" ido-dired "dired")
         ("x" helm-M-x "M-x")
         ("j" asok/helm-mini "helm mini")
