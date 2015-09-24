@@ -84,6 +84,7 @@
     engine-mode
     nameless
     color-theme-sanityinc-tomorrow
+    edit-server
     )
   "List of packages installed via package.el")
 
