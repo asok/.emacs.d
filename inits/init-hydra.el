@@ -100,6 +100,7 @@
   ("s" rspec-verify-single "single")
   ("m" rspec-verify-matching "matching")
   ("d" rspec-toggle-example-pendingness "pending")
+  ("2" asok/rspec-2-split "2 split")
   )
 
 (setq asok/hydra-global-heads

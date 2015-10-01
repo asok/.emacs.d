@@ -32,6 +32,14 @@
 (add-hook 'rspec-compilation-mode-hook 'asok/rspec-compilation-hook)
 
 (eval-after-load 'rspec-mode
-                 '(progn
-                    (diminish 'rspec-mode "ΡΣ")
-                    (diminish 'rspec-verifiable-mode "ΡΣΩ")))
+  '(progn
+     (diminish 'rspec-mode "ΡΣ")
+     (diminish 'rspec-verifiable-mode "ΡΣΩ")))
+
+(defun asok/rspec-2-split ()
+  (interactive)
+  (delete-other-windows)
+  (split-window-right)
+  (other-window 1)
+  (rspec-toggle-spec-and-target)
+  (other-window 1))
