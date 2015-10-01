@@ -15,3 +15,5 @@
   (cider-repl-delete-current-input)
   (call-interactively 'evil-append-line))
 (evil-define-key 'normal cider-repl-mode-map (kbd "S") 'asok/cider-repl-clear-input)
+
+(add-hook 'cider-mode-hook #'eldoc-mode)
