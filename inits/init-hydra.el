@@ -29,6 +29,7 @@
   ("F" helm-projectile-find-file-in-known-projects "file in projects")
   ("p" helm-projectile-switch-project "switch project")
   ("P" projectile-test-project "test")
+  ("k" projectile-kill-buffers "kill buffers")
   ("a" helm-projectile-ag "ag")
   ("j" helm-projectile-switch-to-buffer "buffer"))
 
@@ -87,6 +88,8 @@
   ("[" asok/sp-wrap-with-square-brackets "wrap [" :exit t)
   ("{" asok/sp-wrap-with-curly-braces "wrap {" :exit t)
   ("'" asok/sp-wrap-with-quotes "wrap \"" :exit t)
+  ("n" sp-forward-sexp "forward sexp")
+  ("p" sp-backward-sexp "backward sexp")
   )
 
 (defhydra hydra-rspec (:color blue :columns 8)
