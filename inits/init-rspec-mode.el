@@ -19,7 +19,8 @@
 
 (setq rspec-use-rvm nil
       rspec-use-opts-file-when-available nil
-      rspec-use-rake-when-possible nil)
+      rspec-use-rake-when-possible nil
+      rspec-autosave-buffer t)
 
 (defun asok/rspec-compilation-hook ()
   (make-local-variable 'compilation-scroll-output)
