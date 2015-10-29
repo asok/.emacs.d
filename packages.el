@@ -11,6 +11,7 @@
     evil-matchit
     evil-easymotion
     hydra
+    beacon
     string-inflection
     smartparens
     diminish
