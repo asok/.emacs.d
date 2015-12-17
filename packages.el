@@ -19,6 +19,7 @@
     markdown-mode
     bundler
     yaml-mode
+    nodejs-repl
     ;; mmm-mode
     ;; rbenv
     chruby
